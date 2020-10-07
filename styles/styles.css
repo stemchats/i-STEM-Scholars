@@ -19,6 +19,7 @@
 .campaigns #campaigns-nav,
 .contact #contact-nav {
   color: #4f9da6;
+  border-bottom: 2px solid #f6d970;
   font-weight: bold;
 }
 

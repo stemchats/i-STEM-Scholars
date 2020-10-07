@@ -41,7 +41,7 @@ $yellow : #f6d970;
 .campaigns #campaigns-nav, 
 .contact #contact-nav {
     color: $light-blue; //light blue or white
-    //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
+    border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
                                         //whichever is chosen, the hover color will be opposite?
     font-weight: bold;
     //text-shadow: 0px 0px 1px $light-blue;
