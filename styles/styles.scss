@@ -40,14 +40,14 @@ $yellow : #f6d970;
 .toolbox #toolbox-nav, 
 .campaigns #campaigns-nav, 
 .contact #contact-nav {
-    color: $light-blue; //light blue or white
-    border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
+    color: white; //light blue or white
+    //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
                                         //whichever is chosen, the hover color will be opposite?
     font-weight: bold;
     //text-shadow: 0px 0px 1px $light-blue;
 
     &:hover {
-        //color: $light-blue;
+        color: $light-blue;
     }
 }
 
@@ -96,6 +96,7 @@ header {
             transition: 0.3s;
             background: $dark-blue;
             padding: 10px 5px 5px;
+            font-weight: bold;
         }
 
         a:hover {
@@ -104,7 +105,7 @@ header {
 
         &:hover {
             &::before {
-                width: 150px; //250px
+                width: 240px; //250px
             }
             &::after {
                 height: 0;//27px; //57px

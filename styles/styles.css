@@ -18,9 +18,17 @@
 .toolbox #toolbox-nav,
 .campaigns #campaigns-nav,
 .contact #contact-nav {
-  color: #4f9da6;
-  border-bottom: 2px solid #f6d970;
+  color: white;
   font-weight: bold;
+}
+
+.home #home-nav:hover,
+.about #about-nav:hover,
+.program #program-nav:hover,
+.toolbox #toolbox-nav:hover,
+.campaigns #campaigns-nav:hover,
+.contact #contact-nav:hover {
+  color: #4f9da6;
 }
 
 header {
@@ -85,6 +93,7 @@ header .logo .logo-text {
   transition: 0.3s;
   background: #233142;
   padding: 10px 5px 5px;
+  font-weight: bold;
 }
 
 header .logo a:hover {
@@ -92,7 +101,7 @@ header .logo a:hover {
 }
 
 header .logo:hover::before {
-  width: 150px;
+  width: 240px;
 }
 
 header .logo:hover::after {
