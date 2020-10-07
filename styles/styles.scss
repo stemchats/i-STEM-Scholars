@@ -1,0 +1,139 @@
+// Josefin Sans
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+// Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+// VARIABLES
+
+$light-blue : #4f9da6;
+$dark-blue : #233142;
+$yellow : #f6d970;
+
+
+@mixin center {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+// PAGE HIGHLIGHT
+.home #home-nav, 
+.about #about-nav, 
+.program #program-nav, 
+.toolbox #toolbox-nav, 
+.campaigns #campaigns-nav, 
+.contact #contact-nav {
+    color: $light-blue; //light blue or white
+    //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
+                                        //whichever is chosen, the hover color will be opposite?
+    font-weight: bold;
+    //text-shadow: 0px 0px 1px $light-blue;
+
+    &:hover {
+        //color: $light-blue;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0;
+    height: 70px;
+    white-space: nowrap;
+    z-index: 5;
+    background-color: $dark-blue; //either dark blue or light grey; can't choose
+    //background-color: #f1f1f1;
+    
+    a {
+        color: white;
+    }
+
+    .logo {
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -0.5rem;
+
+        &::before, &::after { //still dk what to do w this animation lmao -myco
+            position: absolute;
+            background: $yellow;
+            transform: translateY(-4px);
+            z-index: -1;
+            transition: 0.6s;
+            content: '';
+        }
+        &::before {
+            width: 0;
+            height: 57px;
+        }
+        &::after {
+            width: 250px;
+            height: 0;
+        }
+
+        .logo-text {
+            border: 0;
+            transition: 0.3s;
+            background: $dark-blue;
+            padding: 10px 5px 5px;
+        }
+
+        a:hover {
+            color: white; //cancel out bootstrap
+        }
+
+        &:hover {
+            &::before {
+                width: 150px; //250px
+            }
+            &::after {
+                height: 0;//27px; //57px
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 25px;
+
+            a {
+                &::after { //so that the bold highlighting wont shift width
+                    display: block;
+                    content: attr(title);
+                    font-weight: bold;
+                    height: 1px;
+                    color: transparent;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    color: $light-blue;
+                }
+            }
+        }
+    }
+}

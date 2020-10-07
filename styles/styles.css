@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* a:hover {
+  text-decoration: none;
+}
+
+.home #home-nav,
+.about #about-nav,
+.program #program-nav,
+.toolbox #toolbox-nav,
+.campaigns #campaigns-nav,
+.contact #contact-nav {
+  color: #4f9da6;
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 0;
+  height: 70px;
+  white-space: nowrap;
+  z-index: 5;
+  background-color: #233142;
+}
+
+header a {
+  color: white;
+}
+
+header .logo {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -0.5rem;
+}
+
+header .logo::before, header .logo::after {
+  position: absolute;
+  background: #f6d970;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  z-index: -1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  content: '';
+}
+
+header .logo::before {
+  width: 0;
+  height: 57px;
+}
+
+header .logo::after {
+  width: 250px;
+  height: 0;
+}
+
+header .logo .logo-text {
+  border: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #233142;
+  padding: 10px 5px 5px;
+}
+
+header .logo a:hover {
+  color: white;
+}
+
+header .logo:hover::before {
+  width: 150px;
+}
+
+header .logo:hover::after {
+  height: 0;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin: 0 25px;
+}
+
+header ul li a::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+header ul li a:hover {
+  color: #4f9da6;
+}
+/*# sourceMappingURL=styles.css.map */
