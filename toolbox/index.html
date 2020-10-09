@@ -63,11 +63,79 @@
 
 </head>
 
-<body class="toolbox">
+<body class="toolbox" data-spy="scroll">
     <!-- HEADER -->
     <div id="header"></div>
 
     <!-- CONTENT -->
+
+    <div class="container" data-spy="scroll">
+        <div class="row">
+            <div class="col-12" id="title">
+                <h1><center>Visual Labs and other thingies</center></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <center>path of the webpage (bio/labs/pcr, etc)</center>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+              <div class="row">
+                  <!-- <h3>Table of Contents/Directory (Scrollable)</h3> -->
+                  <!-- nav starts here -->
+                  <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                      <a class="nav-link" href="#item-1">Item 1</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                      </nav>
+                      <a class="nav-link" href="#item-2">Item2</a>
+                      <a class="nav-link" href="#item-3">Item3</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                      </nav>
+                    </nav>
+                  </nav>
+                  <!-- end of navbar -->
+              </div>
+              <div class="row">
+                  <h3>Other Topics in Series (Scrollable)</h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Video 1</li>
+                    <li class="list-group-item">Article 1</li>
+                    <li class="list-group-item">Article 2</li>
+                    <li class="list-group-item">Video 2</li>
+                    <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-8" id="content">
+              <center>The Page Content Goes Here</center>
+              <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h4 id="item-1">Item 1</h4>
+                <p></p>
+                <h5 id="item-1-1">Item 1-1</h5>
+                <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+                <h5 id="item-1-2">Item 1-2</h5>
+                <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+                <h4 id="item-2">Item 2</h4>
+                <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+                <h4 id="item-3">Item 3</h4>
+                <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+                <h5 id="item-3-1">Item 3-1</h5>
+                <p>...</p>
+                <h5 id="item-3-2">Item 3-2</h5>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+    </div>
 
     <!-- footer -->
     <div id="footer"></div>

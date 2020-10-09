@@ -132,4 +132,8 @@ header ul li a::after {
 header ul li a:hover {
   color: #4f9da6;
 }
+
+header .scrollspy-example {
+  position: relative;
+}
 /*# sourceMappingURL=styles.css.map */
