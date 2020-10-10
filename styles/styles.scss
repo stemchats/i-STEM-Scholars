@@ -9,6 +9,7 @@
 $light-blue : #4f9da6;
 $dark-blue : #233142;
 $yellow : #f6d970;
+$light-grey : #f8f8f8;
 
 
 @mixin center {
@@ -143,4 +144,53 @@ header {
     }
 
     
+}
+
+#hometop{
+    h2{
+        padding: 75px 50px 25px;
+        font-weight: bold; 
+    }
+    .headerdes{
+        padding: 0px 100px 20px;
+    }
+}
+
+#homemid{
+    padding-bottom: 50px;
+    background-color: $light-grey;
+    img{
+        padding-right: 7%;
+        height: 350px;
+        object-fit: contain;
+    }
+    .card-text{
+        padding-left: 10%; 
+    }
+    .card-title{
+        padding-left: 10%; 
+    }
+}
+
+.card-deck{
+    margin: 0 1.5rem;
+
+    .card{
+        // background-color:  $light-blue;
+
+        img {
+            padding: 2rem;
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+    .card-title{
+        font-weight: bold;
+    }
+    .card-text {
+        color: black;
+    }
+    .card-body{
+        padding: 1.5rem 1.5rem 2rem;
+    }
 }
