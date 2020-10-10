@@ -22,8 +22,8 @@ $light-grey : #f8f8f8;
 
 
 * {
-    //font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
 
     a {
         text-decoration: none;
@@ -32,6 +32,10 @@ $light-grey : #f8f8f8;
             text-decoration: none;
         }
     }
+}
+
+body {
+    overflow-y: scroll;
 }
 
 // PAGE HIGHLIGHT
