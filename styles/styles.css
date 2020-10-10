@@ -101,7 +101,7 @@ header .logo a:hover {
 }
 
 header .logo:hover::before {
-  width: 240px;
+  width: 0;
 }
 
 header .logo:hover::after {

@@ -42,9 +42,8 @@ $yellow : #f6d970;
 .contact #contact-nav {
     color: white; //light blue or white
     //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
-                                        //whichever is chosen, the hover color will be opposite?
+                                        //whichever is chosen, the text hover color will be opposite?
     font-weight: bold;
-    //text-shadow: 0px 0px 1px $light-blue;
 
     &:hover {
         color: $light-blue;
@@ -105,7 +104,7 @@ header {
 
         &:hover {
             &::before {
-                width: 240px; //250px
+                width: 0;//240px; //250px
             }
             &::after {
                 height: 0;//27px; //57px
