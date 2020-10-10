@@ -9,6 +9,7 @@
 $light-blue : #4f9da6;
 $dark-blue : #233142;
 $yellow : #f6d970;
+$light-grey : #f8f8f8;
 
 
 @mixin center {
@@ -21,8 +22,8 @@ $yellow : #f6d970;
 
 
 * {
-    font-family: 'Josefin Sans', sans-serif;
-    //font-family: 'Open Sans', sans-serif;
+    //font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     a {
         text-decoration: none;
@@ -135,5 +136,64 @@ header {
                 }
             }
         }
+    }
+    //for my wireframing, I have no idea if this is gonna work.
+    .scrollspy-example {
+        position: relative;
+    }
+
+    
+}
+
+#hometop{
+    h2{
+        padding: 75px 50px 20px;
+        font-weight: bold; 
+        color: $dark-blue;
+    }
+    .headerdes{
+        padding: 0px 100px 20px;
+    }
+}
+
+#homemid{
+    padding-bottom: 50px;
+    background-color: $light-grey;
+    // rgba(196, 196, 196, 0.49)
+    img{
+        padding-right: 7%;
+        height: 350px;
+        object-fit: contain;
+    }
+    .card-text{
+        padding-left: 10%; 
+    }
+    .card-title{
+        padding-left: 10%; 
+    }
+}
+
+.card-deck{
+    margin: 0 1.5rem;
+    padding: 50px 10px 20px;
+
+    .card{
+        background-color: $light-grey;
+
+        img {
+            padding: 2rem;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+    .card-title{
+        font-weight: bold;
+        color: black;
+    }
+    .card-text {
+        color: black;
+    }
+    .card-body{
+        padding: 1.5rem 1.5rem 2rem;
     }
 }

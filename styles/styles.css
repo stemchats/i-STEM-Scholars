@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 * a {
@@ -131,5 +131,68 @@ header ul li a::after {
 
 header ul li a:hover {
   color: #4f9da6;
+}
+
+header .scrollspy-example {
+  position: relative;
+}
+
+#hometop h2 {
+  padding: 75px 50px 20px;
+  font-weight: bold;
+  color: #233142;
+}
+
+#hometop .headerdes {
+  padding: 0px 100px 20px;
+}
+
+#homemid {
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+}
+
+#homemid img {
+  padding-right: 7%;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#homemid .card-text {
+  padding-left: 10%;
+}
+
+#homemid .card-title {
+  padding-left: 10%;
+}
+
+.card-deck {
+  margin: 0 1.5rem;
+  padding: 50px 10px 20px;
+}
+
+.card-deck .card {
+  background-color: #f8f8f8;
+}
+
+.card-deck .card img {
+  padding: 2rem;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-deck .card-title {
+  font-weight: bold;
+  color: black;
+}
+
+.card-deck .card-text {
+  color: black;
+}
+
+.card-deck .card-body {
+  padding: 1.5rem 1.5rem 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
