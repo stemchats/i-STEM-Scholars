@@ -138,8 +138,9 @@ header .scrollspy-example {
 }
 
 #hometop h2 {
-  padding: 75px 50px 25px;
+  padding: 75px 50px 20px;
   font-weight: bold;
+  color: #233142;
 }
 
 #hometop .headerdes {
@@ -168,17 +169,23 @@ header .scrollspy-example {
 
 .card-deck {
   margin: 0 1.5rem;
+  padding: 50px 10px 20px;
+}
+
+.card-deck .card {
+  background-color: #f8f8f8;
 }
 
 .card-deck .card img {
   padding: 2rem;
-  height: 300px;
+  height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .card-deck .card-title {
   font-weight: bold;
+  color: black;
 }
 
 .card-deck .card-text {
