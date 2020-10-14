@@ -39,12 +39,12 @@ body {
 }
 
 // PAGE HIGHLIGHT
-.home #home-nav, 
-.about #about-nav, 
-.program #program-nav, 
-.toolbox #toolbox-nav, 
-.campaigns #campaigns-nav, 
-.contact #contact-nav {
+.home #home-nav,
+.about #about-nav,
+.program #program-nav,
+.toolbox #toolbox-nav,
+.campaigns #campaigns-nav,
+.get-involved #get-involved-nav {
     color: white; //light blue or white
     //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
                                         //whichever is chosen, the text hover color will be opposite?
@@ -66,7 +66,7 @@ header {
     z-index: 5;
     background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
     //background-color: #f1f1f1;
-    
+
     a {
         color: white;
     }
@@ -146,13 +146,13 @@ header {
         position: relative;
     }
 
-    
+
 }
 
 #hometop{
     h2{
         padding: 75px 50px 20px;
-        font-weight: bold; 
+        font-weight: bold;
         color: $dark-blue;
     }
     .headerdes{
@@ -170,10 +170,10 @@ header {
         object-fit: contain;
     }
     .card-text{
-        padding-left: 10%; 
+        padding-left: 10%;
     }
     .card-title{
-        padding-left: 10%; 
+        padding-left: 10%;
     }
 }
 
