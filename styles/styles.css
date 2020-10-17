@@ -46,12 +46,24 @@
   margin: 20px;
 }
 
+.quote-row .quote blockquote::before, .quote-row .quote blockquote::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0.25;
+  font-size: 36px;
+  color: #4f9da6;
+}
+
 .quote-row .quote blockquote::before {
-  content: '\"';
+  content: '\f10d';
+  margin-top: -20px;
+  margin-left: -30px;
 }
 
 .quote-row .quote blockquote::after {
-  content: '\"';
+  content: '\f10e';
+  margin-top: -10px;
 }
 
 .quote-row[data-id="1"] {
