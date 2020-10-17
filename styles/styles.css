@@ -21,7 +21,7 @@ body {
 .program #program-nav,
 .toolbox #toolbox-nav,
 .campaigns #campaigns-nav,
-.get-involved #get-involved-nav {
+.contact #contact-nav {
   color: white;
   font-weight: bold;
 }
@@ -31,7 +31,7 @@ body {
 .program #program-nav:hover,
 .toolbox #toolbox-nav:hover,
 .campaigns #campaigns-nav:hover,
-.get-involved #get-involved-nav:hover {
+.contact #contact-nav:hover {
   color: #4f9da6;
 }
 
@@ -198,5 +198,48 @@ header .scrollspy-example {
 
 .card-deck .card-body {
   padding: 1.5rem 1.5rem 2rem;
+}
+
+footer .row {
+  margin: 0;
+}
+
+footer .shift-y {
+  margin-bottom: -30px;
+}
+
+footer .socialmedia-links {
+  padding-top: 40px;
+}
+
+footer .social-icons {
+  margin: 20px auto 40px;
+  font-size: 24px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+footer .social-icons i {
+  margin: 0 10px;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .social-icons i:hover {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  opacity: 1;
+}
+
+footer .social-icons:hover i {
+  opacity: 0.5;
+}
+
+footer .copy {
+  font-size: 0.5px;
+  padding-bottom: 0px;
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */
