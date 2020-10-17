@@ -33,6 +33,47 @@ $light-grey : #f8f8f8;
     text-align: center;
 }
 
+.quotes-container {
+    height: 400px;
+    margin: 30px 0;
+}
+
+.quote-row {
+    display: flex;
+    opacity: 0; 
+    animation-name: fade; 
+    animation-duration: 15s; 
+    animation-iteration-count: infinite; 
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+
+    .quote {
+        @include center();
+        width: 350px;
+        min-width: 200px;
+        margin: 20px;
+    
+        blockquote::before {
+            content: '\"';
+        }
+        blockquote::after {
+            content: '\"';
+        }
+    }
+
+    &[data-id="1"] {
+        animation-delay: 0s;
+    }
+    &[data-id="2"] {
+        animation-delay: 5s;
+    }
+    &[data-id="3"] {
+        animation-delay: 10s;
+    }
+}
+
+
 
 
 * {
@@ -48,8 +89,14 @@ $light-grey : #f8f8f8;
     }
 }
 
+html {
+    scroll-behavior: smooth;
+    outline: none;
+}
+
 body {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 // PAGE HIGHLIGHT
@@ -265,3 +312,15 @@ footer {
         z-index: 1;
     }
 }
+
+
+
+// ANIMATIONS
+
+@keyframes fade {
+    0%   { opacity: 0; }
+    11.11%   { opacity: 1; }
+    33.33%  { opacity: 1; }
+    44.44%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
