@@ -228,63 +228,121 @@ header .scrollspy-example {
   position: relative;
 }
 
-#hometop h2 {
-  padding: 75px 50px 20px;
-  font-weight: bold;
-  color: #233142;
-}
-
-#hometop .headerdes {
-  padding: 0px 100px 20px;
-}
-
-#homemid {
+#hometop {
   padding-bottom: 50px;
   background-color: #f8f8f8;
+  width: 100%;
 }
 
-#homemid img {
+#hometop img {
   padding-right: 7%;
-  height: 350px;
+  height: 450px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#homemid .card-text {
-  padding-left: 10%;
+#hometop .card-text {
+  padding-right: 10%;
 }
 
-#homemid .card-title {
-  padding-left: 10%;
+#hometop .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30%;
 }
 
-.card-deck {
-  margin: 0 1.5rem;
-  padding: 50px 10px 20px;
+#hometop .chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
 }
 
-.card-deck .card {
-  background-color: #f8f8f8;
+#hometop .chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
 }
 
-.card-deck .card img {
-  padding: 2rem;
-  height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
+#hometop .chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
 }
 
-.card-deck .card-title {
-  font-weight: bold;
-  color: black;
+#hometop .chevron:before,
+#hometop .chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #233142;
 }
 
-.card-deck .card-text {
-  color: black;
+#hometop .chevron:before {
+  left: 0;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
 }
 
-.card-deck .card-body {
-  padding: 1.5rem 1.5rem 2rem;
+#hometop .chevron:after {
+  right: 0;
+  width: 50%;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
+  }
 }
 
 footer {
