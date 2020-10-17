@@ -14,9 +14,29 @@
   text-align: center;
 }
 
+.small-box-title {
+  margin-top: 3rem;
+  font-size: 28px;
+}
+
+.medium-box-title {
+  margin-top: 3rem;
+  font-size: 32px;
+}
+
+.large-box-title {
+  margin-top: 3rem;
+  font-size: 40px;
+}
+
 .quotes-container {
-  height: 400px;
+  height: 600px;
   margin: 30px 0;
+}
+
+.quotes-container .row {
+  width: 80%;
+  margin: 0;
 }
 
 .quote-row {
@@ -41,9 +61,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  width: 350px;
-  min-width: 200px;
-  margin: 20px;
+  margin-bottom: 2rem;
 }
 
 .quote-row .quote blockquote::before, .quote-row .quote blockquote::after {
@@ -64,6 +82,7 @@
 .quote-row .quote blockquote::after {
   content: '\f10e';
   margin-top: -10px;
+  margin-left: -5px;
 }
 
 .quote-row[data-id="1"] {
@@ -87,20 +106,27 @@
 
 * a {
   text-decoration: none;
+  color: #4f9da6;
 }
 
 * a:hover {
   text-decoration: none;
+  color: #f6d970;
 }
 
 html {
   scroll-behavior: smooth;
-  outline: none;
 }
 
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: calc(100vh - 370px);
 }
 
 .home #home-nav,
@@ -228,7 +254,7 @@ header .scrollspy-example {
   position: relative;
 }
 
-#hometop h2 {
+#hometop h1 {
   padding: 75px 50px 20px;
   font-weight: bold;
   color: #233142;
@@ -287,6 +313,26 @@ header .scrollspy-example {
   padding: 1.5rem 1.5rem 2rem;
 }
 
+.toolbox nav {
+  width: 100%;
+}
+
+.toolbox nav .nav-link {
+  color: black;
+}
+
+.toolbox nav .nav-link:hover {
+  color: #4f9da6;
+}
+
+.toolbox nav .nav-link.active {
+  background-color: #4f9da6;
+}
+
+.toolbox .col-8 {
+  padding-left: 2rem;
+}
+
 footer {
   padding-bottom: 4rem;
   padding-top: 2rem;
@@ -315,6 +361,10 @@ footer .social-icons {
   width: max-content;
 }
 
+footer .social-icons:hover i {
+  opacity: 0.5;
+}
+
 footer .social-icons i {
   margin: 0 10px;
   color: white;
@@ -326,10 +376,6 @@ footer .social-icons i:hover {
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
   opacity: 1;
-}
-
-footer .social-icons:hover i {
-  opacity: 0.5;
 }
 
 footer .copy {
