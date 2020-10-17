@@ -35,9 +35,6 @@ body {
   color: #4f9da6;
 }
 
-
-
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,73 +199,4 @@ header .scrollspy-example {
 .card-deck .card-body {
   padding: 1.5rem 1.5rem 2rem;
 }
-
-.text-center {
-  width: 100%;
-  background-color: #233142;
-  border: none;
-  border-radius: 0;
-}
-
-.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-footer {
-  padding-bottom: 4rem;
-  padding-top: 2rem;
-  margin-top: 4rem; 
-  background-color: #233142;
-  overflow-x: hidden;
-}
-
-
-
-footer .row {
-  margin: 0;
-}
-
-footer .shift-y {
-  margin-bottom: -30px;
-} 
-
-footer .socialmedia-links {
-  padding-top: 40px;
-} 
-
-footer .social-icons {
-  margin: 20px auto 40px;
-  font-size: 24px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-footer .social-icons:hover i {
-  opacity: 0.5;
-}
-
-footer .social-icons i {
-  margin: 0 10px;
-  color: white;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-footer .social-icons i:hover {
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
-  opacity: 1;
-}
-
-footer .copy {
-  font-size: 0.5px;
-  padding-bottom: 0px;
-  z-index: 1;
-}
-
-
 /*# sourceMappingURL=styles.css.map */
