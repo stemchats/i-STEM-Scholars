@@ -19,6 +19,20 @@ $light-grey : #f8f8f8;
     margin-left: auto;
 }
 
+.text-center {
+    width: 100%;
+    background-color: #233142;
+    border: none;
+    border-radius: 0;
+}
+  
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 
 
 * {
@@ -204,6 +218,12 @@ header {
 
 
 footer {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    margin-top: 4rem; 
+    background-color: #233142;
+    overflow-x: hidden;
+
     .row {
         margin: 0;
     }
