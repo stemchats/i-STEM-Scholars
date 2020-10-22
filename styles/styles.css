@@ -394,12 +394,13 @@ header .scrollspy-example {
   padding-bottom: 2px;
 }
 
-.toolbox li .scrollable-items {
-  height: 50px;
-  overflow: hidden;
+.toolbox .list-group {
+  height: 300px;
+  overflow-y: scroll;
+  z-index: 5;
 }
 
-.toolbox .col-9 {
+.toolbox .right-col {
   padding-left: 4rem;
 }
 

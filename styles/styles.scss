@@ -400,23 +400,23 @@ header {
             }
         }
     }
+    
     li {
         padding-top: 2px;
         padding-bottom: 2px;
-        .list-group-item{
-            
-        }
-        .scrollable-items{
-            height: 50px;
-            overflow: hidden;
-        }
     }
 
+    .list-group {
+        height: 300px;
+        overflow-y: scroll;
+        z-index: 5;
+    }
 
-    .col-9{
+    .right-col {
         padding-left: 4rem;
     }
-    .fixed-col{
+
+    .fixed-col {
         position: fixed;
         top: 100px;
     }
