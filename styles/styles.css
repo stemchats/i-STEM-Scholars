@@ -377,6 +377,8 @@ header .scrollspy-example {
 
 .toolbox nav .nav-link {
   color: black;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .toolbox nav .nav-link:hover {
@@ -387,8 +389,23 @@ header .scrollspy-example {
   background-color: #4f9da6;
 }
 
-.toolbox .col-8 {
-  padding-left: 2rem;
+.toolbox li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.toolbox li .scrollable-items {
+  height: 50px;
+  overflow: hidden;
+}
+
+.toolbox .col-9 {
+  padding-left: 4rem;
+}
+
+.toolbox .fixed-col {
+  position: fixed;
+  top: 100px;
 }
 
 footer {

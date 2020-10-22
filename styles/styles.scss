@@ -389,7 +389,8 @@ header {
 
         .nav-link {
             color: black;
-
+            padding-top: 0;
+            padding-bottom: 0;
             &:hover {
                 color: $light-blue;
             }
@@ -399,9 +400,25 @@ header {
             }
         }
     }
+    li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        .list-group-item{
+            
+        }
+        .scrollable-items{
+            height: 50px;
+            overflow: hidden;
+        }
+    }
 
-    .col-8 {
-        padding-left: 2rem;
+
+    .col-9{
+        padding-left: 4rem;
+    }
+    .fixed-col{
+        position: fixed;
+        top: 100px;
     }
 }
 
