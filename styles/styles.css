@@ -261,14 +261,22 @@ header .scrollspy-example {
 }
 
 #hometop img {
-  padding-right: 7%;
-  height: 450px;
+  padding-right: 2%;
+  padding-left: 5%;
+  margin-top: 2%;
+  height: 440px;
   -o-object-fit: contain;
      object-fit: contain;
+  left: 10%;
 }
 
 #hometop .card-text {
   padding-right: 10%;
+}
+
+#hometop .card-title {
+  font-size: 40px;
+  padding-top: 10%;
 }
 
 #hometop .arrow {
