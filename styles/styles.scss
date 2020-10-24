@@ -33,22 +33,32 @@ $light-grey : #f8f8f8;
     text-align: center;
 }
 
-.small-box-title {
-    //h3
+.small-box-title { //h3
     margin-top: 3rem;
     font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.small-box-sub {
+    font-size: 18px;
 }
 
-.medium-box-title {
-    //h2
+.medium-box-title { //h2
     margin-top: 3rem;
     font-size: 32px;
+    text-transform: capitalize;
+}
+.medium-box-sub {
+    font-size: 24px;
 }
 
-.large-box-title {
-    //h1
+.large-box-title { //h1
     margin-top: 3rem;
     font-size: 40px;
+    text-transform: capitalize;
+}
+.large-box-sub {
+    font-size: 36px;
 }
 
 

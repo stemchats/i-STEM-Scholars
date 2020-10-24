@@ -17,16 +17,32 @@
 .small-box-title {
   margin-top: 3rem;
   font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.small-box-sub {
+  font-size: 18px;
 }
 
 .medium-box-title {
   margin-top: 3rem;
   font-size: 32px;
+  text-transform: capitalize;
+}
+
+.medium-box-sub {
+  font-size: 24px;
 }
 
 .large-box-title {
   margin-top: 3rem;
   font-size: 40px;
+  text-transform: capitalize;
+}
+
+.large-box-sub {
+  font-size: 36px;
 }
 
 .quotes-container {
