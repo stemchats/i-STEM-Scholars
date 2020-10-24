@@ -28,7 +28,6 @@
 .medium-box-title {
   margin-top: 3rem;
   font-size: 32px;
-  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -39,7 +38,6 @@
 .large-box-title {
   margin-top: 3rem;
   font-size: 40px;
-  font-weight: bold;
   text-transform: capitalize;
 }
 
