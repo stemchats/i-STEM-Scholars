@@ -460,6 +460,10 @@ header .scrollspy-example {
   top: 100px;
 }
 
+.toolbox .col-2 {
+  margin: 10px;
+}
+
 footer {
   padding-bottom: 4rem;
   padding-top: 2rem;

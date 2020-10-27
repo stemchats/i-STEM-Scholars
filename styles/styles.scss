@@ -408,6 +408,7 @@ header {
 // TOOLBOX STYLES
 
 .toolbox {
+    //display: flex;
     nav {
         width: 100%;
 
@@ -443,6 +444,10 @@ header {
     .fixed-col {
         position: fixed;
         top: 100px;
+    }
+
+    .col-2{
+        margin: 10px;
     }
 }
 
