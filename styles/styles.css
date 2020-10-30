@@ -440,6 +440,11 @@ header .scrollspy-example {
   background-color: #4f9da6;
 }
 
+.toolbox .lessons {
+  height: 900px;
+  overflow-y: scroll;
+}
+
 .toolbox li {
   padding-top: 2px;
   padding-bottom: 2px;

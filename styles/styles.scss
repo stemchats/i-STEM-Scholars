@@ -425,6 +425,11 @@ header {
             }
         }
     }
+
+    .lessons{
+        height: 900px;
+        overflow-y: scroll;
+    }
     
     li {
         padding-top: 2px;
