@@ -270,13 +270,7 @@ header .scrollspy-example {
   position: relative;
 }
 
-#hometop {
-  padding-bottom: 50px;
-  background-color: #f8f8f8;
-  width: 100%;
-}
-
-#hometop img {
+img {
   padding-right: 2%;
   margin-left: 5%;
   margin-top: 2%;
@@ -287,7 +281,7 @@ header .scrollspy-example {
           animation: fadeIn ease 4s;
 }
 
-#hometop .card-text {
+.card-text {
   padding-right: 10%;
   text-transform: none;
   margin: 0 20px;
@@ -295,7 +289,7 @@ header .scrollspy-example {
           animation: fadeIn ease 4s;
 }
 
-#hometop .card-title {
+.card-title {
   font-size: 40px;
   padding-top: 10%;
   text-transform: none;
@@ -320,6 +314,12 @@ header .scrollspy-example {
   100% {
     opacity: 1;
   }
+}
+
+#hometop {
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+  width: 100%;
 }
 
 #hometop .arrow {
@@ -420,6 +420,11 @@ header .scrollspy-example {
     -webkit-transform: translateY(4.8rem) scale(0.5);
             transform: translateY(4.8rem) scale(0.5);
   }
+}
+
+#home2 {
+  padding-bottom: 50px;
+  width: 100%;
 }
 
 .toolbox nav {
