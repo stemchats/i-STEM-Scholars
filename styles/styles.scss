@@ -279,7 +279,8 @@ img {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%; 
-    height: 440px;
+    width: 50%;
+    height: auto;
     object-fit: contain;
     animation: fadeIn ease 4s;
 }
@@ -305,10 +306,10 @@ img {
 #hometop {
     background-color: $light-grey;
     width: 100%;
-    height: 100%; 
+    height: 100vh; 
     .arrow {
         text-align: center;
-        margin: 12% 0 1%;
+        margin: 8% 0 2%;
       }
       .bounce {
         -moz-animation: bounce 2s infinite;
@@ -332,7 +333,7 @@ img {
 #home2{
     width: 100%;
     margin-left: 5%;
-    height: 100%;
+    height: 100vh;
 }
 
 #homebottom{ 
