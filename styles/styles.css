@@ -411,6 +411,10 @@ img {
   background-color: #4f9da6;
 }
 
+.toolbox .card {
+  margin-top: 20px;
+}
+
 .toolbox .lessons {
   height: 900px;
   overflow-y: scroll;
