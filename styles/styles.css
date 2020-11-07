@@ -234,7 +234,7 @@ header .logo a:hover {
 }
 
 header .logo:hover::before {
-  width: 0;
+  width: 250px;
 }
 
 header .logo:hover::after {
