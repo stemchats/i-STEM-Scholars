@@ -301,8 +301,8 @@ img {
     padding-right: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%; 
-    width: 50%;
+    margin-top: 5%; 
+    width: 45%;
     height: auto;
     object-fit: contain;
     animation: fadeIn ease 4s;
@@ -315,10 +315,11 @@ img {
     text-transform: none;
     margin: 0 1.5%;
     animation: fadeIn ease 4s;
+    font-size: 1.5vw;
 }
 
 .card-title{
-    font-size: 40px;
+    font-size: 3vw;
     padding-top:10%; 
     text-transform: none;
     margin: 0 1.5%;
@@ -332,7 +333,7 @@ img {
 
     .arrow {
         text-align: center;
-        margin: 15% 0 2%;
+        margin: 6% 0 2%;
     }
       
     .bounce {
