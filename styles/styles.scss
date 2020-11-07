@@ -279,14 +279,15 @@ img {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%; 
-    height: 440px;
+    width: 50%;
+    height: auto;
     object-fit: contain;
     animation: fadeIn ease 4s;
 }
 .card-text {
     padding: 0.5% 10% 1% 0%; 
     text-transform: none;
-    margin: 0 20px;
+    margin: 0 1.5%;
     animation: fadeIn ease 4s;
 }
 
@@ -294,7 +295,7 @@ img {
     font-size: 40px;
     padding-top:10%; 
     text-transform: none;
-    margin: 0 20px;
+    margin: 0 1.5%;
     animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {
@@ -303,86 +304,44 @@ img {
     }
 
 #hometop {
-    padding-bottom: 50px;
     background-color: $light-grey;
     width: 100%;
-
-    // rgba(196, 196, 196, 0.49)
+    height: 100vh; 
+    .arrow {
+        text-align: center;
+        margin: 8% 0 2%;
+      }
+      .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+      }
       
-    // $base: 0.6rem;
-
-    // .arrow {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100%;
-    //     height: 30%;
-    // }
-
-    // .chevron {
-    //     position: absolute;
-    //     width: $base * 3.5;
-    //     height: $base * 0.8;
-    //     opacity: 0;
-    //     transform: scale(0.3);
-    //     animation: move-chevron 3s ease-out infinite;
-    // }
-
-    // .chevron:first-child {
-    //     animation: move-chevron 3s ease-out 1s infinite;
-    // }
-
-    // .chevron:nth-child(2) {
-    //     animation: move-chevron 3s ease-out 2s infinite;
-    // }
-
-    // .chevron:before,
-    // .chevron:after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     height: 100%;
-    //     width: 50%;
-    //     background: $dark-blue;
-    // }
-
-    // .chevron:before {
-    //     left: 0;
-    //     transform: skewY(30deg);
-    // }
-
-    // .chevron:after {
-    //     right: 0;
-    //     width: 50%;
-    //     transform: skewY(-30deg);
-    // }
-
-    // @keyframes move-chevron {
-    //     25% {
-    //         opacity: 1;
-    //     }
-
-    //     33.3% {
-    //         opacity: 1;
-    //         transform: translateY($base * 3.8);
-    //     }
-
-    //     66.6% {
-    //         opacity: 1;
-    //         transform: translateY($base * 5.2);
-    //     }
-
-    //     100% {
-    //         opacity: 0;
-    //         transform: translateY($base * 8) scale(0.5);
-    //     }
-    // }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
 }
 
 #home2{
-    padding-bottom: 50px;
     width: 100%;
     margin-left: 5%;
+    height: 100vh;
+}
+
+#homebottom{ 
+    width: 100%;
+    background-color: $light-grey; 
+    padding-bottom: 7%;
+    // margin-top: 2%;
+    // margin-bottom: 2%;
 }
 
 .button-home1{
@@ -392,7 +351,7 @@ img {
     font-size: 16px;
     text-align: center;
     border-radius: 12px;
-    margin-left: 1%; 
+    margin-left: 1.5%; 
 }
 
 .button-home{
