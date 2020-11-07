@@ -33,6 +33,15 @@ $light-grey : #f8f8f8;
     text-align: center;
 }
 
+.hashtag::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -90px; 
+    height: 90px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 .small-box-title { //h3
     margin-top: 3rem;
     font-size: 28px;
@@ -149,8 +158,9 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    margin-top: 2rem;
+.container, .container-fluid {
+    position: relative;
+    margin-top: 100px;
     margin-bottom: 2rem;
     //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
 }
@@ -178,10 +188,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
     padding: 1rem 2rem 0;
     height: 70px;
+    width: 100%;
     white-space: nowrap;
-    z-index: 5;
+    z-index: 10000;
     background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
     //background-color: #f1f1f1;
 
@@ -270,8 +283,6 @@ header {
     .scrollspy-example {
         position: relative;
     }
-
-
 }
 
 img {
@@ -365,6 +376,7 @@ img {
 
 .fixed-nav {
     margin-top: 100px;
+    margin-bottom: 30px;
 
     .list-group-item {
         padding-left: 0.75rem;

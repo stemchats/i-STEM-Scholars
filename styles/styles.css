@@ -14,6 +14,15 @@
   text-align: center;
 }
 
+.hashtag::before {
+  display: block;
+  content: " ";
+  margin-top: -90px;
+  height: 90px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .small-box-title {
   margin-top: 3rem;
   font-size: 28px;
@@ -140,8 +149,9 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  margin-top: 2rem;
+.container, .container-fluid {
+  position: relative;
+  margin-top: 100px;
   margin-bottom: 2rem;
 }
 
@@ -174,10 +184,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  top: 0;
   padding: 1rem 2rem 0;
   height: 70px;
+  width: 100%;
   white-space: nowrap;
-  z-index: 5;
+  z-index: 10000;
   background-color: #233142;
 }
 
@@ -395,6 +408,7 @@ img {
 
 .fixed-nav {
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .fixed-nav .list-group-item {
