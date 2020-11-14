@@ -72,8 +72,8 @@
   opacity: 0;
   -webkit-animation-name: fade;
           animation-name: fade;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   position: absolute;
@@ -118,13 +118,13 @@
 }
 
 .quote-row[data-id="2"] {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .quote-row[data-id="3"] {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 
 * {

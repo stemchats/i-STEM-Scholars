@@ -86,7 +86,7 @@ $light-grey : #f8f8f8;
     display: flex;
     opacity: 0;
     animation-name: fade;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     position: absolute;
     left: 50%;
@@ -124,11 +124,11 @@ $light-grey : #f8f8f8;
     }
 
     &[data-id="2"] {
-        animation-delay: 5s;
+        animation-delay: 10s;
     }
 
     &[data-id="3"] {
-        animation-delay: 10s;
+        animation-delay: 20s;
     }
 }
 
