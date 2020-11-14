@@ -283,20 +283,10 @@ header .scrollspy-example {
   position: relative;
 }
 
-.home section {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5rem;
-}
-
-.home section img {
-  max-width: 850px;
-  width: 90%;
+.get-involved .icon-img {
+  width: 40%;
+  display: inline;
+  margin: 0 0 20px;
 }
 
 img {

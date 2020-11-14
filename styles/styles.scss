@@ -285,15 +285,11 @@ header {
     }
 }
 
-.home section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 5rem;
-
-    img {
-        max-width: 850px;
-        width: 90%;
+.get-involved {
+    .icon-img {
+        width: 40%;
+        display: inline;
+        margin: 0 0 20px;
     }
 }
 
