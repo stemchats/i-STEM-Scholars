@@ -33,7 +33,7 @@ $light-grey : #f8f8f8;
     text-align: center;
 }
 
-.hashtag::before { 
+.hashtag::before { //add .hashtag to all in-page anchor links
     display: block; 
     content: " "; 
     margin-top: -90px; 
