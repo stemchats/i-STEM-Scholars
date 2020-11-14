@@ -62,6 +62,10 @@
 
 </head>
 
+<!-- <script>
+    var pageURL = localStorage.getItem("page");
+</script> -->
+
 <body class="toolbox" data-spy="scroll">
     <!-- HEADER -->
     <div id="header"></div>
@@ -91,13 +95,25 @@
                     </nav>
                     <!-- end of navbar -->
                 </div>
+                <div class="row">
+                    <div class="col" style="margin-top: 30px;">
+                        <button type="button" class="btn btn-lg btn-outline-dark" onclick="goBack()" style="background-color: #4f9da6; border-color: #4f9da6; color: white;">Go to previous page</button>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-7 offset-sm-2" id="content">
                 <h1 class="center">Visual Labs and other thingies</h1>
         
                 <div class="row">
                     <div class="col">
-                        <p class="center">path of the webpage (bio/labs/pcr, etc)</p>
+                        <script>
+                            window.onload = function(){                                
+                            var the_name = localStorage.getItem("name");
+                            var pageURL = localStorage.getItem("page");
+                            document.getElementById("topic").innerHTML=pageURL;
+                            };
+                        </script>
+                        <p class="center"><a href="/toolbox/vsl.html">vsl</a><a id="topic" href="" + name></a></p>
                     </div>
                 </div>
 
@@ -139,7 +155,8 @@
                     <p>...</p>
                 </div>
             </div>
-            <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
+            <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
+            <!-- <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
                 <div class="scrollable-items">
                     <h3>Other Topics in Series (Scrollable)</h3>
                     <ul class="list-group list-group-flush">
@@ -157,7 +174,7 @@
                         <li class="list-group-item">Make these two sub-rows divide equally or else</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
