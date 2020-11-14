@@ -299,8 +299,6 @@ img {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-animation: fadeIn ease 4s;
-          animation: fadeIn ease 4s;
 }
 
 .card-body {
@@ -311,8 +309,6 @@ img {
   padding: 0.5% 10% 1% 0%;
   text-transform: none;
   margin: 0 1.5%;
-  -webkit-animation: fadeIn ease 4s;
-          animation: fadeIn ease 4s;
   font-size: 1.5vw;
 }
 
@@ -321,8 +317,6 @@ img {
   padding-top: 10%;
   text-transform: none;
   margin: 0 1.5%;
-  -webkit-animation: fadeIn ease 4s;
-          animation: fadeIn ease 4s;
 }
 
 #hometop {
@@ -564,24 +558,6 @@ footer .copy {
   60% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */
