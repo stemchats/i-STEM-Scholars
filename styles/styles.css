@@ -128,7 +128,7 @@
 }
 
 * {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 * a {
@@ -154,6 +154,7 @@ body {
   position: relative;
   margin-top: 100px;
   margin-bottom: 2rem;
+  font-size: 18px; 
 }
 
 .home #home-nav,
@@ -309,7 +310,7 @@ img {
   padding: 0.5% 10% 1% 0%;
   text-transform: none;
   margin: 0 1.5%;
-  font-size: 1.5vw;
+  font-size: 1.55vw;
 }
 
 .card-title {
