@@ -302,7 +302,6 @@ img {
     width: 45%;
     height: auto;
     object-fit: contain;
-    animation: fadeIn ease 4s;
 }
 .card-body {
     position: relative;
@@ -311,7 +310,6 @@ img {
     padding: 0.5% 10% 1% 0%; 
     text-transform: none;
     margin: 0 1.5%;
-    animation: fadeIn ease 4s;
     font-size: 1.5vw;
 }
 
@@ -320,7 +318,6 @@ img {
     padding-top:10%; 
     text-transform: none;
     margin: 0 1.5%;
-    animation: fadeIn ease 4s;
 }
 
 #hometop {
@@ -548,7 +545,7 @@ footer {
     }
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
- }
+// @keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//  }
