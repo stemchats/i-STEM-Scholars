@@ -74,10 +74,6 @@ $light-grey : #f8f8f8;
 
 
 .important {
-    p {
-        margin-bottom: 0;
-    }
-
     padding: 20px;
     border: 1px solid $yellow;
     text-align: center;
@@ -86,6 +82,16 @@ $light-grey : #f8f8f8;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
+
+    p {
+        margin-bottom: 0;
+        color: $dark-blue;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: normal;
+    }
 }
 
 
@@ -100,7 +106,66 @@ $light-grey : #f8f8f8;
     }
 }
 
-.quote-row {
+
+.quotes-container {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: max-content;
+
+    .quote {
+        @include center();
+        margin-bottom: 2rem;
+    
+        blockquote::before,
+        blockquote::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            opacity: 0.25;
+            font-size: 36px;
+            color: $light-blue;
+        }
+    
+        blockquote::before {
+            content: '\f10d';
+            margin-top: -20px;
+            margin-left: -30px;
+        }
+    
+        blockquote::after {
+            content: '\f10e';
+            margin-top: -10px;
+            margin-left: -5px;
+        }
+    }
+
+    .left-arrow, .right-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .left-arrow {
+        left: 30px;
+    }
+    .right-arrow {
+        right: 30px;
+    }
+
+    img {
+        margin-top: 0;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding: 0;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* .quote-row {
     display: flex;
     opacity: 0;
     animation-name: fade;
@@ -148,7 +213,7 @@ $light-grey : #f8f8f8;
     &[data-id="3"] {
         animation-delay: 20s;
     }
-}
+} */
 
 
 

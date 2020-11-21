@@ -68,6 +68,12 @@
 
 .important p {
   margin-bottom: 0;
+  color: #233142;
+}
+
+.important a {
+  font-style: normal;
+  font-weight: normal;
 }
 
 .quotes-container {
@@ -80,24 +86,18 @@
   margin: 0;
 }
 
-.quote-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  position: absolute;
+.quotes-container {
+  position: relative;
+  width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-.quote-row .quote {
+.quotes-container .quote {
   display: block;
   text-align: center;
   margin-right: auto;
@@ -105,8 +105,8 @@
   margin-bottom: 2rem;
 }
 
-.quote-row .quote blockquote::before,
-.quote-row .quote blockquote::after {
+.quotes-container .quote blockquote::before,
+.quotes-container .quote blockquote::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -115,33 +115,93 @@
   color: #4f9da6;
 }
 
-.quote-row .quote blockquote::before {
+.quotes-container .quote blockquote::before {
   content: '\f10d';
   margin-top: -20px;
   margin-left: -30px;
 }
 
-.quote-row .quote blockquote::after {
+.quotes-container .quote blockquote::after {
   content: '\f10e';
   margin-top: -10px;
   margin-left: -5px;
 }
 
-.quote-row[data-id="1"] {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+.quotes-container .left-arrow, .quotes-container .right-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 28px;
+  cursor: pointer;
 }
 
-.quote-row[data-id="2"] {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+.quotes-container .left-arrow {
+  left: 30px;
 }
 
-.quote-row[data-id="3"] {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
+.quotes-container .right-arrow {
+  right: 30px;
 }
 
+.quotes-container img {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 0;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* .quote-row {
+    display: flex;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .quote {
+        @include center();
+        margin-bottom: 2rem;
+
+        blockquote::before,
+        blockquote::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            opacity: 0.25;
+            font-size: 36px;
+            color: $light-blue;
+        }
+
+        blockquote::before {
+            content: '\f10d';
+            margin-top: -20px;
+            margin-left: -30px;
+        }
+
+        blockquote::after {
+            content: '\f10e';
+            margin-top: -10px;
+            margin-left: -5px;
+        }
+    }
+
+    &[data-id="1"] {
+        animation-delay: 0s;
+    }
+
+    &[data-id="2"] {
+        animation-delay: 10s;
+    }
+
+    &[data-id="3"] {
+        animation-delay: 20s;
+    }
+} */
 * {
   font-family: 'Josefin Sans', sans-serif;
 }
