@@ -13,6 +13,42 @@ $yellow : #f6d970;
 $light-grey : #f8f8f8;
 
 
+
+
+* {
+    // font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 101.5%;
+
+    a {
+        text-decoration: none;
+        color: $light-blue;
+
+        &:hover {
+            text-decoration: none;
+            color: $yellow;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container, .container-fluid {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 2rem;
+    //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
+}
+
+
+
 @mixin center {
     display: block;
     text-align: center;
@@ -56,6 +92,7 @@ $light-grey : #f8f8f8;
 .medium-box-title { //h2
     margin-top: 3rem;
     font-size: 32px;
+    font-weight: bold;
     text-transform: capitalize;
 }
 .medium-box-sub {
@@ -65,6 +102,7 @@ $light-grey : #f8f8f8;
 .large-box-title { //h1
     margin-top: 3rem;
     font-size: 40px;
+    font-weight: bold;
     text-transform: capitalize;
 }
 .large-box-sub {
@@ -97,26 +135,18 @@ $light-grey : #f8f8f8;
 
 
 .quotes-container {
-    height: 600px; //must encompass entire height of quotes
-    margin: 3rem 0;
-
-    .row {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-
-.quotes-container {
     position: relative;
     width: 100%;
     left: 50%;
+    margin: 3rem 0 5rem;
     transform: translateX(-50%);
     height: max-content;
 
     .quote {
         @include center();
         margin-bottom: 2rem;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
     
         blockquote::before,
         blockquote::after {
@@ -164,7 +194,17 @@ $light-grey : #f8f8f8;
     }
 }
 
-/* .quote-row {
+/* .quotes-container {
+    height: 600px; //must encompass entire height of quotes
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.quote-row {
     display: flex;
     opacity: 0;
     animation-name: fade;
@@ -215,40 +255,6 @@ $light-grey : #f8f8f8;
 } */
 
 
-
-
-* {
-    font-family: 'Josefin Sans', sans-serif;
-    //font-family: 'Open Sans', sans-serif;
-
-    a {
-        text-decoration: none;
-        color: $light-blue;
-
-        &:hover {
-            text-decoration: none;
-            color: $yellow;
-        }
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.container, .container-fluid {
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 2rem;
-    //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
-}
-
-
 // PAGE HIGHLIGHT
 .home #home-nav,
 .about #about-nav,
@@ -280,6 +286,7 @@ header {
     z-index: 10000;
     background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
     //background-color: #f1f1f1;
+    font-family: 'Josefin Sans', sans-serif !important;
 
     a {
         color: white;
@@ -305,7 +312,7 @@ header {
 
         &::before {
             width: 0;
-            height: 57px;
+            height: 54px;
         }
 
         &::after {
@@ -317,7 +324,7 @@ header {
             border: 0;
             transition: 0.3s;
             background: $dark-blue;
-            padding: 10px 5px 5px;
+            padding: 5px;
             font-weight: bold;
         }
 
@@ -592,7 +599,6 @@ footer {
     }
 
     .copy {
-        font-size: 0.5px;
         padding-bottom: 0px;
         z-index: 1;
     }
@@ -636,7 +642,7 @@ footer {
     }
 }
 
-// @keyframes fadeIn {
-//     0% {opacity:0;}
-//     100% {opacity:1;}
-//  }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
