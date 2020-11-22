@@ -312,7 +312,7 @@ header .logo::before, header .logo::after {
 
 header .logo::before {
   width: 0;
-  height: 53px;
+  height: 58px;
 }
 
 header .logo::after {
@@ -325,7 +325,7 @@ header .logo .logo-text {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #233142;
-  padding: 5px;
+  padding: 10px 5px 5px;
   font-weight: bold;
 }
 
