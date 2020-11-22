@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 101.5%;
 }
 
@@ -14,6 +14,10 @@
 * a:hover {
   text-decoration: none;
   color: #f6d970;
+}
+
+* p {
+  font-family: 'Karla', sans-serif;
 }
 
 html {
