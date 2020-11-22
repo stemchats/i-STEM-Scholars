@@ -16,7 +16,7 @@
   color: #f6d970;
 }
 
-* p {
+* p, * blockquote {
   font-family: 'Karla', sans-serif;
 }
 
@@ -31,8 +31,8 @@ body {
 
 .container, .container-fluid {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 2rem;
+  margin-top: 110px;
+  margin-bottom: 3rem;
 }
 
 .text-center {

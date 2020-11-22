@@ -16,8 +16,7 @@ $light-grey : #f8f8f8;
 
 
 * {
-     font-family: 'Josefin Sans', sans-serif;
-    
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 101.5%;
 
     a {
@@ -30,8 +29,7 @@ $light-grey : #f8f8f8;
         }
     }
 
-    p
-    {
+    p, blockquote {
         font-family: 'Karla', sans-serif;
     }
 }
@@ -47,8 +45,8 @@ body {
 
 .container, .container-fluid {
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 2rem;
+    margin-top: 110px;
+    margin-bottom: 3rem;
     //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
 }
 
