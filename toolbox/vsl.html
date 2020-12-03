@@ -72,21 +72,77 @@
     <div class="container">
         <h3 class="large-box-title center">Virtual Student Labs</h3>
         <p><a href="/">Home </a>><a href="/toolbox/index.html"> Toolbox </a>> VSL</p>
-        <div class="row">
-            <div class="col-8">
-                        <!-- beginning of description -->
-        <h3>Overview</h3>
-        <p>The Virtual Student Lab course provides aspiring student scientists with online lessons about technical skills used in laboratory experiments, so that they are better equipped with a good foundation of introductory lab knowledge for their future research endeavors. </p>
-        <h3>Learning Objectives</h3>
-        <p>Each lesson includes a background explaining the lab skill, a lab simulation where students can virtually practice the skill, a video of scientists performing the skill in a lab, a quiz to gauge understanding, and A Reach into Research section discussing the real-world application of the skill in research projects today. The purpose of this curriculum is to provide an accessible resource for students who want to learn about technical research skills but do not have access to a university lab or other research opportunities to do so. </p>
-        <h3>Audience</h3>
-        <p>The Virtual Student Lab is catered towards high school students who have little to no technical skill experience in a lab. WIth these lessons, i-STEM Scholars specifically want to focus on providing the educational resources and opportunities that are inaccessible to students of FGLI/URM background. </p>
-        <h3>How do I participate?</h3>
-        <p>These lessons are open and free to anyone! Simply browse through the selection of lessons below and begin your journey as a student scientist. </p>
-        <!-- end of description -->
+            <!-- beginning of description -->
+            <!-- <h3>Overview</h3>
+            <p>The Virtual Student Lab course provides aspiring student scientists with online lessons about technical skills used in laboratory experiments, so that they are better equipped with a good foundation of introductory lab knowledge for their future research endeavors.</p>
+            <h3>Learning Objectives</h3>
+            <p>Each lesson includes a background explaining the lab skill, a lab simulation where students can virtually practice the skill, a video of scientists performing the skill in a lab, a quiz to gauge understanding, and A Reach into Research section discussing the real-world application of the skill in research projects today. The purpose of this curriculum is to provide an accessible resource for students who want to learn about technical research skills but do not have access to a university lab or other research opportunities to do so. </p>
+            <h3>Audience</h3>
+            <p>The Virtual Student Lab is catered towards high school students who have little to no technical skill experience in a lab. WIth these lessons, i-STEM Scholars specifically want to focus on providing the educational resources and opportunities that are inaccessible to students of FGLI/URM background. </p>
+            <h3>How do I participate?</h3>
+            <p>These lessons are open and free to anyone! Simply browse through the selection of lessons below and begin your journey as a student scientist. </p> -->
+            <!-- end of description -->
+        <div id="vsl_accordion" class="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Overview
+                </button>
+              </h2>
             </div>
-            <!-- i removed the columns -->
-            <div class="col-4">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#vsl_accordion">
+              <div class="card-body">
+                  The Virtual Student Lab course provides aspiring student scientists with online lessons about technical skills used in laboratory experiments, so that they are better equipped with a good foundation of introductory lab knowledge for their future research endeavors.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Learning Objectives
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#vsl_accordion">
+              <div class="card-body">
+                  Each lesson includes a background explaining the lab skill, a lab simulation where students can virtually practice the skill, a video of scientists performing the skill in a lab, a quiz to gauge understanding, and A Reach into Research section discussing the real-world application of the skill in research projects today. The purpose of this curriculum is to provide an accessible resource for students who want to learn about technical research skills but do not have access to a university lab or other research opportunities to do so.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Audience
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#vsl_accordion">
+              <div class="card-body">
+                  The Virtual Student Lab is catered towards high school students who have little to no technical skill experience in a lab. WIth these lessons, i-STEM Scholars specifically want to focus on providing the educational resources and opportunities that are inaccessible to students of FGLI/URM background.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  How do I participate?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#vsl_accordion">
+              <div class="card-body">
+                  These lessons are open and free to anyone! Simply browse through the selection of lessons below and begin your journey as a student scientist.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
                 <div class="card">
                     <a id="biology" href="/toolbox/biology.html" onclick="setURL(this.id)" onclick="setName(this.id)">
                       <!-- <img class="card-img-top" src="/images/edition25/scary.png" alt="Newsletter Image"> -->
@@ -96,9 +152,8 @@
                       </div>
                     </a>
                 </div>
-
-            <!-- end of div -->
-            <!-- i removed the columns -->
+            </div>
+            <div class="col-sm-6">
                 <div class="card">
                     <a id="chemistry" href="/toolbox/chemistry.html" onclick="setLocalStorage(this.id)" onclick="setName(this.id)">
                       <!-- <img class="card-img-top" src="/images/edition25/scary.png" alt="Newsletter Image"> -->
@@ -108,12 +163,9 @@
                       </div>
                     </a>
                 </div>
-
-            <!-- end of div -->
             </div>
         </div>
     </div>
-
     <!-- footer -->
     <div id="footer"></div>
 

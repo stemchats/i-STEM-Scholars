@@ -74,11 +74,11 @@ body {
 }
 
 .hashtag::before { //add .hashtag to all in-page anchor links
-    display: block; 
-    content: " "; 
-    margin-top: -90px; 
-    height: 90px; 
-    visibility: hidden; 
+    display: block;
+    content: " ";
+    margin-top: -90px;
+    height: 90px;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -135,7 +135,23 @@ body {
     }
 }
 
+#vsl_accordion {
 
+    .card {
+        margin-top: 0px;
+    }
+    .btn:focus {
+        outline: none;
+        box-shadow: none !important;
+    }
+    .btn {
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+    }
+    .card-body {
+        font-family: 'Karla', sans-serif;
+    }
+}
 
 .quotes-container {
     position: relative;
@@ -150,7 +166,7 @@ body {
         margin-bottom: 2rem;
         animation-name: fadeIn;
         animation-duration: 1.5s;
-    
+
         blockquote::before,
         blockquote::after {
             font-family: "Font Awesome 5 Free";
@@ -160,13 +176,13 @@ body {
             font-size: 36px;
             color: $light-blue;
         }
-    
+
         blockquote::before {
             content: '\f10d';
             margin-top: -20px;
             margin-left: -30px;
         }
-    
+
         blockquote::after {
             content: '\f10e';
             margin-top: -10px;
@@ -389,7 +405,7 @@ img {
     padding-right: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%; 
+    margin-top: 5%;
     width: 45%;
     height: auto;
     object-fit: contain;
@@ -398,7 +414,7 @@ img {
     position: relative;
 }
 .card-text {
-    padding: 0.5% 10% 1% 0%; 
+    padding: 0.5% 10% 1% 0%;
     text-transform: none;
     margin: 0 1.5%;
     font-size: 1.5vw;
@@ -406,7 +422,7 @@ img {
 
 .card-title{
     font-size: 3vw;
-    padding-top:10%; 
+    padding-top:10%;
     text-transform: none;
     margin: 0 1.5%;
 }
@@ -414,13 +430,13 @@ img {
 #hometop {
     background-color: $light-grey;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
 
     .arrow {
         text-align: center;
         margin: 6% 0 2%;
     }
-      
+
     .bounce {
         animation: bounce 2s infinite;
     }
@@ -432,9 +448,9 @@ img {
     height: 100vh;
 }
 
-#homebottom{ 
+#homebottom{
     width: 100%;
-    background-color: $light-grey; 
+    background-color: $light-grey;
     padding-top: 7%;
     padding-bottom: 7%;
     // margin-top: 2%;
@@ -450,17 +466,17 @@ img {
 }
 
 .button-home1{
-    // color: white; 
+    // color: white;
     padding: 10px;
     text-decoration: none;
     font-size: 16px;
     text-align: center;
     border-radius: 12px;
-    margin-left: 1.5%; 
+    margin-left: 1.5%;
 }
 
 .button-home{
-    // color: white; 
+    // color: white;
     padding: 10px;
     text-decoration: none;
     font-size: 16px;
@@ -529,7 +545,7 @@ img {
         margin-top: 100px;
         margin-bottom:100px;
     }
-    
+
     li {
         padding-top: 2px;
         padding-bottom: 2px;
