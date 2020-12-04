@@ -50,6 +50,12 @@ body {
     //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
 }
 
+b {
+    font-family: inherit;
+    font-weight: bold;
+    color: $light-blue;
+}
+
 
 
 @mixin center {
