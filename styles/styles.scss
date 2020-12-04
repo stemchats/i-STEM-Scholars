@@ -309,11 +309,16 @@ header {
     width: 100%;
     white-space: nowrap;
     z-index: 10000;
+    color: white;
     background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
     //background-color: #f1f1f1;
 
     a {
         color: white;
+    }
+
+    i {
+        margin-bottom: 5px;
     }
 
     .logo {
@@ -370,9 +375,12 @@ header {
     ul {
         display: flex;
         list-style: none;
+        min-height: 100%;
 
         li {
             margin: 0 25px;
+            display: flex;
+            align-items: center;
 
             a {
                 &::after {
@@ -391,6 +399,11 @@ header {
                 }
             }
         }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+        }
     }
 
     //for my wireframing, I have no idea if this is gonna work.
@@ -398,6 +411,59 @@ header {
         position: relative;
     }
 }
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    background-color: $dark-blue;
+    width: 100%;
+    top: 50px;
+    padding: 0;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    a {
+        color: white;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.side {
+    display: flex;
+}
+
+.side-content {
+    position: absolute;
+    display: none;
+    z-index: -1;
+    background-color: $light-grey;
+    width: 150px;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 0;
+    margin-left: 205px;
+
+    i {
+        display: none;
+    }
+}
+
+.dropdown-content .sub, .side-content .sub {
+    margin: 5px 10px;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    text-transform: lowercase;
+    white-space: initial;
+}
+
+.dropdown:hover .dropdown-content, .side:hover .side-content {
+    display: block;
+}
+
+
 
 .get-involved {
     .icon-img {
@@ -522,7 +588,7 @@ img {
 
 .toolbox {
     //display: flex;
-    nav {
+    .fixed-nav nav {
         width: 100%;
 
         .nav-link {
@@ -550,11 +616,6 @@ img {
     .grid {
         margin-top: 100px;
         margin-bottom:100px;
-    }
-
-    li {
-        padding-top: 2px;
-        padding-bottom: 2px;
     }
 
     .list-group {
