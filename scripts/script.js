@@ -8,3 +8,8 @@ function setURL(the_id) {
 function setName(the_id) {
     localStorage.setItem("name", the_id);
 }
+
+
+//stuff for prev/next buttons
+var lessonsBio = [];
+var lessonsChem = []
