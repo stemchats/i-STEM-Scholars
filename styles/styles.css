@@ -161,28 +161,6 @@ b {
           animation-duration: 1.5s;
 }
 
-.quotes-container .quote blockquote::before,
-.quotes-container .quote blockquote::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  opacity: 0.25;
-  font-size: 36px;
-  color: #4f9da6;
-}
-
-.quotes-container .quote blockquote::before {
-  content: '\f10d';
-  margin-top: -20px;
-  margin-left: -30px;
-}
-
-.quotes-container .quote blockquote::after {
-  content: '\f10e';
-  margin-top: -10px;
-  margin-left: -5px;
-}
-
 .quotes-container .left-arrow, .quotes-container .right-arrow {
   position: absolute;
   top: 50%;
@@ -206,6 +184,28 @@ b {
   border-radius: 50%;
   padding: 0;
   width: 200px;
+}
+
+blockquote::before,
+blockquote::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0.25;
+  font-size: 36px;
+  color: #4f9da6;
+}
+
+blockquote::before {
+  content: '\f10d';
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+blockquote::after {
+  content: '\f10e';
+  margin-top: -10px;
+  margin-left: -5px;
 }
 
 /* .quotes-container {
