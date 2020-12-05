@@ -157,29 +157,29 @@
             <p class="card-text">We welcome all HS, Undergraduate, and Graduate Students + Professors/PIs who are
                 passionate about equity and education to explore our resources and collaborate with our team!</p>
             
-            <div class="row">
-                <div class="col-md">
-                    <button class="button-home">High School Students</button>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <button class="button-home" onclick="toggleText(1)">High School Students</button>
                 </div>
-                <div class="col-md">
-                    <button class="button-home">College Students</button>
+                <div class="col-3">
+                    <button class="button-home" onclick="toggleText(2)">College Students</button>
                 </div>
-                <div class="col-md">
-                    <button class="button-home">Graduate/PhD Students, Professors, other research professionals</button>
+                <div class="col-3">
+                    <button class="button-home" onclick="toggleText(3)">Graduate/PhD Students, Professors, other research professionals</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md center">
+            <div class="row justify-content-center text-boxes">
+                <div class="col-3" id="show" data-text="1">
                     <p>Apply to be an <b>i-STEM Scholar</b> for Summer 2021 (application will open Spring 2021)</p>
                     <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
                         resources on our website & social media</p>
                 </div>
-                <div class="col-md center">
+                <div class="col-3" id="show" data-text="2">
                     <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
                         resources on our website & social media</p>
                     <p>Showcase your own research through our social media campaigns</p>
                 </div>
-                <div class="col-md center">
+                <div class="col-3" id="show" data-text="3">
                     <p>Partner with us to host a high school student for our Summer 2021 Research Program Cohort</p>
                     <p>Showcase your own research through our social media campaigns</p>
                     <p>Host workshops or talks with students from FGLI/URM backgrounds</p>
@@ -204,6 +204,36 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <!-- text shows up when button is clicked -->
+    <script>
+        function getStyle(el, name) {
+            // the way of the DOM
+            if ( document.defaultView && document.defaultView.getComputedStyle )
+            {
+                var style = document.defaultView.getComputedStyle(el, null);
+                if ( style )
+                return style[name];
+            }
+            // IE-specific
+            else if ( el.currentStyle )
+                return el.currentStyle[name];
+            
+            return null;
+        }
+
+        function toggleText(i) {
+            var indexSelect = "[data-text='" + i + "']";
+            var text = document.querySelector(indexSelect);
+            if(!text) return true;
+            if (getStyle(text, "opacity") === "0") {
+                text.style.opacity = "1";
+            } else {
+                text.style.opacity = "0";
+            }
+            return true;
+        }
     </script>
 
 </body>
