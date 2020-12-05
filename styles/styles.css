@@ -137,6 +137,11 @@ b {
   font-family: 'Karla', sans-serif;
 }
 
+.mentor-quotes img {
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
 .quotes-container {
   position: relative;
   width: 100%;
@@ -467,13 +472,13 @@ header .scrollspy-example {
   display: block;
 }
 
-.get-involved .icon-img {
+.home .get-involved .icon-img {
   width: 40%;
   display: inline;
   margin: 0 0 20px;
 }
 
-img {
+.home img {
   padding-right: 2%;
   margin-left: 5%;
   margin-right: 5%;
@@ -484,62 +489,62 @@ img {
      object-fit: contain;
 }
 
-.card-body {
+.home .card-body {
   position: relative;
 }
 
-.card-text {
+.home .card-text {
   padding: 0.5% 10% 1% 0%;
   text-transform: none;
   margin: 0 1.5%;
   font-size: 1.5vw;
 }
 
-.card-title {
+.home .card-title {
   font-size: 3vw;
   padding-top: 10%;
   text-transform: none;
   margin: 0 1.5%;
 }
 
-#hometop {
+.home #hometop {
   background-color: #f8f8f8;
   width: 100%;
   height: 100vh;
 }
 
-#hometop .arrow {
+.home #hometop .arrow {
   text-align: center;
   margin: 6% 0 2%;
 }
 
-#hometop .bounce {
+.home #hometop .bounce {
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
 }
 
-#home2 {
+.home #home2 {
   width: 100%;
   margin-left: 5%;
   height: 100vh;
 }
 
-#homebottom {
+.home #homebottom {
   width: 100%;
   background-color: #f8f8f8;
   padding-top: 7%;
   padding-bottom: 7%;
 }
 
-#homebottom .card-title {
+.home #homebottom .card-title {
   padding-top: 0;
 }
 
-#homebottom .card-text {
+.home #homebottom .card-text {
   padding: 0.5% 10% 1%;
 }
 
-.button-home1 {
+.home .button-home1 {
   padding: 10px;
   text-decoration: none;
   font-size: 16px;
@@ -548,7 +553,7 @@ img {
   margin-left: 1.5%;
 }
 
-.button-home {
+.home .button-home {
   padding: 10px;
   text-decoration: none;
   font-size: 16px;

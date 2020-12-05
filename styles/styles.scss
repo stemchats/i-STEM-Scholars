@@ -159,6 +159,13 @@ b {
     }
 }
 
+.mentor-quotes {
+    img {
+        border-radius: 40px;
+        margin-bottom: 30px;
+    }
+}
+
 .quotes-container {
     position: relative;
     width: 100%;
@@ -462,96 +469,97 @@ header {
 }
 
 
-
-.get-involved {
-    .icon-img {
-        width: 40%;
-        display: inline;
-        margin: 0 0 20px;
+.home {
+    .get-involved {
+        .icon-img {
+            width: 40%;
+            display: inline;
+            margin: 0 0 20px;
+        }
     }
-}
-
-img {
-    padding-right: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    width: 45%;
-    height: auto;
-    object-fit: contain;
-}
-.card-body {
-    position: relative;
-}
-.card-text {
-    padding: 0.5% 10% 1% 0%;
-    text-transform: none;
-    margin: 0 1.5%;
-    font-size: 1.5vw;
-}
-
-.card-title{
-    font-size: 3vw;
-    padding-top:10%;
-    text-transform: none;
-    margin: 0 1.5%;
-}
-
-#hometop {
-    background-color: $light-grey;
-    width: 100%;
-    height: 100vh;
-
-    .arrow {
-        text-align: center;
-        margin: 6% 0 2%;
+    
+    img {
+        padding-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        width: 45%;
+        height: auto;
+        object-fit: contain;
     }
-
-    .bounce {
-        animation: bounce 2s infinite;
+    .card-body {
+        position: relative;
     }
-}
-
-#home2{
-    width: 100%;
-    margin-left: 5%;
-    height: 100vh;
-}
-
-#homebottom{
-    width: 100%;
-    background-color: $light-grey;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    // margin-top: 2%;
-    // margin-bottom: 2%;
-
-    .card-title {
-        padding-top: 0;
-    }
-
     .card-text {
-        padding: 0.5% 10% 1%;
+        padding: 0.5% 10% 1% 0%;
+        text-transform: none;
+        margin: 0 1.5%;
+        font-size: 1.5vw;
     }
-}
-
-.button-home1{
-    // color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 12px;
-    margin-left: 1.5%;
-}
-
-.button-home{
-    // color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 12px;
+    
+    .card-title{
+        font-size: 3vw;
+        padding-top:10%;
+        text-transform: none;
+        margin: 0 1.5%;
+    }
+    
+    #hometop {
+        background-color: $light-grey;
+        width: 100%;
+        height: 100vh;
+    
+        .arrow {
+            text-align: center;
+            margin: 6% 0 2%;
+        }
+    
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+    }
+    
+    #home2{
+        width: 100%;
+        margin-left: 5%;
+        height: 100vh;
+    }
+    
+    #homebottom{
+        width: 100%;
+        background-color: $light-grey;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        // margin-top: 2%;
+        // margin-bottom: 2%;
+    
+        .card-title {
+            padding-top: 0;
+        }
+    
+        .card-text {
+            padding: 0.5% 10% 1%;
+        }
+    }
+    
+    .button-home1{
+        // color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 1.5%;
+    }
+    
+    .button-home{
+        // color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 12px;
+    }
 }
 
 .fixed-nav {
