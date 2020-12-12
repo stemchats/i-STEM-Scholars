@@ -41,6 +41,12 @@ b {
   color: #4f9da6;
 }
 
+img {
+  position: relative;
+  left: -5%;
+  width: 110%;
+}
+
 .text-center {
   width: 100%;
   background-color: #233142;

@@ -56,6 +56,12 @@ b {
     color: $light-blue;
 }
 
+img {
+    position: relative;
+    left: -5%;
+    width: 110%;
+}
+
 
 
 @mixin center {
@@ -218,13 +224,11 @@ blockquote::after {
     font-size: 36px;
     color: $light-blue;
 }
-
 blockquote::before {
     content: '\f10d';
     margin-top: -20px;
     margin-left: -30px;
 }
-
 blockquote::after {
     content: '\f10e';
     margin-top: -10px;
