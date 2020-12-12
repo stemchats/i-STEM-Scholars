@@ -329,6 +329,10 @@ header {
     background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
     //background-color: #f1f1f1;
 
+    #menu-icon, #menu-icon + label {
+        display: none;
+    }
+
     a {
         color: white;
     }
@@ -367,7 +371,7 @@ header {
 
         .logo-img {
             width: 70px;
-            margin-top: -10px;
+            margin-top: -7px;
             margin-right: -20px;
         }
 
