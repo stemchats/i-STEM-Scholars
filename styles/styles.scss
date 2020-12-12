@@ -365,6 +365,12 @@ header {
             height: 0;
         }
 
+        .logo-img {
+            width: 70px;
+            margin-top: -10px;
+            margin-right: -20px;
+        }
+
         .logo-text {
             border: 0;
             transition: 0.3s;
@@ -377,7 +383,7 @@ header {
             color: white; //cancel out bootstrap
         }
 
-        &:hover {
+        /* &:hover {
             &::before {
                 width: 250px; //240px; //250px
             }
@@ -385,7 +391,7 @@ header {
             &::after {
                 height: 0; //27px; //57px
             }
-        }
+        } */
     }
 
     ul {

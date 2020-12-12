@@ -343,6 +343,15 @@ header .logo {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -0.5rem;
+  /* &:hover {
+            &::before {
+                width: 250px; //240px; //250px
+            }
+
+            &::after {
+                height: 0; //27px; //57px
+            }
+        } */
 }
 
 header .logo::before, header .logo::after {
@@ -366,6 +375,12 @@ header .logo::after {
   height: 0;
 }
 
+header .logo .logo-img {
+  width: 70px;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
 header .logo .logo-text {
   border: 0;
   -webkit-transition: 0.3s;
@@ -377,14 +392,6 @@ header .logo .logo-text {
 
 header .logo a:hover {
   color: white;
-}
-
-header .logo:hover::before {
-  width: 250px;
-}
-
-header .logo:hover::after {
-  height: 0;
 }
 
 header ul {
