@@ -357,10 +357,6 @@ header a {
   color: white;
 }
 
-header i {
-  margin-bottom: 3px;
-}
-
 header .logo {
   z-index: 0;
   display: -webkit-box;

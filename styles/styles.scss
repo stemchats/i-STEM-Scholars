@@ -349,8 +349,7 @@ header {
     white-space: nowrap;
     z-index: 10000;
     color: white;
-    background-color: $dark-blue; //either dark blue, light grey, or white; can't choose
-    //background-color: #f1f1f1;
+    background-color: $dark-blue;
 
     #menu-icon, #menu-icon + label {
         display: none;
@@ -359,10 +358,6 @@ header {
 
     a {
         color: white;
-    }
-
-    i {
-        margin-bottom: 3px;
     }
 
     .logo {
