@@ -15,32 +15,28 @@ $light-grey : #f8f8f8;
 
 
 
-@media screen and (max-width: 991px) {
-    .fixed-nav {
-        //display: none;
-        position: relative;
-        width: 100%;
-        margin: 0;
-        top: auto;
-        left: auto;
-        right: auto;
-
-        &.one {
-            margin: 0 15px 30px;
+@media screen and (max-width: 1305px) {
+    header {
+        .logo {
+            .logo-text {
+                font-size: 28px;
+            }
+        }
+        ul {
+            li {
+                margin: 0 17px;
+            }
         }
     }
-
-    .offset-sm-2 {
-        padding: 0 1.5rem;
-    }
 }
+
 
 @media screen and (max-width: 1190px) {
     header {
         flex-direction: column;
         height: max-content;
-        padding-bottom: -10px;
         overflow: hidden;
+        padding: 1rem 1.5rem 0;
 
         .logo {
             align-self: flex-start;
@@ -48,9 +44,9 @@ $light-grey : #f8f8f8;
 
         #menu-icon + label {
             display: block;
-            position: absolute;
-            right: 50px;
-            top: 37px;
+            position: fixed;
+            right: 2rem;
+            top: 35px;
             transform: translateY(-50%);
             font-size: 24px;
             cursor: pointer;
@@ -83,9 +79,48 @@ $light-grey : #f8f8f8;
         }
     
         #menu-icon:checked ~ ul {
-            height: 180px; //max-content
+            height: 170px; //max-content
         }
     }
 }
 
 
+@media screen and (max-width: 991px) {
+    .fixed-nav {
+        //display: none;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        top: auto;
+        left: auto;
+        right: auto;
+
+        &.one {
+            margin: 0 15px 30px;
+        }
+    }
+
+    .offset-sm-2 {
+        padding: 0 1.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    header {
+        .logo {
+            height: 50px;
+    
+            .logo-img {
+                width: 60px;
+            }
+    
+            .logo-text {
+                font-size: 26px;
+                margin: 0;
+            }
+        }
+    }
+}

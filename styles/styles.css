@@ -325,6 +325,7 @@ header {
 
 header #menu-icon, header #menu-icon + label {
   display: none;
+  margin: 0;
 }
 
 header a {
@@ -348,6 +349,7 @@ header .logo {
           justify-content: center;
   margin-top: -0.5rem;
   height: 60px;
+  overflow: hidden;
   /* &:hover {
             &::before {
                 width: 250px; //240px; //250px
@@ -393,6 +395,7 @@ header .logo .logo-text {
   background: #233142;
   padding: 10px 5px 5px;
   font-weight: bold;
+  z-index: 5;
 }
 
 header .logo a:hover {
@@ -501,7 +504,11 @@ header .scrollspy-example {
   margin: 0 0 20px;
 }
 
-.home img {
+.home .card-body {
+  position: relative;
+}
+
+.home .card-body img {
   padding-right: 2%;
   margin-left: 5%;
   margin-right: 5%;
@@ -510,10 +517,6 @@ header .scrollspy-example {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.home .card-body {
-  position: relative;
 }
 
 .home .card-text {

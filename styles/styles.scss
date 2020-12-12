@@ -331,6 +331,7 @@ header {
 
     #menu-icon, #menu-icon + label {
         display: none;
+        margin: 0;
     }
 
     a {
@@ -348,6 +349,7 @@ header {
         justify-content: center;
         margin-top: -0.5rem;
         height: 60px;
+        overflow: hidden;
 
         &::before,
         &::after {
@@ -382,6 +384,7 @@ header {
             background: $dark-blue;
             padding: 10px 5px 5px;
             font-weight: bold;
+            z-index: 5;
         }
 
         a:hover {
@@ -497,19 +500,21 @@ header {
             margin: 0 0 20px;
         }
     }
-    
-    img {
-        padding-right: 2%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5%;
-        width: 45%;
-        height: auto;
-        object-fit: contain;
-    }
+
     .card-body {
         position: relative;
+    
+        img {
+            padding-right: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+            width: 45%;
+            height: auto;
+            object-fit: contain;
+        }
     }
+
     .card-text {
         padding: 0.5% 10% 1% 0%;
         text-transform: none;
