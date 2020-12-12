@@ -65,6 +65,20 @@
 }
 
 @media screen and (max-width: 991px) {
+  .section-img:nth-of-type(odd) {
+    margin: 0 auto 4rem auto;
+  }
+  .section-img:nth-of-type(even) {
+    margin: 0 auto 4rem auto;
+  }
+  .home section {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .home .arrow {
+    margin-top: 3%;
+  }
   .fixed-nav {
     position: relative;
     width: 100%;

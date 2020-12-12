@@ -18,6 +18,8 @@ $light-grey : #f8f8f8;
 * {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 101.5%;
+    margin: 0;
+    padding: 0;
 
     a {
         text-decoration: none;
@@ -45,8 +47,8 @@ body {
 
 .container, .container-fluid {
     position: relative;
-    margin-top: 110px;
-    margin-bottom: 3rem;
+    padding-top: 120px;
+    padding-bottom: 120px;
     //min-height: calc(100vh - 385px); // footer @ bottom even on short pages
 }
 
@@ -58,8 +60,25 @@ b {
 
 img {
     position: relative;
+    width: 100%;
+}
+
+.student-breakdown {
     left: -5%;
     width: 110%;
+}
+
+button {
+    background-color: transparent;
+    border-color: rgba($color: $light-blue, $alpha: 0.5);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba($color: $light-blue, $alpha: 0.5);
+    }
+    &:hover {
+        color: $yellow;
+    }
 }
 
 
@@ -145,6 +164,10 @@ img {
         font-style: normal;
         font-weight: normal;
     }
+}
+
+.section-grey-bg {
+    background-color: $light-grey;
 }
 
 #vsl_accordion {
@@ -375,13 +398,12 @@ header {
         .logo-img {
             width: 70px;
             margin-top: -7px;
-            margin-right: -20px;
+            margin-right: -5px;
         }
 
         .logo-text {
             border: 0;
             transition: 0.3s;
-            background: $dark-blue;
             padding: 10px 5px 5px;
             font-weight: bold;
             z-index: 5;
@@ -491,17 +513,71 @@ header {
     display: block;
 }
 
+.section-desc {
+    text-align: left;
+    font-size: 110%;
+    margin-bottom: 30px;
+}
+.section-desc-center {
+    text-align: center;
+    font-size: 110%;
+    margin-bottom: 30px;
+}
+
+.section-img {
+    width: 80%;
+
+    &:nth-of-type(odd) {
+        margin: 0 auto 4rem 0;
+    }
+
+    &:nth-of-type(even) {
+        margin: 0 0 4rem auto;
+    }
+}
+
+
 
 .home {
-    .get-involved {
-        .icon-img {
-            width: 40%;
-            display: inline;
-            margin: 0 0 20px;
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &:nth-of-type(even) {
+            background-color: $light-grey;
         }
     }
 
-    .card-body {
+    .container {
+        .row {
+            align-items: center;
+        }
+
+        .text-boxes {
+            align-items: flex-start;
+            margin-top: 10px;
+
+            .popup {
+                opacity: 0;
+                transition: 0.4s;
+            }
+        }
+    }
+    
+    .arrow {
+        text-align: center;
+        margin: 6% 0 2%;
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+
+
+    /* .card-body {
         position: relative;
     
         img {
@@ -533,15 +609,6 @@ header {
         background-color: $light-grey;
         width: 100%;
         height: 100vh;
-    
-        .arrow {
-            text-align: center;
-            margin: 6% 0 2%;
-        }
-    
-        .bounce {
-            animation: bounce 2s infinite;
-        }
     }
     
     #home2{
@@ -575,9 +642,9 @@ header {
         text-align: center;
         border-radius: 12px;
         margin-left: 1.5%;
-    }
+    } */
     
-    .button-home{
+    .button-home {
         // color: white;
         padding: 10px;
         text-decoration: none;
@@ -610,17 +677,6 @@ header {
 .offset-sm-2 {
     margin-right: auto;
     margin-left: auto;
-}
-
-.buttons {
-    margin-top: 50px;
-}
-
-.text-boxes {
-    .col-3 {
-        opacity: 0;
-        transition: 0.4s;
-    }
 }
 
 

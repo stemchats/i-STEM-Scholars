@@ -86,6 +86,26 @@ $light-grey : #f8f8f8;
 
 
 @media screen and (max-width: 991px) {
+    .section-img {
+        &:nth-of-type(odd) {
+            margin: 0 auto 4rem auto; //centered
+        }
+
+        &:nth-of-type(even) {
+            margin: 0 auto 4rem auto;
+        }
+    }
+
+    .home {
+        section {
+            height: max-content;
+        }
+    
+        .arrow {
+            margin-top: 3%;
+        }
+    }
+
     .fixed-nav {
         //display: none;
         position: relative;
