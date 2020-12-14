@@ -102,6 +102,7 @@
   }
   header .logo .logo-img {
     width: 60px;
+    margin-left: -10px;
   }
   header .logo .logo-text {
     font-size: 26px;
