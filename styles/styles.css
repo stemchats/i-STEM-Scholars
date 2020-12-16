@@ -705,6 +705,13 @@ header .scrollspy-example {
 }
 
 .toolbox .card {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toolbox .col {
   margin-top: 20px;
 }
 

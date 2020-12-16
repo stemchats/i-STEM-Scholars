@@ -697,6 +697,11 @@ header {
     }
 
     .card{
+        margin-top: 10px;
+        // height: 0.15*height;
+        display:flex;
+    }
+    .col {
         margin-top: 20px;
     }
 
