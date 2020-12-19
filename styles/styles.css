@@ -343,6 +343,8 @@ header {
   white-space: nowrap;
   z-index: 10000;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #233142;
 }
 

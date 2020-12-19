@@ -347,6 +347,7 @@ header {
     white-space: nowrap;
     z-index: 10000;
     color: white;
+    transition: 0.3s;
     background-color: $dark-blue;
 
     #menu-icon, #menu-icon + label {
