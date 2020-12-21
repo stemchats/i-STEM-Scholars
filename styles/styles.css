@@ -180,7 +180,6 @@ button:hover {
   position: relative;
   width: 100%;
   left: 50%;
-  margin: 3rem 0 5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: -webkit-max-content;
