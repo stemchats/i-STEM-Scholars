@@ -39,6 +39,34 @@
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="/styles/media.css">
 
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <!-- More Firebase -->
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
+          authDomain: "i-stem-scholars.firebaseapp.com",
+          projectId: "i-stem-scholars",
+          storageBucket: "i-stem-scholars.appspot.com",
+          messagingSenderId: "365248308743",
+          appId: "1:365248308743:web:3eb6df4333086ea1982ca2",
+          measurementId: "G-VPJNQSBN1F"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth = firebase.auth()
+      </script>
+
+
     <title>i-STEM Scholars</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics
@@ -67,184 +95,206 @@
 </head>
 
 <body class="home">
+    <div class="wrapper">
     <!-- HEADER -->
-    <div id="header"></div>
-
-    <section>
-        <div class="container">
-            <div class="row content">
-                <div class="col-lg-7 section-img">
-                    <img src="images/home_research.svg" alt="Research Image">
+    <div id="header"></div>  
+        <section>
+            <div class="container">
+                <div class="row content">
+                    <div class="col-lg-7 section-img">
+                        <img src="images/home_research.svg" alt="Research Image">
+                    </div>
+                    <div class="col-lg-4 section-desc">
+                        <h1><strong>i-STEM Scholars</strong></h1>
+                        <p>aims to serve high school students from
+                            <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b> backgrounds by
+                            providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve the accessibility
+                            of STEM research, and ensure that FLGI and URM students feel <b>empowered</b> to learn more about and
+                            pursue these research fields.</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 section-desc">
-                    <h1><strong>i-STEM Scholars</strong></h1>
-                    <p>aims to serve high school students from
-                        <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b> backgrounds by
-                        providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve the accessibility
-                        of STEM research, and ensure that FLGI and URM students feel <b>empowered</b> to learn more about and
-                        pursue these research fields.</p>
-                </div>
-            </div>
-            <div class="arrow bounce">
-                <div class="fa fa-arrow-down fa-2x"></div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <div class="row align-items-center flex-md-row flex-column-reverse content">
-                <div class="col-lg-4 section-desc">
-                    <h1>Summer Research Program</h1>
-                    <p>Join our annual <b>Summer Research Program</b>, connecting high school students with
-                    <b>university labs</b> to contribute to a research project.</p>
-                    <button class="button-home" onclick="window.location.pathname='/program/index.html';">Learn More!</button>
-                </div>
-                <div class="col-lg-7 section-img justify-content-end">
-                    <img src="images/home_research2.svg" alt="Research Image">
+                <div class="arrow bounce">
+                    <div class="fa fa-arrow-down fa-2x"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container" data-aos="fade-right" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <div class="row align-items-center content">
-                <div class="col-lg-7 section-img">
-                    <img src="images/home_toolbox.svg" alt="Toolbox Image">
-                </div>
-                <div class="col-lg-4 section-desc">
-                    <h1>STEM Research Toolbox</h1>
-                    <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
-                        STEM reasearch</b> and providing workshops and courses for all.</p>
-                    <button class="button-home" onclick="window.location.pathname='/toolbox/index.html';">Learn More!</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-            <div class="row align-items-center flex-md-row flex-column-reverse content">
-                <div class="col-lg-4 section-desc">
-                    <h1>i-STEM Campaigns</h1>
-                    <p>Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FLGI/URM students by
-                        highlighting researchers from similar backgrounds & giving students the opportunity to interact with
-                        those in STEM research.
-                    </p>
-                    <!-- <button class="button-home" onclick="window.location.pathname='/campaigns/index.html';">Learn More!</button> -->
-                    <!-- Include curator plug-in content later -->
-                </div>
-                <div class="col-lg-7 section-img justify-content-end">
-                    <img src="images/home_campaign.svg" alt="home_campaign Image">
+        </section>
+    
+        <section>
+            <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="row align-items-center flex-md-row flex-column-reverse content">
+                    <div class="col-lg-4 section-desc">
+                        <h1>Summer Research Program</h1>
+                        <p>Join our annual <b>Summer Research Program</b>, connecting high school students with
+                        <b>university labs</b> to contribute to a research project.</p>
+                        <button class="button-home" onclick="window.location.pathname='/program/index.html';">Learn More!</button>
+                    </div>
+                    <div class="col-lg-7 section-img justify-content-end">
+                        <img src="images/home_research2.svg" alt="Research Image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <div>
-        <div class="container center">
-            <div class="section-desc-center">
-                <h1>Get Involved</h1>
-                <p>We welcome all HS, Undergraduate, and Graduate Students + Professors/PIs who are
-                    passionate about equity and education to explore our resources and collaborate with our team!</p>
-            </div>
-
-            <div class="row justify-content-center buttons">
-                <div class="col-3">
-                    <button class="button-home" onclick="toggleText(1)">High School Students</button>
-                </div>
-                <div class="col-3">
-                    <button class="button-home" onclick="toggleText(2)">College Students</button>
-                </div>
-                <div class="col-3">
-                    <button class="button-home" onclick="toggleText(3)">Graduate/PhD Students, Professors, other research professionals</button>
+        </section>
+    
+        <section>
+            <div class="container" data-aos="fade-right" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="row align-items-center content">
+                    <div class="col-lg-7 section-img">
+                        <img src="images/home_toolbox.svg" alt="Toolbox Image">
+                    </div>
+                    <div class="col-lg-4 section-desc">
+                        <h1>STEM Research Toolbox</h1>
+                        <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
+                            STEM reasearch</b> and providing workshops and courses for all.</p>
+                        <button class="button-home" onclick="window.location.pathname='/toolbox/index.html';">Learn More!</button>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center text-boxes">
-                <div class="col-3 popup" data-text="1">
-                    <p>Apply to be an <b>i-STEM Scholar</b> for Summer 2021 (application will open Spring 2021)</p>
-                    <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
-                        resources on our website & social media</p>
-                </div>
-                <div class="col-3 popup" data-text="2">
-                    <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
-                        resources on our website & social media</p>
-                    <p>Showcase your own research through our social media campaigns</p>
-                </div>
-                <div class="col-3 popup" data-text="3">
-                    <p>Partner with us to host a high school student for our Summer 2021 Research Program Cohort</p>
-                    <p>Showcase your own research through our social media campaigns</p>
-                    <p>Host workshops or talks with students from FGLI/URM backgrounds</p>
+        </section>
+    
+        <section>
+            <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="row align-items-center flex-md-row flex-column-reverse content">
+                    <div class="col-lg-4 section-desc">
+                        <h1>i-STEM Campaigns</h1>
+                        <p>Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FLGI/URM students by
+                            highlighting researchers from similar backgrounds & giving students the opportunity to interact with
+                            those in STEM research.
+                        </p>
+                        <!-- <button class="button-home" onclick="window.location.pathname='/campaigns/index.html';">Learn More!</button> -->
+                        <!-- Include curator plug-in content later -->
+                    </div>
+                    <div class="col-lg-7 section-img justify-content-end">
+                        <img src="images/home_campaign.svg" alt="home_campaign Image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- <div class="center">
-        <div class="card text-left">
-            <div class="card-body" id="hometop">
-                <div class="content">
-                    <img src="images/home_research.svg" class="rounded float-left" alt="Research Image">
-                    <p class="card-title"><strong>i-STEM Scholars</strong></p>
-                    <p class="card-text">aims to serve high school students from
-                        <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b> backgrounds by
-                        providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve the accessibility
-                        of STEM research, and ensure that FLGI and URM students feel <b>empowered</b> to learn more about and
-                        pursue these research fields.</p>
+        </section>
+    
+        <div>
+            <div class="container center">
+                <div class="section-desc-center">
+                    <h1>Get Involved</h1>
+                    <p>We welcome all HS, Undergraduate, and Graduate Students + Professors/PIs who are
+                        passionate about equity and education to explore our resources and collaborate with our team!</p>
+                </div>
+    
+                <div class="row justify-content-center buttons">
+                    <div class="col-3">
+                        <button class="button-home" onclick="toggleText(1)">High School Students</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="button-home" onclick="toggleText(2)">College Students</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="button-home" onclick="toggleText(3)">Graduate/PhD Students, Professors, other research professionals</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-boxes">
+                    <div class="col-3 popup" data-text="1">
+                        <p>Apply to be an <b>i-STEM Scholar</b> for Summer 2021 (application will open Spring 2021)</p>
+                        <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
+                            resources on our website & social media</p>
+                    </div>
+                    <div class="col-3 popup" data-text="2">
+                        <p>Learn about the fundamentals of STEM research through courses, workshops, and other educational
+                            resources on our website & social media</p>
+                        <p>Showcase your own research through our social media campaigns</p>
+                    </div>
+                    <div class="col-3 popup" data-text="3">
+                        <p>Partner with us to host a high school student for our Summer 2021 Research Program Cohort</p>
+                        <p>Showcase your own research through our social media campaigns</p>
+                        <p>Host workshops or talks with students from FGLI/URM backgrounds</p>
+                    </div>
                 </div>
             </div>
         </div>
+    
+    
+    
+    
+        <!-- <div class="center">
+            <div class="card text-left">
+                <div class="card-body" id="hometop">
+                    <div class="content">
+                        <img src="images/home_research.svg" class="rounded float-left" alt="Research Image">
+                        <p class="card-title"><strong>i-STEM Scholars</strong></p>
+                        <p class="card-text">aims to serve high school students from
+                            <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b> backgrounds by
+                            providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve the accessibility
+                            of STEM research, and ensure that FLGI and URM students feel <b>empowered</b> to learn more about and
+                            pursue these research fields.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-left">
+                <div class="card-body" id="home2">
+                    <div class="content">
+                        <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <img src="images/home_research2.svg" class="rounded float-right" alt="Research Image">
+                            <h5 class="card-title">Summer Research Program</h5>
+                            <p class="card-text">Join our annual <b>Summer Research Program</b>, connecting high school students with
+                            <b>university labs</b> to contribute to a research project.</p>
+                            <button class="button-home1"><a href="/program/index.html">Learn More!</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card text-left">
+                <div class="card-body" id="hometop">
+                    <div class="content">
+                        <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <img src="images/home_toolbox.svg" class="rounded float-left" alt="Toolbox Image">
+                            <h5 class="card-title">STEM Research Toolbox</h5>
+                            <p class="card-text">Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
+                                STEM reasearch</b> and providing workshops and courses for all.</p>
+                            <button class="button-home"><a href="/toolbox/index.html">Learn More!</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
         <div class="card text-left">
             <div class="card-body" id="home2">
                 <div class="content">
                     <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-                        <img src="images/home_research2.svg" class="rounded float-right" alt="Research Image">
-                        <h5 class="card-title">Summer Research Program</h5>
-                        <p class="card-text">Join our annual <b>Summer Research Program</b>, connecting high school students with
-                        <b>university labs</b> to contribute to a research project.</p>
-                        <button class="button-home1"><a href="/program/index.html">Learn More!</a></button>
+                        <img src="images/home_campaign.svg" class="rounded float-right" alt="home_campaign Image">
+                        <h5 class="card-title">i-STEM Campaigns</h5>
+                        <p class="card-text">Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FLGI/URM students by
+                            highlighting researchers from similar backgrounds & giving students the opportunity to interact with
+                            those in STEM research.
+                        </p>
+                        <button class="button-home1"><a href="/campaigns/index.html">Learn More!</a></button>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card text-left">
-            <div class="card-body" id="hometop">
-                <div class="content">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-                        <img src="images/home_toolbox.svg" class="rounded float-left" alt="Toolbox Image">
-                        <h5 class="card-title">STEM Research Toolbox</h5>
-                        <p class="card-text">Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
-                            STEM reasearch</b> and providing workshops and courses for all.</p>
-                        <button class="button-home"><a href="/toolbox/index.html">Learn More!</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
+    
+            <!-- footer -->
+    <div id="footer"></div>
     </div>
 
-    <div class="card text-left">
-        <div class="card-body" id="home2">
-            <div class="content">
-                <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
-                    <img src="images/home_campaign.svg" class="rounded float-right" alt="home_campaign Image">
-                    <h5 class="card-title">i-STEM Campaigns</h5>
-                    <p class="card-text">Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FLGI/URM students by
-                        highlighting researchers from similar backgrounds & giving students the opportunity to interact with
-                        those in STEM research.
-                    </p>
-                    <button class="button-home1"><a href="/campaigns/index.html">Learn More!</a></button>
-                </div>
+    <div class="form-wrapper">
+        <form>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-        </div>
-    </div> -->
+            <div class="form-group">
+              <label for="InputPassword1">Password</label>
+              <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" onclick="">Sign Up</button>
+            <button type="submit" class="btn btn-primary" onclick="">Log In</button>
+          </form>
+    </div>
 
-    <!-- footer -->
-    <div id="footer"></div>
+
+    
+
 
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -290,6 +340,7 @@
             return true;
         }
     </script>
+
 
 </body>
 
