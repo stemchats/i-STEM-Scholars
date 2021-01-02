@@ -611,7 +611,10 @@ header .scrollspy-example {
 }
 
 .home section {
-  height: 100vh;
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

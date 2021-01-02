@@ -33,12 +33,14 @@
         
         function scrollShowNav() {
             var currentScrollPos = window.pageYOffset;
-           if (prevScrollpos > currentScrollPos) {
-              document.getElementsByTagName("header")[0].style.top = "0px";
-           } else {
-              document.getElementsByTagName("header")[0].style.top = "-58px";
-           }
-           prevScrollpos = currentScrollPos;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByTagName("header")[0].style.top = "0px";
+                document.getElementsByTagName("label")[0].style.opacity = 1;
+            } else {
+                document.getElementsByTagName("header")[0].style.top = "-58px";
+                document.getElementsByTagName("label")[0].style.opacity = 0;
+            }
+            prevScrollpos = currentScrollPos;
         }
         </script>
 </header>

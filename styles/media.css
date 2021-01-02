@@ -41,9 +41,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
+    opacity: 0;
     height: 0;
-    -webkit-transition: height 0.35s;
-    transition: height 0.35s;
+    margin-top: -15px;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
     padding: 0;
     margin-left: auto;
   }
@@ -60,7 +62,9 @@
     display: none;
   }
   header #menu-icon:checked ~ ul {
-    height: 170px;
+    margin-top: 0;
+    opacity: 1;
+    height: 140px;
   }
 }
 

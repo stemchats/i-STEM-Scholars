@@ -56,9 +56,11 @@ $light-grey : #f8f8f8;
         ul {
             flex-direction: column;
             position: relative;
+            opacity: 0;
             height: 0;
+            margin-top: -15px;
             //top: 15px;
-            transition: height 0.35s;
+            transition: 0.35s;
             padding: 0;
             margin-left: auto;
 
@@ -79,7 +81,9 @@ $light-grey : #f8f8f8;
         }
     
         #menu-icon:checked ~ ul {
-            height: 170px; //max-content
+            margin-top: 0;
+            opacity: 1;
+            height: 140px;
         }
     }
 }
