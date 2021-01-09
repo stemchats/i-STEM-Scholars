@@ -639,12 +639,10 @@ header .scrollspy-example {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 10px;
-}
-
-.home .container .text-boxes .popup {
-  opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  /* .popup {
+                opacity: 1;
+                transition: 0.4s;
+            } */
 }
 
 .home .arrow {
