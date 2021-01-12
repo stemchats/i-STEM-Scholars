@@ -72,7 +72,10 @@
     <!-- loading the popup -->
     <script type="text/javascript">
         $(window).on('load', function() {
-            $('#signUpModal').modal('show');
+            if(localStorage.getItem('modal') != 'shown'){
+                $('#signUpModal').modal('show');
+                localStorage.setItem('modal', 'shown');
+            }
         });
     </script>
 </head>
@@ -85,7 +88,7 @@
         <!-- Modal -->
         <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Sign up to save your Lab Progress!
@@ -197,7 +200,7 @@
                         <h1>STEM Research Toolbox</h1>
                         <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
                             STEM reasearch</b> and providing workshops and courses for all.</p>
-                        <button class="button-home" onclick="window.location.pathname='/toolbox/index.html';">Learn More!</button>
+                        <button class="button-home" onclick="window.location.pathname='/toolbox/index.html'">Learn More!</button>
                     </div>
                 </div>
             </div>
