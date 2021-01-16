@@ -88,7 +88,6 @@ button {
     .card {
         margin-left: 5px;
         margin-right: 5px;
-        border: 0;
         background-color: $light-grey;
     }
 }
@@ -174,29 +173,13 @@ button {
     background-color: $light-grey;
 }
 
-#vsl_accordion {
+.shiny-cards {
     .card {
-        margin-top: 0px;
-    }
-    .btn:focus {
-        outline: none;
-        box-shadow: none !important;
-    }
-    .btn {
-        font-family: 'Karla', sans-serif;
-        font-size: 20px;
-    }
-    .card-body {
-        font-family: 'Karla', sans-serif;
-    }
-}
-
-.vsl-description, .card-deck {
-    .card {
-        border: 0;
+        border-color: rgba($color: $light-grey, $alpha: 0.5);
         background-color: rgba($color: $light-grey, $alpha: 0.5);
         overflow: hidden;
         transition: 0.3s;
+        cursor: default;
 
         &::after {
             content: "";
@@ -215,15 +198,16 @@ button {
         &:hover {
             transform: translateY(-1px);
             box-shadow: 0 2px 10px rgba($color: black, $alpha: 0.1);
+            border: 1px solid rgba($color: black, $alpha: 0.175);
 
-            &::after {
+            /* &::after {
                 animation: slideRight 0.8s 0.15s 1 running;
-            }
+            } */
         }
     }
 }
 
-.student-breakdown-info {
+.student-breakdown {
     margin-top: 1rem;
     margin-bottom: 2rem;
 
@@ -247,10 +231,6 @@ button {
     img {
         @include center();
     }
-}
-.student-breakdown {
-    left: -5%;
-    width: 110%;
 }
 
 .mentor-quotes {
