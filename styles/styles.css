@@ -202,8 +202,8 @@ button:hover {
 }
 
 .vsl-description .card:hover::after, .card-deck .card:hover::after {
-  -webkit-animation: slideRight 0.75s 0.15s 1 running;
-          animation: slideRight 0.75s 0.15s 1 running;
+  -webkit-animation: slideRight 0.8s 0.15s 1 running;
+          animation: slideRight 0.8s 0.15s 1 running;
 }
 
 .student-breakdown-info {
