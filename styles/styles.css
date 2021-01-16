@@ -47,11 +47,6 @@ img {
   width: 100%;
 }
 
-.student-breakdown {
-  left: -5%;
-  width: 110%;
-}
-
 button {
   background-color: transparent;
   border-color: rgba(79, 157, 166, 0.5);
@@ -164,6 +159,42 @@ button:hover {
 
 #vsl_accordion .card-body {
   font-family: 'Karla', sans-serif;
+}
+
+.student-breakdown-info {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.student-breakdown-info .left {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.student-breakdown-info .left .bar {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.student-breakdown-info .left .circles img {
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.student-breakdown-info img {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.student-breakdown {
+  left: -5%;
+  width: 110%;
+}
+
+.mentor-quotes {
+  margin-bottom: 3rem;
 }
 
 .mentor-quotes img {
