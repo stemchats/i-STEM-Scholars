@@ -81,6 +81,18 @@ button {
     }
 }
 
+.card-deck {
+    margin-left: -5px;
+    margin-right: -5px;
+
+    .card {
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 0;
+        background-color: $light-grey;
+    }
+}
+
 
 
 .text-center {
@@ -163,7 +175,6 @@ button {
 }
 
 #vsl_accordion {
-
     .card {
         margin-top: 0px;
     }
@@ -177,6 +188,39 @@ button {
     }
     .card-body {
         font-family: 'Karla', sans-serif;
+    }
+}
+
+.vsl-description {
+    .card {
+        border: 0;
+        background-color: rgba($color: $light-grey, $alpha: 0.5);
+        overflow: hidden;
+        transition: 0.3s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -110%;
+            left: -10%;
+            width: 30px;
+            height: 500px;
+            opacity: 1;
+            transform: rotate(30deg);
+            z-index: 10000;
+            
+            background: rgba($color: white, $alpha: 0.5);
+            //background-color: yellow;
+        }
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 10px rgba($color: black, $alpha: 0.1);
+
+            &::after {
+                animation: slideRight 0.75s 0.15s 1 running;
+            }
+        }
     }
 }
 
@@ -853,4 +897,13 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0) rotate(30deg);
+    }
+    100% {
+        transform: translateX(150vh) rotate(30deg);
+    }
 }

@@ -62,6 +62,18 @@ button:hover {
   color: #f6d970;
 }
 
+.card-deck {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.card-deck .card {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0;
+  background-color: #f8f8f8;
+}
+
 .text-center {
   width: 100%;
   background-color: #233142;
@@ -159,6 +171,40 @@ button:hover {
 
 #vsl_accordion .card-body {
   font-family: 'Karla', sans-serif;
+}
+
+.vsl-description .card {
+  border: 0;
+  background-color: rgba(248, 248, 248, 0.5);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.vsl-description .card::after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -10%;
+  width: 30px;
+  height: 500px;
+  opacity: 1;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.vsl-description .card:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vsl-description .card:hover::after {
+  -webkit-animation: slideRight 0.75s 0.15s 1 running;
+          animation: slideRight 0.75s 0.15s 1 running;
 }
 
 .student-breakdown-info {
@@ -907,6 +953,28 @@ footer .copy {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0) rotate(30deg);
+            transform: translateX(0) rotate(30deg);
+  }
+  100% {
+    -webkit-transform: translateX(150vh) rotate(30deg);
+            transform: translateX(150vh) rotate(30deg);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0) rotate(30deg);
+            transform: translateX(0) rotate(30deg);
+  }
+  100% {
+    -webkit-transform: translateX(150vh) rotate(30deg);
+            transform: translateX(150vh) rotate(30deg);
   }
 }
 /*# sourceMappingURL=styles.css.map */
