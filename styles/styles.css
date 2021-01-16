@@ -73,6 +73,39 @@ button:hover {
   background-color: #f8f8f8;
 }
 
+.card .card-header {
+  padding: 1.25rem;
+  color: white;
+}
+
+.card .card-body {
+  padding: 1.5rem 1.25rem;
+}
+
+.card a {
+  color: black;
+}
+
+.card a:hover {
+  color: black;
+}
+
+.card .biology .card-header {
+  background-color: #00a9b7;
+}
+
+.card .chemistry .card-header {
+  background-color: #a6cd57;
+}
+
+.card #physics .card-header {
+  background-color: #ad208e;
+}
+
+.card #astronomy .card-header {
+  background-color: #005f86;
+}
+
 .text-center {
   width: 100%;
   background-color: #233142;

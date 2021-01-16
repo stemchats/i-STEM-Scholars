@@ -92,6 +92,38 @@ button {
     }
 }
 
+.card {
+    .card-header {
+        padding: 1.25rem;
+        color: white;
+    }
+
+    .card-body {
+        padding: 1.5rem 1.25rem;
+    }
+
+    a {
+        color: black;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .biology .card-header {
+        background-color: #00a9b7;
+    }
+    .chemistry .card-header {
+        background-color: #a6cd57;
+    }
+    #physics .card-header {
+        background-color: #ad208e;
+    }
+    #astronomy .card-header {
+        background-color: #005f86;
+    }
+}
+
 
 
 .text-center {
