@@ -81,6 +81,12 @@ button {
     }
 }
 
+.btn {
+    padding: .55rem .85rem;
+    font-size: inherit;
+    border-radius: .35rem;
+}
+
 .card-deck {
     margin-left: -5px;
     margin-right: -5px;
@@ -199,10 +205,6 @@ button {
         font-style: normal;
         font-weight: normal;
     }
-}
-
-.section-grey-bg {
-    background-color: $light-grey;
 }
 
 .shiny-cards {
@@ -404,9 +406,7 @@ blockquote::after {
 .toolbox #toolbox-nav,
 .campaigns #campaigns-nav,
 .contact #contact-nav {
-    color: white; //light blue or white
-    //border-bottom: 2px solid $yellow; //either yellow or light blue; can't choose
-    //whichever is chosen, the text hover color will be opposite?
+    color: white;
     font-weight: bold;
 
     &:hover {
@@ -471,7 +471,7 @@ header {
 
         .logo-img {
             width: 70px;
-            margin-top: -7px;
+            margin-top: -15px;
             margin-right: -5px;
         }
 
@@ -587,28 +587,20 @@ header {
     display: block;
 }
 
-.section-desc {
-    text-align: left;
-    font-size: 110%;
-    margin-bottom: 30px;
-}
-.section-desc-center {
-    text-align: center;
-    font-size: 110%;
-    margin-bottom: 30px;
-}
+.green-btn {
+    background-color: $light-blue;
+    border-color: $light-blue;
+    color: white;
+    border: 0;
+    transition: 0.25s;
 
-.section-img {
-    width: 80%;
-
-    &:nth-of-type(odd) {
-        margin: 0 auto 4rem 0;
-    }
-
-    &:nth-of-type(even) {
-        margin: 0 0 4rem auto;
+    &:hover {
+        background: #3d858d;
+        color: white;
     }
 }
+
+
 
 
 
@@ -649,75 +641,6 @@ header {
     .bounce {
         animation: bounce 2s infinite;
     }
-
-
-
-    /* .card-body {
-        position: relative;
-    
-        img {
-            padding-right: 2%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 5%;
-            width: 45%;
-            height: auto;
-            object-fit: contain;
-        }
-    }
-
-    .card-text {
-        padding: 0.5% 10% 1% 0%;
-        text-transform: none;
-        margin: 0 1.5%;
-        font-size: 1.5vw;
-    }
-    
-    .card-title{
-        font-size: 3vw;
-        padding-top:10%;
-        text-transform: none;
-        margin: 0 1.5%;
-    }
-    
-    #hometop {
-        background-color: $light-grey;
-        width: 100%;
-        height: 100vh;
-    }
-    
-    #home2{
-        width: 100%;
-        margin-left: 5%;
-        height: 100vh;
-    }
-    
-    #homebottom{
-        width: 100%;
-        background-color: $light-grey;
-        padding-top: 7%;
-        padding-bottom: 7%;
-        // margin-top: 2%;
-        // margin-bottom: 2%;
-    
-        .card-title {
-            padding-top: 0;
-        }
-    
-        .card-text {
-            padding: 0.5% 10% 1%;
-        }
-    }
-    
-    .button-home1{
-        // color: white;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 16px;
-        text-align: center;
-        border-radius: 12px;
-        margin-left: 1.5%;
-    } */
     
     .button-home {
         // color: white;
@@ -726,6 +649,29 @@ header {
         font-size: 16px;
         text-align: center;
         border-radius: 12px;
+    }
+
+    .section-img {
+        width: 80%;
+    
+        &:nth-of-type(odd) {
+            margin: 0 auto 4rem 0;
+        }
+    
+        &:nth-of-type(even) {
+            margin: 0 0 4rem auto;
+        }
+    }
+
+    .section-desc {
+        text-align: left;
+        font-size: 110%;
+        margin-bottom: 30px;
+    }
+    .section-desc-center {
+        text-align: center;
+        font-size: 110%;
+        margin-bottom: 30px;
     }
 }
 

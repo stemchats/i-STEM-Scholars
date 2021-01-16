@@ -4,8 +4,10 @@
 </head>
 <header>
     <div class="logo">
-        <img src="/images/logo.png" alt="logo" class="logo-img">
-        <h2 class="logo-text"><a href="/">i-STEM Scholars</a></h2>
+        <a href="/">
+            <img src="/images/logo.png" alt="logo" class="logo-img d-inline-block">
+            <h2 class="logo-text d-inline-block">i-STEM Scholars</h2>
+        </a>
     </div>
 
     <input type="checkbox" id="menu-icon">
@@ -26,6 +28,35 @@
                 <li><a href="/toolbox/" class="sub">c</a></li>
             </ul>
         </div> -->
+        
+        <!-- Button trigger modal -->
+        <!-- <li>
+            <button type="button" class="btn green-btn" data-toggle="modal" data-target="#login-signup">
+                Log In
+            </button>
+        </li> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="login-signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </ul>
 
     <script>
