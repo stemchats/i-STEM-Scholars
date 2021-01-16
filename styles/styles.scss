@@ -191,7 +191,7 @@ button {
     }
 }
 
-.vsl-description {
+.vsl-description, .card-deck {
     .card {
         border: 0;
         background-color: rgba($color: $light-grey, $alpha: 0.5);
@@ -201,12 +201,11 @@ button {
         &::after {
             content: "";
             position: absolute;
-            top: -110%;
             left: -10%;
-            width: 30px;
-            height: 500px;
+            width: 50px;
+            height: 700px;
             opacity: 1;
-            transform: rotate(30deg);
+            transform: translate(-200%, -30%) rotate(20deg);
             z-index: 10000;
             
             background: rgba($color: white, $alpha: 0.5);
@@ -901,7 +900,7 @@ footer {
 
 @keyframes slideRight {
     0% {
-        transform: translateX(0) rotate(30deg);
+        transform: translate(-200%, -30%) rotate(20deg);
     }
     100% {
         transform: translateX(150vh) rotate(30deg);
