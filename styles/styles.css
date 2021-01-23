@@ -31,6 +31,11 @@ body {
   overflow-x: hidden;
 }
 
+.modal-open {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 .container, .container-fluid {
   position: relative;
   padding: 120px 1.5rem;
@@ -62,10 +67,6 @@ button:hover {
   color: #f6d970;
 }
 
-.modal-open {
-  overflow: scroll;
-}
-
 .btn {
   padding: .45rem 1rem;
   font-size: inherit;
@@ -83,6 +84,10 @@ button:hover {
 .green-btn:hover {
   background: #317179;
   color: white;
+}
+
+.login-btn {
+  margin-right: 0;
 }
 
 .card-deck {
@@ -641,8 +646,13 @@ header .scrollspy-example {
   display: block;
 }
 
-#logInModal .redirect, #logInModal label, #signUpModal .redirect, #signUpModal label {
+#logInModal .modal-dialog, #signUpModal .modal-dialog {
+  max-width: 500px;
+}
+
+#logInModal .modal-title, #logInModal .redirect, #signUpModal .modal-title, #signUpModal .redirect {
   color: black;
+  white-space: normal;
 }
 
 #logInModal a, #signUpModal a {
@@ -651,6 +661,13 @@ header .scrollspy-example {
 
 #logInModal a:hover, #signUpModal a:hover {
   color: #f6d970;
+}
+
+#logInModal input, #signUpModal input {
+  border: 0;
+  outline: none;
+  background-color: #f8f8f8;
+  border-radius: 0;
 }
 
 .home section {

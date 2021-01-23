@@ -50,6 +50,10 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.modal-open {
+    height: 100%;
+    overflow-y: hidden;
+}
 
 .container, .container-fluid {
     position: relative;
@@ -81,10 +85,6 @@ button {
     }
 }
 
-.modal-open {
-    overflow: scroll;
-}
-
 .btn {
     padding: .45rem 1rem;
     font-size: inherit;
@@ -101,6 +101,10 @@ button {
         background: #317179;
         color: white;
     }
+}
+
+.login-btn {
+    margin-right: 0;
 }
 
 .card-deck {
@@ -629,8 +633,13 @@ header {
 }
 
 #logInModal, #signUpModal {
-    .redirect, label {
+    .modal-dialog {
+        max-width: 500px;
+    }
+    
+    .modal-title, .redirect {
         color: black;
+        white-space: normal;
     }
     
     a {
@@ -639,6 +648,13 @@ header {
         &:hover {
             color: $yellow;
         }
+    }
+
+    input {
+        border: 0;
+        outline: none;
+        background-color: $light-grey;
+        border-radius: 0;
     }
 }
 

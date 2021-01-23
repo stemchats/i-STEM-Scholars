@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 </head>
 <header>
@@ -19,7 +20,7 @@
         <li><a href="/program/" id="program-nav" title="Summer Research Program">Summer Research Program</a></li>
         <!-- <li><a href="/toolbox/" id="toolbox-nav" title="STEM Research Toolbox">STEM Research Toolbox</a></li> -->
         <li><a href="/toolbox/vsl/" id="toolbox-nav" title="Virtual Student Lab">Virtual Student Lab</a></li>
-        <li><button type="button" class="btn green-btn" id="login">Log in</button></li>
+        <li class="login-btn"><button type="button" class="btn green-btn" id="login">Log in</button></li>
         <li><button type="button" class="btn green-btn" id="signup">Sign Up</button></li>
 
         <!-- <div class="dropdown">
@@ -33,24 +34,84 @@
 
         <!-- Modal -->
 
-            <!-- loading the popup -->
+        <!-- loading the popup -->
         <script type="text/javascript">
-            $('#signup').click(function(){
-                $('#signUpModal').modal('show');
+            $('#login').click(function () {
+                $('#logInModal').modal('toggle');
             });
 
-            $('#login').click(function(){
-                $('#logInModal').modal('show');
+            $('#signup').click(function () {
+                $('#signUpModal').modal('toggle');
+            });
+
+            $('.toggleLogSign').click(function(){
+                $('#logInModal').modal('toggle');
+                $('#signUpModal').modal('toggle');
             });
         </script>
 
         <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="logInBox">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Log in to catch up on
+                                your progress!
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- form -->
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailLogIn" aria-describedby="emailHelp"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="passwordLogIn" placeholder="Password">
+                                </div>
+                                <small class="redirect center">Don't have an account? <a href="#" class="toggleLogSign">Sign up.</a></small>
+                                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
+                                In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- for the authentication functions (LOG IN)-->
+        <script>
+            const logInBtn = document.querySelector('#loginButton');
+            logInBtn.addEventListener('click', e => {
+                e.preventDefault();
+
+                const email = document.querySelector('#emailLogIn').value;
+                const password = document.querySelector('#passwordLogIn').value;
+
+                auth.signInWithEmailAndPassword(email, password).then(cred => {
+                    console.log('Logged in user!');
+                }).catch(error => {
+                    console.log(error.message);
+                })
+            });
+        </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="signUpTitle" style="color: black;">Sign up to save your Lab Progress!</h5>
+                        <h5 class="modal-title" id="signUpTitle">Sign up to save your Lab
+                            Progress!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -59,8 +120,8 @@
                         <!-- form -->
                         <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="emailSignUp"
-                                    aria-describedby="emailHelp" placeholder="Email Address">
+                                <input type="email" class="form-control" id="emailSignUp" aria-describedby="emailHelp"
+                                    placeholder="Email Address">
                             </div>
                             <div class="form-group">
                                 <input type="password" class="form-control" id="passwordSignUp"
@@ -70,7 +131,7 @@
                                 <input type="password" class="form-control" id="passwordConfSignUp"
                                     placeholder="Confirm Password">
                             </div>
-                            <small class="redirect">Already have an account? <a href="">Log in.</a></small>
+                            <small class="redirect center">Already have an account? <a href="#" class="toggleLogSign">Log in.</a></small>
                             <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         </form>
                     </div>
@@ -82,88 +143,37 @@
             </div>
         </div>
 
-               <!-- for the authentication functions (SIGN UP)-->
-               <script>
-                const signUpBtn = document.querySelector('#signUpButton');
-                signUpBtn.addEventListener('click', e => {
-                    e.preventDefault();
-        
-                    const email = document.querySelector('#emailSignUp').value;
-                    const password = document.querySelector('#passwordSignUp').value;
-        
-                    auth.createUserWithEmailAndPassword(email, password).then(cred => {
-                    console.log('User signed up!');
-                    });
-                });
-                </script>
-
-                <!-- Modal -->
-                <div class="modal fade" id="logInModal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Log in to catch up on your progress!
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- form -->
-                            <form>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="emailLogIn"
-                                        aria-describedby="emailHelp" placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="passwordLogIn"
-                                        placeholder="Password">
-                                </div>
-                                <small class="redirect">Don't have an account? <a href="">Sign up.</a></small>
-                                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
-                                In</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-                   <!-- for the authentication functions (LOG IN)-->
+        <!-- for the authentication functions (SIGN UP)-->
         <script>
-            const logInBtn = document.querySelector('#loginButton');
-            logInBtn.addEventListener('click', e => {
+            const signUpBtn = document.querySelector('#signUpButton');
+            signUpBtn.addEventListener('click', e => {
                 e.preventDefault();
-    
-                const email = document.querySelector('#emailLogIn').value;
-                const password = document.querySelector('#passwordLogIn').value;
-    
-                auth.signInWithEmailAndPassword(email, password).then(cred => {
-                    console.log('Logged in user!');
-                }).catch(error => {
-                    console.log(error.message);
-                })
-            });
-            </script>
 
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = scrollShowNav;
-        
-        function scrollShowNav() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementsByTagName("header")[0].style.top = "0px";
-                document.getElementsByTagName("label")[0].style.opacity = 1;
-            } else {
-                document.getElementsByTagName("header")[0].style.top = "-58px";
-                document.getElementsByTagName("label")[0].style.opacity = 0;
+                const email = document.querySelector('#emailSignUp').value;
+                const password = document.querySelector('#passwordSignUp').value;
+
+                auth.createUserWithEmailAndPassword(email, password).then(cred => {
+                    console.log('User signed up!');
+                });
+            });
+        </script>
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = scrollShowNav;
+
+            function scrollShowNav() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementsByTagName("header")[0].style.top = "0px";
+                    document.getElementsByTagName("label")[0].style.opacity = 1;
+                } else {
+                    document.getElementsByTagName("header")[0].style.top = "-58px";
+                    document.getElementsByTagName("label")[0].style.opacity = 0;
+                }
+                prevScrollpos = currentScrollPos;
             }
-            prevScrollpos = currentScrollPos;
-        }
         </script>
 </header>
+
 </html>
