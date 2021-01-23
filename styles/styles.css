@@ -67,9 +67,22 @@ button:hover {
 }
 
 .btn {
-  padding: .5rem 1rem;
+  padding: .45rem 1rem;
   font-size: inherit;
   border-radius: .35rem;
+}
+
+.green-btn {
+  background-color: #4f9da6;
+  color: white;
+  border: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.green-btn:hover {
+  background: #317179;
+  color: white;
 }
 
 .card-deck {
@@ -628,17 +641,16 @@ header .scrollspy-example {
   display: block;
 }
 
-.green-btn {
-  background-color: #4f9da6;
-  color: white;
-  border: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+#logInModal .redirect, #logInModal label, #signUpModal .redirect, #signUpModal label {
+  color: black;
 }
 
-.green-btn:hover {
-  background: #317179;
-  color: white;
+#logInModal a, #signUpModal a {
+  color: #4f9da6;
+}
+
+#logInModal a:hover, #signUpModal a:hover {
+  color: #f6d970;
 }
 
 .home section {

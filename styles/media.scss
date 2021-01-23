@@ -78,12 +78,16 @@ $light-grey : #f8f8f8;
                     }
                 }
             }
+
+            button {
+                margin-left: auto;
+            }
         }
     
         #menu-icon:checked ~ ul {
             margin-top: 0;
             opacity: 1;
-            height: 140px;
+            height: 240px;//without buttons: 140px;
         }
     }
 }

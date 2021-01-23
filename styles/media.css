@@ -61,10 +61,13 @@
   header ul li a::after {
     display: none;
   }
+  header ul button {
+    margin-left: auto;
+  }
   header #menu-icon:checked ~ ul {
     margin-top: 0;
     opacity: 1;
-    height: 140px;
+    height: 240px;
   }
 }
 

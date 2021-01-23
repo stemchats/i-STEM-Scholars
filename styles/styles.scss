@@ -86,9 +86,21 @@ button {
 }
 
 .btn {
-    padding: .5rem 1rem;
+    padding: .45rem 1rem;
     font-size: inherit;
     border-radius: .35rem;
+}
+
+.green-btn {
+    background-color: $light-blue;
+    color: white;
+    border: 0;
+    transition: 0.25s;
+
+    &:hover {
+        background: #317179;
+        color: white;
+    }
 }
 
 .card-deck {
@@ -616,15 +628,17 @@ header {
     display: block;
 }
 
-.green-btn {
-    background-color: $light-blue;
-    color: white;
-    border: 0;
-    transition: 0.25s;
+#logInModal, #signUpModal {
+    .redirect, label {
+        color: black;
+    }
+    
+    a {
+        color: $light-blue;
 
-    &:hover {
-        background: #317179;
-        color: white;
+        &:hover {
+            color: $yellow;
+        }
     }
 }
 
