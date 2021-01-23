@@ -31,11 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-.modal-open {
-  height: 100%;
-  overflow-y: hidden;
-}
-
 .container, .container-fluid {
   position: relative;
   padding: 120px 1.5rem;
