@@ -11,3 +11,7 @@ function setURL(the_id) {
 function setName(the_id) {
     localStorage.setItem("name", the_id);
 }
+function signout(){
+    console.log("logged out user, stupid");
+    auth.signOut();
+}

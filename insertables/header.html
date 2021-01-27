@@ -13,15 +13,23 @@
 
     <input type="checkbox" id="menu-icon">
     <label for="menu-icon"><i class="fas fa-bars"></i></label>
-
     <ul>
         <li><a href="/" id="home-nav" title="Home">Home</a></li>
         <li><a href="/about/" id="about-nav" title="About Us">About Us</a></li>
         <li><a href="/program/" id="program-nav" title="Summer Research Program">Summer Research Program</a></li>
         <!-- <li><a href="/toolbox/" id="toolbox-nav" title="STEM Research Toolbox">STEM Research Toolbox</a></li> -->
         <li><a href="/toolbox/vsl/" id="toolbox-nav" title="Virtual Student Lab">Virtual Student Lab</a></li>
-        <li class="login-btn"><button type="button" class="btn green-btn" id="login">Log in</button></li>
-        <li><button type="button" class="btn green-btn" id="signup">Sign Up</button></li>
+        <!-- <li class="login-btn"><button type="button" class="btn green-btn" id="login">Log in</button></li>
+        <li><button type="button" class="btn green-btn" id="signup">Sign Up</button></li> -->
+        <li><div class="login-btn" id="login-signup">
+            <button type="button" class="btn green-btn" id="login">Log in</button>
+            <button type="button" class="btn green-btn" id="signup">Sign Up</button>
+        </div></li>
+        <li><div class="login-btn" id="logout-profile" style="display: none;">
+            <button type="button" class="btn green-btn" id="login" onclick="signout()">Log out</button>
+            <button type="button" class="btn green-btn" id="signup">Profile Page</button>
+        </div></li>
+
 
         <!-- <div class="dropdown">
             <li><a href="/toolbox/" id="toolbox-nav" title="STEM Research Toolbox">STEM Research Toolbox</a><i class="fas fa-caret-down"></i></li>
@@ -173,6 +181,23 @@
                 }
                 prevScrollpos = currentScrollPos;
             }
+        </script>
+
+                <script>
+            // $("logout-profile").css("display", "none");
+            firebase.auth().onAuthStateChanged(firebaseUser => {
+                if(firebaseUser){
+                    // console.log(firebaseUser);
+                    // $("login-signup").css("display", "none");
+                    // $("logout-profile").css("display", "block");
+                    document.getElementById("login-signup").style.display = "none";
+                    document.getElementById("logout-profile").style.display = "block";
+                }else{
+                    document.getElementById("login-signup").style.display = "block";
+                    document.getElementById("logout-profile").style.display = "none";
+                }
+            })
+
         </script>
 </header>
 
