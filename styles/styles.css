@@ -319,8 +319,8 @@ button:hover {
   margin-left: auto;
   -webkit-animation-name: slideLeft;
           animation-name: slideLeft;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
 }
 
 .slideshow .left-arrow, .slideshow .right-arrow {

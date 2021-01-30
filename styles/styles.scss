@@ -335,7 +335,7 @@ button {
     .slide {
         @include center();
         animation-name: slideLeft;
-        animation-duration: 0.5s;
+        animation-duration: 0.65s;
     }
 
     .left-arrow, .right-arrow {
