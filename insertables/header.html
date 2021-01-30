@@ -26,8 +26,19 @@
             <button type="button" class="btn green-btn" id="signup">Sign Up</button>
         </div></li>
         <li><div class="login-btn" id="logout-profile" style="display: none;">
-            <button type="button" class="btn green-btn" id="login" onclick="signout()">Log out</button>
-            <button type="button" class="btn green-btn" id="signup">Profile Page</button>
+            <!-- <button type="button" class="btn green-btn" id="login" onclick="signout()">Log out</button> -->
+            <!-- <button type="button" class="btn green-btn" id="signup">Profile Page</button> -->
+
+            <div class="dropdown">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style = "background-color: #233142; stroke: #233142;">
+                  <img src = "/images/profile-avatar.png" style = "height: 40px; width: 40px; border-radius: 50%;">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/insertables/profile.html">My Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#"onclick="signout()">Log Out</a>
+                </div>
+              </div>
         </div></li>
 
 
