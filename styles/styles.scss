@@ -646,6 +646,10 @@ header {
         background-color: $light-grey;
         border-radius: 0;
     }
+
+    .toggleLogSign, .toggleSignLog {
+        cursor: pointer;
+    }
 }
 
 

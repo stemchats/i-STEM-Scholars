@@ -655,6 +655,10 @@ header .scrollspy-example {
   border-radius: 0;
 }
 
+#logInModal .toggleLogSign, #logInModal .toggleSignLog, #signUpModal .toggleLogSign, #signUpModal .toggleSignLog {
+  cursor: pointer;
+}
+
 .home section {
   min-height: 100vh;
   height: -webkit-max-content;
