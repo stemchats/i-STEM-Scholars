@@ -327,11 +327,12 @@ button {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    height: max-content;
+    background-color: $light-grey;
+    padding: 2rem;
+    border-radius: 20px;
 
     .quote {
         @include center();
-        margin-bottom: 2rem;
         animation-name: fadeIn;
         animation-duration: 1.5s;
     }
@@ -342,6 +343,9 @@ button {
         transform: translateY(-50%);
         font-size: 28px;
         cursor: pointer;
+        background: $yellow;
+        padding: .25rem 0.98rem 0rem;
+        border-radius: 50%;
     }
     .left-arrow {
         left: 30px;

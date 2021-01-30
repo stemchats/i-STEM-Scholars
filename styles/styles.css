@@ -306,9 +306,9 @@ button:hover {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 20px;
 }
 
 .quotes-container .quote {
@@ -316,7 +316,6 @@ button:hover {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 2rem;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1.5s;
@@ -330,6 +329,9 @@ button:hover {
           transform: translateY(-50%);
   font-size: 28px;
   cursor: pointer;
+  background: #f6d970;
+  padding: .25rem 0.98rem 0rem;
+  border-radius: 50%;
 }
 
 .quotes-container .left-arrow {
