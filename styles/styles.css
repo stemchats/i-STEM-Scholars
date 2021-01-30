@@ -300,7 +300,7 @@ button:hover {
   margin-top: 30px;
 }
 
-.quotes-container {
+.slideshow {
   position: relative;
   width: 100%;
   left: 50%;
@@ -309,20 +309,21 @@ button:hover {
   background-color: #f8f8f8;
   padding: 2rem;
   border-radius: 20px;
+  overflow: hidden;
 }
 
-.quotes-container .quote {
+.slideshow .slide {
   display: block;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-name: slideLeft;
+          animation-name: slideLeft;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
-.quotes-container .left-arrow, .quotes-container .right-arrow {
+.slideshow .left-arrow, .slideshow .right-arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -330,19 +331,19 @@ button:hover {
   font-size: 28px;
   cursor: pointer;
   background: #f6d970;
-  padding: .25rem 0.98rem 0rem;
+  padding: .15rem 0.88rem 0rem;
   border-radius: 50%;
 }
 
-.quotes-container .left-arrow {
+.slideshow .left-arrow {
   left: 30px;
 }
 
-.quotes-container .right-arrow {
+.slideshow .right-arrow {
   right: 30px;
 }
 
-.quotes-container img {
+.slideshow img {
   margin-top: 0;
   margin-bottom: 20px;
   border-radius: 50%;
@@ -372,7 +373,7 @@ blockquote::after {
   margin-left: -5px;
 }
 
-/* .quotes-container {
+/* .slideshow {
     height: 600px; //must encompass entire height of quotes
 
     .row {
@@ -979,6 +980,40 @@ footer .copy {
   100% {
     -webkit-transform: translateX(150vh) rotate(30deg);
             transform: translateX(150vh) rotate(30deg);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */
