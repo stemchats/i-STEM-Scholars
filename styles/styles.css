@@ -286,10 +286,6 @@ button:hover {
   margin-left: auto;
 }
 
-.mentor-quotes {
-  margin-bottom: 3rem;
-}
-
 .mentor-quotes img {
   border-radius: 30px;
   margin-bottom: 20px;
@@ -307,8 +303,9 @@ button:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #f8f8f8;
+  margin: 3rem 0 0;
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -373,17 +370,7 @@ blockquote::after {
   margin-left: -5px;
 }
 
-/* .slideshow {
-    height: 600px; //must encompass entire height of quotes
-
-    .row {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-
-.quote-row {
+/* .quote-row {
     display: flex;
     opacity: 0;
     animation-name: fade;
@@ -797,6 +784,10 @@ header .scrollspy-example {
 
 .toolbox .col {
   margin-top: 20px;
+}
+
+.toolbox .lessons-boxes {
+  margin-top: 3rem;
 }
 
 .toolbox .lessons {

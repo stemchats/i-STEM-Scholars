@@ -309,8 +309,6 @@ button {
 }
 
 .mentor-quotes {
-    margin-bottom: 3rem;
-
     img {
         border-radius: 30px;
         margin-bottom: 20px;
@@ -328,8 +326,9 @@ button {
     left: 50%;
     transform: translateX(-50%);
     background-color: $light-grey;
+    margin: 3rem 0 0;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 
     .slide {
@@ -384,17 +383,7 @@ blockquote::after {
     margin-left: -5px;
 }
 
-/* .slideshow {
-    height: 600px; //must encompass entire height of quotes
-
-    .row {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-
-.quote-row {
+/* .quote-row {
     display: flex;
     opacity: 0;
     animation-name: fade;
@@ -790,6 +779,10 @@ header {
     }
     .col {
         margin-top: 20px;
+    }
+
+    .lessons-boxes {
+        margin-top: 3rem;
     }
 
     .lessons{

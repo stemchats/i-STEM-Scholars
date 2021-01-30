@@ -57,11 +57,11 @@
         <!-- loading the popup -->
         <script type="text/javascript">
             $('#login').click(function () {
-                $('#logInModal').modal('toggle');
+                $('#logInModal').modal('show');
             });
 
             $('#signup').click(function () {
-                $('#signUpModal').modal('toggle');
+                $('#signUpModal').modal('show');
             });
 
             $('.toggleLogSign').click(function(){
@@ -94,7 +94,7 @@
                                 <div class="form-group">
                                     <input type="password" class="form-control" id="passwordLogIn" placeholder="Password" required>
                                 </div>
-                                <small class="redirect center">Don't have an account? <a href="#" class="toggleLogSign">Sign up.</a></small>
+                                <small class="redirect center">Don't have an account? <a href="#" data-dismiss="modal" class="toggleLogSign">Sign up.</a></small>
                                 <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                             </form>
                         </div>
@@ -139,6 +139,20 @@
                     <div class="modal-body">
                         <!-- form -->
                         <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="fname" aria-describedby="firstName"
+                                            placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="lname" aria-describedby="lastName"
+                                            placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="emailSignUp" aria-describedby="emailHelp"
                                     placeholder="Email Address" required>
@@ -151,7 +165,7 @@
                                 <input type="password" class="form-control" id="passwordConfSignUp"
                                     placeholder="Confirm Password" required>
                             </div>
-                            <small class="redirect center">Already have an account? <a href="#" class="toggleLogSign">Log in.</a></small>
+                            <small class="redirect center">Already have an account? <a href="#" data-dismiss="modal" class="toggleLogSign">Log in.</a></small>
                             <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         </form>
                     </div>
