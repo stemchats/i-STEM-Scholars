@@ -72,9 +72,9 @@
     <!-- loading the popup -->
     <script type="text/javascript">
         $(window).on('load', function() {
-            if(localStorage.getItem('modal') != 'shown'){
+            if(sessionStorage.getItem('modal') != 'shown'){
                 $('#signUpModal').modal('show');
-                localStorage.setItem('modal', 'shown');
+                sessionStorage.setItem('modal', 'shown');
             }
         });
     </script>
