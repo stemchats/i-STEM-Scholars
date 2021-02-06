@@ -339,6 +339,12 @@ button:hover {
   background: #f6d970;
   padding: .15rem 0.93rem 0rem;
   border-radius: 50%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.slideshow .left-arrow:hover, .slideshow .right-arrow:hover {
+  background: #dfc155;
 }
 
 .slideshow .left-arrow {
@@ -762,7 +768,7 @@ header .scrollspy-example {
 .one::after {
   content: '';
   position: absolute;
-  height: 600px;
+  height: 550px;
   width: 1px;
   background-color: rgba(0, 0, 0, 0.3);
   right: -45px;

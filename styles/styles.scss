@@ -355,6 +355,11 @@ button {
         background: $yellow;
         padding: .15rem 0.93rem 0rem;
         border-radius: 50%;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background: #dfc155;
+        }
     }
     .left-arrow {
         left: 30px;
@@ -752,7 +757,7 @@ header {
     &::after {
         content: '';
         position: absolute;
-        height: 600px;
+        height: 550px;
         width: 1px;
         background-color: rgba($color: black, $alpha: 0.3);
         right: -45px;
