@@ -58,10 +58,12 @@
         <script type="text/javascript">
             $('#login').click(function () {
                 $('#logInModal').modal('toggle');
+                $("body").css("overflow", "hidden");
             });
 
             $('#signup').click(function () {
                 $('#signUpModal').modal('toggle');
+                $("body").css("overflow", "hidden");
             });
 
 
@@ -70,7 +72,8 @@
                 //add delay when showing next modal
                 setTimeout(function () {
                     $('#signUpModal').modal('show');
-                }, 400);
+                }, 300);
+                $("body").css("overflow", "hidden");
             });
 
             $('.toggleSignLog').click(function(){
@@ -78,7 +81,8 @@
                 //add delay when showing next modal
                 setTimeout(function () {
                     $('#logInModal').modal('show');
-                }, 400);
+                }, 300);
+                $("body").css("overflow", "hidden");
             });
         </script>
 
@@ -92,7 +96,7 @@
                             <h5 class="modal-title" id="exampleModalLongTitle">Log in to catch up on
                                 your progress!
                             </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.body.style.overflow = 'auto'">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -144,7 +148,7 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="signUpTitle">Sign up to save your Lab
                             Progress!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.body.style.overflow = 'auto'">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
