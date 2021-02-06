@@ -91,6 +91,7 @@ button:hover {
 
 .previous-next .previous-btn, .previous-next .next-btn {
   margin-top: 5px;
+  font-size: 0.9em;
 }
 
 .card-deck {
@@ -758,11 +759,6 @@ header .scrollspy-example {
   height: max-content;
 }
 
-.two {
-  left: auto;
-  right: 2%;
-}
-
 .one::after {
   content: '';
   position: absolute;
@@ -772,6 +768,11 @@ header .scrollspy-example {
   right: -45px;
   top: 0;
   z-index: 100000;
+}
+
+.two {
+  left: auto;
+  right: 2%;
 }
 
 .toolbox .fixed-nav nav {

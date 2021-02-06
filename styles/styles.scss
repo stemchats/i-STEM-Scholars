@@ -108,6 +108,7 @@ button {
 
     .previous-btn, .next-btn {
         margin-top: 5px;
+        font-size: 0.9em;
     }
 }
 
@@ -747,15 +748,7 @@ header {
     margin-left: 2rem;
     left: 5%;
     height: max-content;
-}
 
-.two {
-    left: auto;
-    right: 2%;
-}
-
-// CONTENT FOR LESSON PAGES
-.one {
     &::after {
         content: '';
         position: absolute;
@@ -766,6 +759,11 @@ header {
         top: 0;
         z-index: 100000;
     }
+}
+
+.two {
+    left: auto;
+    right: 2%;
 }
 
 
