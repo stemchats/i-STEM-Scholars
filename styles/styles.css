@@ -85,6 +85,14 @@ button:hover {
   margin-right: 0;
 }
 
+.previous-next {
+  padding-bottom: 10px;
+}
+
+.previous-next .previous-btn, .previous-next .next-btn {
+  margin-top: 5px;
+}
+
 .card-deck {
   margin-left: -5px;
   margin-right: -5px;
@@ -736,19 +744,18 @@ header .scrollspy-example {
   margin-bottom: 30px;
 }
 
-.fixed-nav {
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
-
 .fixed-nav .list-group-item {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
 .one {
-  margin-left: 1rem;
-  left: 2%;
+  top: 120px;
+  margin-left: 2rem;
+  left: 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .two {
@@ -756,9 +763,15 @@ header .scrollspy-example {
   right: 2%;
 }
 
-.offset-sm-2 {
-  margin-right: auto;
-  margin-left: auto;
+.one::after {
+  content: '';
+  position: absolute;
+  height: 600px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  right: -45px;
+  top: 0;
+  z-index: 100000;
 }
 
 .toolbox .fixed-nav nav {
