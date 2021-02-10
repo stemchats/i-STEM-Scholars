@@ -271,12 +271,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
             apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
             authDomain: "i-stem-scholars.firebaseapp.com",
+            databaseURL: "https://i-stem-scholars-default-rtdb.firebaseio.com/",
             projectId: "i-stem-scholars",
             storageBucket: "i-stem-scholars.appspot.com",
             messagingSenderId: "365248308743",
@@ -284,7 +286,13 @@
             measurementId: "G-VPJNQSBN1F"
         };
         // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+        if (!firebase.apps.length) {
+            firebase.initializeApp(config);
+        }
+
+        
+        const auth = firebase.auth();
+        const realtime_db = firebase.database();
     </script>
 
     <!-- Bootstrap Javascript -->
