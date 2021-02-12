@@ -131,8 +131,13 @@
                         console.log("Data Collected!")
                         console.log(first_name + " " + last_name + " " + email + " " + birthday + " " +  imageURL)
                     </script>
-                    <button type="submit" class="btn btn-primary" onclick="writeUserData(first_name, last_name, email, password, birthday, imageURL)">Save Changes</button>
-
+                    <button type="submit" id="profile-info"class="btn btn-primary">Save Changes</button>
+                    <script>
+                        $('profile-info').click(function(){
+                            console.log("Data sent")
+                            writeUserData(first_name, last_name, email, password, birthday, imageURL, realtime_db)
+                        });
+                    </script>
                     <hr/>
 
                     <h2>

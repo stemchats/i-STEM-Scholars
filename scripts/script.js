@@ -1,4 +1,6 @@
+const auth = firebase.auth();
 const db = firebase.firestore();
+const realtime_db = firebase.database();
 function goBack() {
     window.history.back();
 }
@@ -125,11 +127,12 @@ function loadLesson(lesson) {
   }
 
 //FIREBASE REALTIME DATABASE FUNCTIONS
-$.getScript('https://cdn.firebase.com/8.2.1/firebase.js', function() {
 
-  function writeUserData(first_name, last_name, email, password, birthday, imageUrl) {
+
+  function writeUserData(first_name, last_name, email, password, birthday, imageUrl, realtime_db) {
     //using email as tree structure for users because its a very unique identifier
-    realtime_db.database().ref('users/' + email).set({
+    //realtime_db = firebase.database();
+    realtime_db.ref('users/' + first_name + "-" + last_name).set({
       first_name: first_name,
       last_name: last_name,
       email: email,
@@ -139,5 +142,5 @@ $.getScript('https://cdn.firebase.com/8.2.1/firebase.js', function() {
     });
   }
 
-});
+
 

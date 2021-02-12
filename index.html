@@ -268,6 +268,13 @@
         <div id="footer"></div>
     </div>
 
+        <!-- Scripts -->
+        <script type="text/javascript" src="/scripts/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
@@ -278,7 +285,7 @@
         var firebaseConfig = {
             apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
             authDomain: "i-stem-scholars.firebaseapp.com",
-            databaseURL: "https://i-stem-scholars-default-rtdb.firebaseio.com/",
+            databaseURL: "https://i-stem-scholars-default-rtdb.firebaseio.com",
             projectId: "i-stem-scholars",
             storageBucket: "i-stem-scholars.appspot.com",
             messagingSenderId: "365248308743",
@@ -286,13 +293,16 @@
             measurementId: "G-VPJNQSBN1F"
         };
         // Initialize Firebase
-        if (!firebase.apps.length) {
-            firebase.initializeApp(config);
-        }
-
-
+        firebase.initializeApp(firebaseConfig);
+        //firebase.analytics();
         const auth = firebase.auth();
+        const db = firebase.firestore();
         const realtime_db = firebase.database();
+
+        writeUserData("Test", "Two", "test2@gmail.com", "123456", "2/12/2021", "", realtime_db);
+        
+
+        
     </script>
 
     <!-- Bootstrap Javascript -->
@@ -303,12 +313,7 @@
         integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
     </script>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="/scripts/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
 
     <!-- text shows up when button is clicked -->
     <script>
