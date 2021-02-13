@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script defer src = "/scripts/script.js"></script>
 </head>
 <header>
     <div class="logo">
@@ -111,12 +112,13 @@
                                     <input type="password" class="form-control" id="passwordLogIn" placeholder="Password" required>
                                 </div>
                                 <small class="redirect center">Don't have an account? <a data-dismiss="modal" class="toggleLogSign">Sign up.</a></small>
-                                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                <!-- <button type="submit" class="btn green-btn">Log In</button>  -->
+                                <div class="modal-footer">
+                                    <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
+                                        In</button> -->
+                                        <button type="submit" class="btn green-btn">Log In</button> 
+                                </div>
                             </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
-                                In</button>
                         </div>
                     </div>
                 </div>
@@ -153,7 +155,8 @@
                     </div>
                     <div class="modal-body">
                         <!-- form -->
-                        <form>
+                        <div id = "error"></div>
+                        <form id = "form" action = "/" method = "GET">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -181,13 +184,16 @@
                                     placeholder="Confirm Password" required>
                             </div>
                             <small class="redirect center">Already have an account? <a data-dismiss="modal" class="toggleSignLog">Log in.</a></small>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            <!-- <button type="submit" class="btn green-btn">Sign Up</button> -->
+                            <div class="modal-footer"> 
+                                <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="signUpButton">Sign
+                                    Up</button> -->
+                                    <button type="submit" class="btn green-btn">Sign
+                                        Up</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn green-btn" data-dismiss="modal" id="signUpButton">Sign
-                            Up</button>
-                    </div>
+
                 </div>
             </div>
         </div>
