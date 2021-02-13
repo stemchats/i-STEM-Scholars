@@ -237,11 +237,20 @@ button:hover {
 
 .shiny-cards .card {
   border-color: rgba(248, 248, 248, 0.5);
-  background-color: rgba(248, 248, 248, 0.5);
+  background-color: #cfe3e7;
   overflow: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: default;
+  /* &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 10px rgba($color: black, $alpha: 0.1);
+            border: 1px solid rgba($color: black, $alpha: 0.175);
+
+            &::after {
+                animation: slideRight 0.8s 0.15s 1 running;
+            }
+        }*/
 }
 
 .shiny-cards .card::after {
@@ -255,17 +264,6 @@ button:hover {
           transform: translate(-200%, -30%) rotate(20deg);
   z-index: 10000;
   background: rgba(255, 255, 255, 0.5);
-}
-
-.shiny-cards .card:hover {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.175);
-  /* &::after {
-                animation: slideRight 0.8s 0.15s 1 running;
-            } */
 }
 
 .student-breakdown {
@@ -653,6 +651,13 @@ header .scrollspy-example {
 #logInModal .modal-title, #logInModal .redirect, #signUpModal .modal-title, #signUpModal .redirect {
   color: black;
   white-space: normal;
+}
+
+#logInModal .modal-content, #signUpModal .modal-content {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 #logInModal a, #signUpModal a {
