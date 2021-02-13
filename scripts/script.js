@@ -142,5 +142,40 @@ function loadLesson(lesson) {
     });
   }
 
+  //AN ATTEMPT!
+  //Login/Signup Required Fields
+  const fname = document.getElementByID('fname');
+  const lname = document.getElementByID('lname');
+  const emailSignUp = document.getElementByID('emailSignUp');
+  const passwordSignUp = document.getElementByID('passwordSignUp');
+  const passwordConfSignUp = document.getElementByID('passwordConfSignUp');
+  const form = document.getElementByID('form');
+  const errorElement = document.getElementById('error')
+
+  form.addEventListener('submit', (e) => {
+    let messages = []
+    if (fname.value == '' || fname.value == null){
+      messages.push('First Name is required')
+    }
+
+    if (lname.value == '' || lname.value == null){
+      messages.push('Last Name is required')
+    }
+    if (emailSignUp.value == '' || emailSignUp.value == null){
+      messages.push('Email is required')
+    }
+
+    if (passwordSignUp.value.length <= 6){
+      messages.push('Password must be longer than 6 characters')
+    }
+
+    if (messages.length > 0){
+      e.preventDefault()
+      errorElement.innerText = messages.join(', ')
+    }
+  })
+
+
+
 
 
