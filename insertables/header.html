@@ -22,26 +22,30 @@
         <li><a href="/toolbox/vsl/" id="toolbox-nav" title="Virtual Student Lab">Virtual Student Lab</a></li>
         <!-- <li class="login-btn"><button type="button" class="btn green-btn" id="login">Log in</button></li>
         <li><button type="button" class="btn green-btn" id="signup">Sign Up</button></li> -->
+
+        <!-- login/signup buttons
         <li><div class="login-btn" id="login-signup">
             <button type="button" class="btn green-btn" id="login">Log in</button>
             <button type="button" class="btn green-btn" id="signup">Sign Up</button>
         </div></li>
-        <li><div class="login-btn" id="logout-profile" style="display: none;">
+        <li><div class="login-btn" id="logout-profile" style="display: none;"> -->
+
+
             <!-- <button type="button" class="btn green-btn" id="login" onclick="signout()">Log out</button> -->
             <!-- <button type="button" class="btn green-btn" id="signup">Profile Page</button> -->
 
-            <div class="dropdown">
-                <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" style="background-color: #233142; stroke: #233142;">
-                    <img src="/images/profile-avatar.png" style="height: 40px; width: 40px; border-radius: 50%;">
+            <!-- profile dropdown -->
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style = "background-color: #233142; stroke: #233142;">
+                  <img src = "/images/profile-avatar.png" style = "height: 40px; width: 40px; border-radius: 50%;">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/insertables/profile.html">My Profile</a>
-                    <a class="dropdown-item" href="#">Settings</a>
-                    <a class="dropdown-item" href="#" onclick="signout()">Log Out</a>
-
+                <a class="dropdown-item" href="/insertables/profile.html">My Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#"onclick="signout()">Log Out</a>
+                  
                 </div>
-            </div>
+              </div> -->
         </div></li>
 
 
@@ -57,7 +61,7 @@
         <!-- Modal -->
 
         <!-- loading the popup -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             $('#login').click(function () {
                 $('#logInModal').modal('toggle');
                 $("body").css("overflow", "hidden");
@@ -86,11 +90,12 @@
                 }, 300);
                 $("body").css("overflow", "hidden");
             });
-        </script>
+        </script> -->
 
         <!-- Modal -->
-        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
-            <div class="modal-dialog modal-dialog-centered modal-lg"  role="document">
+        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="logInBox">
                         <div class="modal-header">
@@ -143,7 +148,8 @@
         </script>
 
         <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
