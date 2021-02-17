@@ -1,6 +1,6 @@
 const auth = firebase.auth();
 const db = firebase.firestore();
-const realtime_db = firebase.database();
+//const realtime_db = firebase.database();
 function goBack() {
     window.history.back();
 }
@@ -21,7 +21,7 @@ function signout(){
 const lessonSection = document.getElementById("lesson"); //section where the lesson will be rendered
 
 const elements = {
-    image: function() {
+    image: function() { //uses map
 		const img = document.createElement("img");
 		img.src = this.content.link;
 		if(typeof this.content.class == "string") {
@@ -47,9 +47,12 @@ const elements = {
 		p.innerHTML = this.content;
 		lessonSection.appendChild(p);
     },
-    header: function() {
+    header: function() { //uses map
 		const head = document.createElement("h4");
-		head.innerHTML = this.content;
+		head.innerHTML = this.content.text;
+		if(typeof this.content.title == "string") {
+			head.id = this.content.title;
+		}
 		lessonSection.appendChild(head);
     },
     button: function() {
@@ -69,6 +72,22 @@ const elements = {
 		video.src = this.content.link;
 		yt.appendChild(video);
 		lessonSection.appendChild(yt);
+    },
+    caption: function() {
+		const p = document.createElement("p");
+		p.classList.add("caption");
+		p.innerHTML = this.content;
+		lessonSection.appendChild(p);
+    },
+    bullets: function() { //uses array
+		const ul = document.createElement("ul");
+		console.log("bullets", this);
+		for (const element of this.content) {
+			const li = document.createElement("li");
+			li.innerHTML = element;
+			ul.appendChild(li);
+		}
+		lessonSection.appendChild(ul);
     }
 };
 // <iframe width="560" height="315" src="https://www.youtube.com/embed/U8r3oTVMtQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -111,20 +130,47 @@ const elements = {
 //   }
 const lessons = db.collection("lessons");
 
-function loadLesson(lesson) {
-   	//how many sections the edition has, iterates through sections (below)
-      lessons.doc("biology").collection("gel-electro").doc("background").get()
-        .then(doc => {
-            const data = doc.data(); //retrieves all the sections as 'objects'
-            console.log(data);
-            let entries1 = Object.entries(data); //return array of each object's key-value pairs
-            for (const [key, value] of entries1.sort()) { //loop through each element (key-value) in the array
-				let keyword = `${key}`; //the different key properties
-				let values = `${value}`; //the different value properties
-				lessonSection.append(values); 
-            }
-        });
-  }
+function loadLesson(subject, lesson) {
+	for (var i = 0; i<sections.length; i++) { //how many sections the edition has, iterates through sections (below)
+		lessons.doc(subject).collection(lesson).doc(sections[i]).get()
+			.then(doc => {
+				const data = doc.data(); //retrieves all the sections as 'objects'
+				console.log(subject, lesson, data);
+				if (data==undefined) return
+				let entries1 = Object.entries(data); //return array of each object's key-value pairs
+				for (const [key, value] of entries1.sort()) { //loop through each element (key-value) in the array
+					let keyword = `${key}`; //the different key properties
+					let values = `${value}`; //the different value properties
+					let renderElement = new Object();
+					renderElement.content = value;
+					//create a new object with content property of value
+					let entries2 = Object.entries(elements); //create array of the 'elements'
+					for (let j = 0; j < entries2.length; j++) { //access the elements + call the apropriate function to the element
+						if (keyword.includes(entries2[j][0]) == true) {
+							if (entries2[j][0] == "image") { //use call method
+								elements.image.call(renderElement);
+							} else if (entries2[j][0] == "header") {
+								elements.header.call(renderElement);
+							} else if (entries2[j][0] == "hyperlink") {
+								elements.hyperlink.call(renderElement);
+							} else if (entries2[j][0] == "paragraph") {
+								elements.paragraph.call(renderElement);
+							} else if (entries2[j][0] == "button") {
+								elements.button.call(renderElement);
+							} else if (entries2[j][0] == "video") {
+								elements.video.call(renderElement);
+							} else if (entries2[j][0] == "caption") {
+								elements.caption.call(renderElement);
+							} else if (entries2[j][0] == "bullets") {
+								elements.bullets.call(renderElement);
+							}
+						}
+					}
+					//lessonSection.append(values); 
+				}
+			});
+	}
+}
 
 //FIREBASE REALTIME DATABASE FUNCTIONS
 
@@ -141,7 +187,7 @@ function writeUserData(first_name, last_name, email, password, birthday, imageUr
 		profile_picture : imageUrl
 	});
 }
-
+/*
 //AN ATTEMPT!
 //Login/Signup Required Fields
 const fname = document.getElementByID('fname');
@@ -174,7 +220,7 @@ form.addEventListener('submit', (e) => {
 		errorElement.innerText = messages.join(', ')
 	}
 })
-
+*/
 
 
 

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
         content="i-STEM Scholars aims to serve high school students from first-generation, low-income (FGLI), and underrepresented minority (URM) backgrounds by providing opportunities and education in STEM research. Our goal is to improve the accessibility of STEM research, and ensure that FGLI and URM students feel empowered to learn more about and pursue these research fields.">
-    <meta name="keywords" content="stem, stemchast, stemchats, nonprofit, students, programs, i-STEM, i-stem, istem, scholars, scholar, research, summer">
+    <meta name="keywords"
+        content="stem, stemchast, stemchats, nonprofit, students, programs, i-STEM, i-stem, istem, scholars, scholar, research, summer">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
@@ -25,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -71,15 +72,17 @@
     <div id="header"></div>
 
     <!-- CONTENT -->
-    <script>//for the count variable that will be used for the previous button function
-    var count = -1;
+    <script>
+        //for the count variable that will be used for the previous button function
+        var count = -1;
     </script>
     <div class="container-fluid" data-spy="scroll">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
                     <!-- <p><a href="/toolbox/index.html">Toolbox </a>><a href="/toolbox/vsl/"> VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel Electrophoresis</p> -->
-                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel Electrophoresis</p>
+                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel
+                        Electrophoresis</p>
                     <!-- <h3>Table of Contents/Directory (Scrollable)</h3> -->
                     <!-- nav starts here -->
                     <nav id="navbar-example3" class="navbar bg-light">
@@ -87,15 +90,17 @@
                             <h4 class="my-1">Gel Electrophoresis</h4>
                             <a class="nav-link my-1" href="#welcome">Welcome</a>
                             <a class="nav-link my-1" href="#background">Background</a>
-                            <a class="nav-link my-1" href="#background-simulation">Background Simulation</a>
+                            <a class="nav-link my-1" href="#bg-simulation">Background Simulation</a>
                             <a class="nav-link my-1" href="#how-it-works">How it Works</a>
-                            <a class="nav-link my-1" href="#quiz-yourself">Quiz Yourself</a>
-                            <a class="nav-link my-1" href="#application-based-simulation">Application Based-Simulation</a>
-                            <a class="nav-link my-1" href="#a-reach-into-research">A Reach into Research</a>
+                            <a class="nav-link my-1" href="#quiz">Quiz Yourself</a>
+                            <a class="nav-link my-1" href="#app-simulation">Application
+                                Based-Simulation</a>
+                            <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
                         <div class="row center previous-next">
                             <!-- <button type="button" class="btn green-btn previous-btn">Previous Lesson</button> -->
-                            <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" class="btn green-btn next-btn">Next Lesson</button>
+                            <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';"
+                                class="btn green-btn next-btn">Next Lesson</button>
                         </div>
                     </nav>
                     <!-- end of navbar -->
@@ -106,11 +111,11 @@
 
                 <div class="row">
                     <div class="col">
-                      <img src="/images/home_research.svg" alt="Research Image">
+                        <img src="/images/home_research.svg" alt="Research Image" class="subj-img">
                     </div>
                 </div>
 
-                <p class="center">The Page Content Goes Here</p>
+                <!-- <p class="center">The Page Content Goes Here</p> -->
                 <div id="lesson" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
                     <!-- content div here -->
 
@@ -152,7 +157,9 @@
     </script>
     <script type="text/javascript" src="/scripts/script.js"></script>
     <script>
-      loadLesson();
+        const sections = ["background", "how-it-works", "bg-simulation", "quiz", "app-simulation", "research"];
+        loadLesson("biology", "gel-electro"); //loadLesson("subject", "lesson")
     </script>
-  </body>
+</body>
+
 </html>

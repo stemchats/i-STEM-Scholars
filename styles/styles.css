@@ -47,6 +47,10 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 button {
   background-color: transparent;
   border-color: rgba(79, 157, 166, 0.5);
@@ -233,6 +237,17 @@ button:hover {
 .important a {
   font-style: normal;
   font-weight: normal;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 .shiny-cards .card {
@@ -802,6 +817,7 @@ header .scrollspy-example {
 
 .toolbox .fixed-nav nav .nav-link.active {
   background-color: #4f9da6;
+  color: white;
 }
 
 .toolbox .card {
@@ -846,6 +862,34 @@ header .scrollspy-example {
 
 .toolbox .col-2 {
   margin: 10px;
+}
+
+.toolbox .subj-img {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+#lesson h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #4f9da6;
+}
+
+#lesson h4:target {
+  padding-top: 70px;
+  margin-top: calc(3rem + -70px);
+}
+
+#lesson img {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
 }
 
 footer {
