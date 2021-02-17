@@ -81,13 +81,21 @@ const elements = {
     },
     bullets: function() { //uses array
 		const ul = document.createElement("ul");
-		console.log("bullets", this);
 		for (const element of this.content) {
 			const li = document.createElement("li");
 			li.innerHTML = element;
 			ul.appendChild(li);
 		}
 		lessonSection.appendChild(ul);
+    },
+    numbered: function() { //uses array
+		const ol = document.createElement("ol");
+		for (const element of this.content) {
+			const li = document.createElement("li");
+			li.innerHTML = element;
+			ol.appendChild(li);
+		}
+		lessonSection.appendChild(ol);
     }
 };
 // <iframe width="560" height="315" src="https://www.youtube.com/embed/U8r3oTVMtQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -163,6 +171,8 @@ function loadLesson(subject, lesson) {
 								elements.caption.call(renderElement);
 							} else if (entries2[j][0] == "bullets") {
 								elements.bullets.call(renderElement);
+							} else if (entries2[j][0] == "numbered") {
+								elements.numbered.call(renderElement);
 							}
 						}
 					}
