@@ -870,13 +870,13 @@ header .scrollspy-example {
   margin-right: auto;
   margin-left: auto;
   max-width: 500px;
-  margin-bottom: 3rem;
 }
 
 #lesson h4 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #4f9da6;
+  margin-top: 3rem;
 }
 
 #lesson h4:target {
@@ -890,6 +890,14 @@ header .scrollspy-example {
   margin-right: auto;
   margin-left: auto;
   max-width: 700px;
+}
+
+#lesson ul li, #lesson ol li {
+  font-family: 'Karla', sans-serif;
+}
+
+#lesson ol li {
+  font-style: italic;
 }
 
 footer {
