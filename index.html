@@ -181,7 +181,7 @@
                         <h1>Summer Research Program</h1>
                         <p>Join our annual <b>Summer Research Program</b>, connecting high school students with
                         <b>university labs</b> to contribute to a research project.</p>
-                        <button class="button-home" onclick="window.location.pathname='/program/index.html';">Learn More!</button>
+                        <button class="btn green-btn" onclick="window.location.pathname='/program/index.html';">Learn More!</button>
                     </div>
                     <div class="col-lg-7 section-img justify-content-end">
                         <img src="images/home_research2.svg" alt="Research Image">
@@ -200,7 +200,7 @@
                         <h1>STEM Research Toolbox</h1>
                         <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
                             STEM reasearch</b> and providing workshops and courses for all.</p>
-                        <button class="button-home" onclick="window.location.pathname='/toolbox/index.html'">Learn More!</button>
+                        <button class="btn green-btn" onclick="window.location.pathname='/toolbox/index.html'">Learn More!</button>
                     </div>
                 </div>
             </div>
@@ -366,38 +366,6 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
         integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
-    </script>
-
-
-
-    <!-- text shows up when button is clicked -->
-    <script>
-        function getStyle(el, name) {
-            // the way of the DOM
-            if ( document.defaultView && document.defaultView.getComputedStyle )
-            {
-                var style = document.defaultView.getComputedStyle(el, null);
-                if ( style )
-                return style[name];
-            }
-            // IE-specific
-            else if ( el.currentStyle )
-                return el.currentStyle[name];
-
-            return null;
-        }
-
-        function toggleText(i) {
-            var indexSelect = "[data-text='" + i + "']";
-            var text = document.querySelector(indexSelect);
-            if(!text) return true;
-            if (getStyle(text, "opacity") === "0") {
-                text.style.opacity = "1";
-            } else {
-                text.style.opacity = "0";
-            }
-            return true;
-        }
     </script>
 
 </body>
