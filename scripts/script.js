@@ -29,7 +29,6 @@ const elements = {
 		}
 		if(typeof this.content.title == "string") {
 			img.id = this.content.title; //set
-			createDirectory(this.content.title); //add title name of each section to the directory
 		}
 		lessonSection.appendChild(img);
     },
@@ -40,6 +39,12 @@ const elements = {
 		if(typeof this.content.class == "string") {
 			link.classList.add(this.content.class);
 		}
+		if(typeof this.content.image == "string") {
+			const img = document.createElement("img");
+			img.src = this.content.image;
+			link.appendChild(img);
+		}
+		link.setAttribute('target', "_blank");
 		lessonSection.appendChild(link);
     },
     paragraph: function() {

@@ -119,9 +119,15 @@
                 </div>
 
                 <p class="center">The Page Content Goes Here</p>
-                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <div id="lesson" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
                     <!-- content div here -->
 
+                </div>
+
+                <div class="sources">
+                    <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.</p>
+
+                    <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR, and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.</p>
                 </div>
             </div>
             <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
@@ -159,8 +165,29 @@
     </script>
 
     <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
+            authDomain: "i-stem-scholars.firebaseapp.com",
+            projectId: "i-stem-scholars",
+            storageBucket: "i-stem-scholars.appspot.com",
+            messagingSenderId: "365248308743",
+            appId: "1:365248308743:web:3eb6df4333086ea1982ca2",
+            measurementId: "G-VPJNQSBN1F"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script type="text/javascript" src="/scripts/script.js"></script>
-
+    <script>
+        const sections = ["background", "simulation", "video", "quiz", "research"];
+        loadLesson("biology", "pcr"); //loadLesson("subject", "lesson")
+    </script>
 </body>
 
 </html>

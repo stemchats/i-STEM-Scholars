@@ -882,6 +882,8 @@ header {
     }
 
     ul, ol {
+        margin-left: 1rem;
+        
         li {
             font-family: 'Karla', sans-serif;
         }
@@ -890,6 +892,13 @@ header {
         li {
             font-style: italic;
         }
+    }
+}
+
+.sources {
+    .source {
+        padding-left: 36px;
+        text-indent: -36px;
     }
 }
 

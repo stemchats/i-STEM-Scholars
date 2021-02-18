@@ -892,12 +892,21 @@ header .scrollspy-example {
   max-width: 700px;
 }
 
+#lesson ul, #lesson ol {
+  margin-left: 1rem;
+}
+
 #lesson ul li, #lesson ol li {
   font-family: 'Karla', sans-serif;
 }
 
 #lesson ol li {
   font-style: italic;
+}
+
+.sources .source {
+  padding-left: 36px;
+  text-indent: -36px;
 }
 
 footer {
