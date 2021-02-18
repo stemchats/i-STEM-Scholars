@@ -76,7 +76,7 @@
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-    <div class="container-fluid" data-spy="scroll">
+       <div class="container-fluid" data-spy="scroll">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
@@ -84,52 +84,58 @@
                     <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > PCR</p>
                     <!-- <h3>Table of Contents/Directory (Scrollable)</h3> -->
                     <!-- nav starts here -->
-                    <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                    <nav id="navbar-example3" class="navbar bg-light">
                         <nav class="nav nav-pills flex-column">
-                            <h4 class="my-1">Navbar</h4>
-                            <a class="nav-link my-1" href="#item-1">Item 1</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-                                <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
-                            </nav>
-                            <a class="nav-link my-1" href="#item-2">Item2</a>
-                            <a class="nav-link my-1" href="#item-3">Item3</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-                            </nav>
+                            <h4 class="my-1">PCR</h4>
+                            <!-- <a class="nav-link my-1" href="#welcome">Welcome</a> -->
+                            <a class="nav-link my-1" href="#background">Background</a>
+                            <a class="nav-link my-1" href="#simulation">Simulation</a>
+                            <a class="nav-link my-1" href="#video">Video</a>
+                            <a class="nav-link my-1" href="#quiz">Quiz Yourself</a>
+                            <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
                         <div class="row center previous-next">
-                            <button type="button"
-                                onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';"
-                                class="btn green-btn previous-btn">Previous Lesson</button>
-                            <!-- <button type="button" class="btn green-btn next-btn">Next Lesson</button> -->
+                            <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';">Previous Lesson</button>
+                            <!-- <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" -->
+                                <!-- class="btn green-btn next-btn">Next Lesson</button> -->
                         </div>
                     </nav>
                     <!-- end of navbar -->
                 </div>
             </div>
             <div class="col-lg-8 offset-lg-1" id="content">
-                <h1 class="center">Visual Labs and other thingies</h1>
+                <h1 class="center">PCR</h1>
 
                 <div class="row">
                     <div class="col">
-
+                        <img src="/images/home_research.svg" alt="Research Image" class="subj-img">
                     </div>
                 </div>
 
-                <p class="center">The Page Content Goes Here</p>
+                <!-- <p class="center">The Page Content Goes Here</p> -->
                 <div id="lesson" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
                     <!-- content div here -->
 
                 </div>
-
                 <div class="sources">
-                    <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.</p>
+                    <div class="sources">
+                        <h3><b>Sources</b></h3>
 
-                    <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR, and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.</p>
+                        <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.</p>
+    
+                        <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR, and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.</p>
+
+                        <p class="source">“RT-PCR Diagram.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+
+                        <p class="source">“RT-PCR: Reverse Transcription PCR.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+
+                        <p class="source">“What Is PCR (Polymerase Chain Reaction)?” Facts, The Public Engagement Team at the Wellcome Genome Campus, 25 Jan. 2016, <a href="www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.">www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.</a></p>
+                    </div>
                 </div>
             </div>
+
+        </div>
+    </div>
             <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
             <!-- <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
                 <div class="scrollable-items">
