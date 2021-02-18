@@ -872,6 +872,10 @@ header .scrollspy-example {
   max-width: 500px;
 }
 
+#lesson {
+  min-height: 100vh;
+}
+
 #lesson h4 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
