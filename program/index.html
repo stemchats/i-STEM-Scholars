@@ -37,7 +37,7 @@
     <!-- Website CSS -->
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="/styles/media.css">
-    
+
     <title>i-STEM Scholars</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics
@@ -73,8 +73,8 @@
             <p>Currently recruiting research mentors for 2021! Professors, postdocs, staff researchers, and grad students at any university-affiliated lab are welcome to reach out at: <a href="mailto:istemscholars.stemchats@gmail.com">istemscholars.stemchats@gmail.com</a></p>
         </div>
         <h1 class="large-box-title center">i-STEM Scholars Summer Research Program</h1>
-        <p class="center">The annual i-STEM Scholars Summer Research Program, which connects high school students with university labs to 
-            contribute to a research project for about 10 weeks. Students are also provided with academic and professional 
+        <p class="center">The annual i-STEM Scholars Summer Research Program, which connects high school students with university labs to
+            contribute to a research project for about 10 weeks. Students are also provided with academic and professional
             development resources, as well as personalized mentorship. Our Summer Research Program is application-based,
             with a focus on students who are FGLI, URM, LGBTQ+, and women, and students spend about 3 months with accredited
             research mentors.</p>
@@ -135,7 +135,7 @@
                     </div>
                     <!-- <img src="/images/i-STEM_scholars_graphics-1.png" alt="student breakdown graphic" class="center student-breakdown"> -->
                 </div>
-                
+
                 <div class="mentor-quotes">
                     <div class="row">
                         <div class="col-md-5 align-self-end">
@@ -259,7 +259,34 @@
     <script type="text/javascript" src="/scripts/script.js"></script>
 
     <script>
-        var slideIndex = 1;
+        //Constant Slideshow Height
+				let maxHeight = 0;
+				let slideShow = document.querySelectorAll(".mySlides");
+				function getHeight(element) {
+				  let container = element.clientHeight + 200; // plus image add height
+          console.log(container)
+				  if(container > maxHeight) {
+				    maxHeight = container;
+				  }
+				}
+				function setHeight(element) {
+				  element.style.height = `${maxHeight}px`;
+				}
+				function getSlideShow() {
+					slideShow.forEach(getHeight);
+				}
+				function setSlideShow() {
+					slideShow.forEach(setHeight);
+				}
+
+				window.onload = getSlideShow();
+				window.onload = setSlideShow();
+				window.onresize = function () {
+					location.reload();
+				};
+
+        //Slideshow Arrows
+        let slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
@@ -277,12 +304,12 @@
             if (n > x.length) {slideIndex = 1}
             if (n < 1) {slideIndex = x.length}
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+                x[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" w3-white", "");
             }
-            x[slideIndex-1].style.display = "block";  
+            x[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " w3-white";
         }
     </script>

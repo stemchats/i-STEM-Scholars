@@ -287,7 +287,7 @@ button {
             opacity: 1;
             transform: translate(-200%, -30%) rotate(20deg);
             z-index: 10000;
-            
+
             background: rgba($color: white, $alpha: 0.5);
             //background-color: yellow;
         }
@@ -311,7 +311,7 @@ button {
     .left {
         margin-top: 20px;
         margin-bottom: 10px;
-    
+
         .bar {
             margin-bottom: 2rem;
             width: 100%;
@@ -336,7 +336,7 @@ button {
         margin-bottom: 20px;
         width: 175px;
     }
-    
+
     .row {
         margin-top: 30px;
     }
@@ -653,7 +653,7 @@ header {
     .modal-dialog {
         max-width: 500px;
     }
-    
+
     .modal-title, .redirect {
         color: black;
         white-space: normal;
@@ -664,7 +664,7 @@ header {
         border: none;
         box-shadow: 0 0 10px rgba($color: black, $alpha: 0.25);
     }
-    
+
     a {
         color: $light-blue;
 
@@ -717,7 +717,7 @@ header {
             } */
         }
     }
-    
+
     .arrow {
         text-align: center;
         margin: 6% 0 2%;
@@ -726,7 +726,7 @@ header {
     .bounce {
         animation: bounce 2s infinite;
     }
-    
+
     .button-home {
         // color: white;
         padding: 10px;
@@ -738,11 +738,11 @@ header {
 
     .section-img {
         width: 80%;
-    
+
         &:nth-of-type(odd) {
             margin: 0 auto 4rem 0;
         }
-    
+
         &:nth-of-type(even) {
             margin: 0 0 4rem auto;
         }
@@ -865,7 +865,7 @@ header {
 
 #lesson {
     min-height: 100vh;
-    
+
     h4 {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: bold;
@@ -875,7 +875,7 @@ header {
         &:target { //allows header space when jumped to with id anchor link
             padding-top: 70px;
             margin-top: calc(3rem + -70px);
-        } 
+        }
     }
 
     img {
@@ -885,7 +885,7 @@ header {
 
     ul, ol {
         margin-left: 1rem;
-        
+
         li {
             font-family: 'Karla', sans-serif;
         }
