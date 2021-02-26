@@ -269,6 +269,10 @@ button {
     font-style: italic;
 }
 
+.noHover{
+    pointer-events: none;
+}
+
 .shiny-cards {
     .card {
         border-color: rgba($color: $light-grey, $alpha: 0.5);
@@ -291,16 +295,15 @@ button {
             background: rgba($color: white, $alpha: 0.5);
             //background-color: yellow;
         }
+        &:hover {
+           transform: translateY(-10px) !important;
+           box-shadow: 0 2px 10px rgba($color: black, $alpha: 0.1) !important;
+           // border: 1px solid rgba($color: black, $alpha: 0.175);
 
-        /* &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 2px 10px rgba($color: black, $alpha: 0.1);
-            border: 1px solid rgba($color: black, $alpha: 0.175);
-
-            &::after {
-                animation: slideRight 0.8s 0.15s 1 running;
-            }
-        }*/
+           // &::after {
+           //     animation: slideRight 0.8s 0.15s 1 running;
+           // }
+        }
     }
 }
 
