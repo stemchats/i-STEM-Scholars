@@ -336,7 +336,6 @@
             	// isIntersecting is true when element and viewport are overlapping
             	// isIntersecting is false when element and viewport don't overlap
             	if(entries[0].isIntersecting === true)
-            		console.log('Element has just become visible in screen');
                 setTimeout(function(){
                   const cards = document.querySelectorAll(".card"); //select all cards
                   for(let i=0;i<cards.length;i++) { //removes delay on cards (from data-aos-delay = 0.5s)
