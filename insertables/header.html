@@ -43,7 +43,7 @@
                 <a class="dropdown-item" href="/insertables/profile.html">My Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <a class="dropdown-item" href="#"onclick="signout()">Log Out</a>
-                  
+
                 </div>
               </div> -->
         </div></li>
@@ -121,7 +121,7 @@
                                 <div class="modal-footer">
                                     <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
                                         In</button> -->
-                                        <button type="submit" class="btn green-btn">Log In</button> 
+                                        <button type="submit" class="btn green-btn">Log In</button>
                                 </div>
                             </form>
                         </div>
@@ -132,19 +132,19 @@
 
         <!-- for the authentication functions (LOG IN)-->
         <script>
-            const logInBtn = document.querySelector('#loginButton');
-            logInBtn.addEventListener('click', e => {
-                e.preventDefault();
-
-                const email = document.querySelector('#emailLogIn').value;
-                const password = document.querySelector('#passwordLogIn').value;
-
-                auth.signInWithEmailAndPassword(email, password).then(cred => {
-                    console.log('Logged in user!');
-                }).catch(error => {
-                    console.log(error.message);
-                })
-            });
+            // const logInBtn = document.querySelector('#loginButton');
+            // logInBtn.addEventListener('click', e => {
+            //     e.preventDefault();
+            //
+            //     const email = document.querySelector('#emailLogIn').value;
+            //     const password = document.querySelector('#passwordLogIn').value;
+            //
+            //     auth.signInWithEmailAndPassword(email, password).then(cred => {
+            //         console.log('Logged in user!');
+            //     }).catch(error => {
+            //         console.log(error.message);
+            //     })
+            // });
         </script>
 
         <!-- Modal -->
@@ -191,7 +191,7 @@
                             </div>
                             <small class="redirect center">Already have an account? <a data-dismiss="modal" class="toggleSignLog">Log in.</a></small>
                             <!-- <button type="submit" class="btn green-btn">Sign Up</button> -->
-                            <div class="modal-footer"> 
+                            <div class="modal-footer">
                                 <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="signUpButton">Sign
                                     Up</button> -->
                                     <button type="submit" class="btn green-btn">Sign
