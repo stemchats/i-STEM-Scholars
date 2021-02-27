@@ -798,6 +798,18 @@ header {
 
 //Toolbox STYLES
 
+//scroll indicator
+#progress-indicator {
+      --scroll: 0%;
+      background: linear-gradient(to right,rgb(0, 143, 105) var(--scroll),transparent 0);
+      position: fixed;
+      width: 100%;
+      height: 7px;
+      top:0px;
+      z-index: 100;
+      margin-top: 12px;
+  }
+
 .toolbox {
     //display: flex;
     .fixed-nav nav {
