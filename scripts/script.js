@@ -148,7 +148,7 @@ function loadLesson(subject, lesson) {
 		lessons.doc(subject).collection(lesson).doc(sections[i]).get()
 			.then(doc => {
 				const data = doc.data(); //retrieves all the sections as 'objects'
-				console.log(subject, lesson, data);
+				// console.log(subject, lesson, data);
 				if (data==undefined) return
 				let entries1 = Object.entries(data); //return array of each object's key-value pairs
 				for (const [key, value] of entries1.sort()) { //loop through each element (key-value) in the array
@@ -181,7 +181,7 @@ function loadLesson(subject, lesson) {
 							}
 						}
 					}
-					//lessonSection.append(values); 
+					//lessonSection.append(values);
 				}
 			});
 	}
@@ -236,7 +236,3 @@ form.addEventListener('submit', (e) => {
 	}
 })
 */
-
-
-
-
