@@ -118,6 +118,10 @@ button {
         margin-top: 5px;
         font-size: 0.9em;
     }
+
+    &.mobile {
+        display: none;
+    }
 }
 
 .card-deck {

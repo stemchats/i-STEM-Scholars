@@ -128,5 +128,11 @@
   #navbar {
     display: none;
   }
+  .previous-next.mobile {
+    display: block;
+  }
+  .previous-next.mobile button {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

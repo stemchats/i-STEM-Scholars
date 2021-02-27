@@ -168,4 +168,12 @@ $light-grey : #f8f8f8;
     #navbar {
         display: none;
     }
+
+    .previous-next.mobile {
+        display: block;
+
+        button {
+            font-size: 18px;
+        }
+    }
 }

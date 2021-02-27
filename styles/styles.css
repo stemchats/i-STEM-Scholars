@@ -104,6 +104,10 @@ button:hover {
   font-size: 0.9em;
 }
 
+.previous-next.mobile {
+  display: none;
+}
+
 .card-deck {
   margin-left: -5px;
   margin-right: -5px;
