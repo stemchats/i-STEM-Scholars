@@ -87,7 +87,7 @@ $light-grey : #f8f8f8;
         #menu-icon:checked ~ ul {
             margin-top: 0;
             opacity: 1;
-            height: 240px;//without buttons: 140px;
+            height: 140px;//with buttons: 240px;
         }
 
         .login-btn {
@@ -155,5 +155,17 @@ $light-grey : #f8f8f8;
                 margin: 0;
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    /* start of phone styles */
+    iframe {
+        width: 100%;
+    }
+
+    #navbar {
+        display: none;
     }
 }

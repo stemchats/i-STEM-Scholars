@@ -30,6 +30,10 @@ $light-grey : #f8f8f8;
     a {
         text-decoration: none;
         color: $light-blue;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
 
         &:hover {
             text-decoration: none;
@@ -390,6 +394,12 @@ button {
         border-radius: 50%;
         padding: 0;
         width: 200px;
+    }
+
+    .slide .card-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
     }
 }
 
@@ -805,7 +815,7 @@ header {
       position: fixed;
       width: 100%;
       height: 7px;
-      top:0px;
+      top: 0;
       z-index: 100;
       margin-top: 12px;
   }
@@ -875,6 +885,7 @@ header {
     .subj-img {
         @include center();
         max-width: 500px;
+        margin-bottom: 30px;
     }
 }
 
@@ -896,6 +907,8 @@ header {
     img {
         @include center();
         max-width: 700px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     ul, ol {

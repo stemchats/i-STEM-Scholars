@@ -67,7 +67,7 @@
   header #menu-icon:checked ~ ul {
     margin-top: 0;
     opacity: 1;
-    height: 240px;
+    height: 140px;
   }
   header .login-btn {
     margin-right: 15px;
@@ -117,6 +117,16 @@
   header .logo .logo-text {
     font-size: 26px;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* start of phone styles */
+  iframe {
+    width: 100%;
+  }
+  #navbar {
+    display: none;
   }
 }
 /*# sourceMappingURL=media.css.map */
