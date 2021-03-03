@@ -45,8 +45,8 @@
                   <a class="dropdown-item" href="#"onclick="signout()">Log Out</a>
 
                 </div>
-              </div> -->
-        </div></li>
+              </div>
+        </div></li> -->
 
 
         <!-- <div class="dropdown">
@@ -57,201 +57,203 @@
                 <li><a href="/toolbox/" class="sub">c</a></li>
             </ul>
         </div> -->
+    </ul>
 
-        <!-- Modal -->
+    <!-- Modal -->
 
-        <!-- loading the popup -->
-        <!-- <script type="text/javascript">
-            $('#login').click(function () {
-                $('#logInModal').modal('toggle');
-                $("body").css("overflow", "hidden");
-            });
+    <!-- loading the popup -->
+    <!-- <script type="text/javascript">
+        $('#login').click(function () {
+            $('#logInModal').modal('toggle');
+            $("body").css("overflow", "hidden");
+        });
 
-            $('#signup').click(function () {
-                $('#signUpModal').modal('toggle');
-                $("body").css("overflow", "hidden");
-            });
+        $('#signup').click(function () {
+            $('#signUpModal').modal('toggle');
+            $("body").css("overflow", "hidden");
+        });
 
 
-            $('.toggleLogSign').click(function(){
-                $('#logInModal').modal('hide');
-                //add delay when showing next modal
-                setTimeout(function () {
-                    $('#signUpModal').modal('show');
-                }, 300);
-                $("body").css("overflow", "hidden");
-            });
+        $('.toggleLogSign').click(function(){
+            $('#logInModal').modal('hide');
+            //add delay when showing next modal
+            setTimeout(function () {
+                $('#signUpModal').modal('show');
+            }, 300);
+            $("body").css("overflow", "hidden");
+        });
 
-            $('.toggleSignLog').click(function(){
-                $('#signUpModal').modal('hide');
-                //add delay when showing next modal
-                setTimeout(function () {
-                    $('#logInModal').modal('show');
-                }, 300);
-                $("body").css("overflow", "hidden");
-            });
-        </script> -->
+        $('.toggleSignLog').click(function(){
+            $('#signUpModal').modal('hide');
+            //add delay when showing next modal
+            setTimeout(function () {
+                $('#logInModal').modal('show');
+            }, 300);
+            $("body").css("overflow", "hidden");
+        });
+    </script> -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="logInBox">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Log in to catch up on
-                                your progress!
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.body.style.overflow = 'auto'">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- form -->
-                            <form>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="emailLogIn" aria-describedby="emailHelp"
-                                        placeholder="Email Address" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="passwordLogIn" placeholder="Password" required>
-                                </div>
-                                <small class="redirect center">Don't have an account? <a data-dismiss="modal" class="toggleLogSign">Sign up.</a></small>
-                                <!-- <button type="submit" class="btn green-btn">Log In</button>  -->
-                                <div class="modal-footer">
-                                    <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
-                                        In</button> -->
-                                        <button type="submit" class="btn green-btn">Log In</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- for the authentication functions (LOG IN)-->
-        <script>
-            // const logInBtn = document.querySelector('#loginButton');
-            // logInBtn.addEventListener('click', e => {
-            //     e.preventDefault();
-            //
-            //     const email = document.querySelector('#emailLogIn').value;
-            //     const password = document.querySelector('#passwordLogIn').value;
-            //
-            //     auth.signInWithEmailAndPassword(email, password).then(cred => {
-            //         console.log('Logged in user!');
-            //     }).catch(error => {
-            //         console.log(error.message);
-            //     })
-            // });
-        </script>
-
-        <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
+    <!-- Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="logInBox">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="signUpTitle">Sign up to save your Lab
-                            Progress!</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Log in to catch up on
+                            your progress!
+                        </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.body.style.overflow = 'auto'">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <!-- form -->
-                        <div id = "error"></div>
-                        <form id = "form" action = "/" method = "GET">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="fname" aria-describedby="firstName"
-                                            placeholder="First Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="lname" aria-describedby="lastName"
-                                            placeholder="Last Name" required>
-                                    </div>
-                                </div>
-                            </div>
+                        <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="emailSignUp" aria-describedby="emailHelp"
+                                <input type="email" class="form-control" id="emailLogIn" aria-describedby="emailHelp"
                                     placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="passwordSignUp"
-                                    placeholder="Create Password" required>
+                                <input type="password" class="form-control" id="passwordLogIn" placeholder="Password" required>
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="passwordConfSignUp"
-                                    placeholder="Confirm Password" required>
-                            </div>
-                            <small class="redirect center">Already have an account? <a data-dismiss="modal" class="toggleSignLog">Log in.</a></small>
-                            <!-- <button type="submit" class="btn green-btn">Sign Up</button> -->
+                            <small class="redirect center">Don't have an account? <a data-dismiss="modal" class="toggleLogSign">Sign up.</a></small>
+                            <!-- <button type="submit" class="btn green-btn">Log In</button>  -->
                             <div class="modal-footer">
-                                <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="signUpButton">Sign
-                                    Up</button> -->
-                                    <button type="submit" class="btn green-btn">Sign
-                                        Up</button>
+                                <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="loginButton">Log
+                                    In</button> -->
+                                    <button type="submit" class="btn green-btn">Log In</button>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- for the authentication functions (SIGN UP)-->
-        <script>
-            const signUpBtn = document.querySelector('#signUpButton');
-            signUpBtn.addEventListener('click', e => {
-                e.preventDefault();
+    <!-- for the authentication functions (LOG IN)-->
+    <script>
+        // const logInBtn = document.querySelector('#loginButton');
+        // logInBtn.addEventListener('click', e => {
+        //     e.preventDefault();
+        //
+        //     const email = document.querySelector('#emailLogIn').value;
+        //     const password = document.querySelector('#passwordLogIn').value;
+        //
+        //     auth.signInWithEmailAndPassword(email, password).then(cred => {
+        //         console.log('Logged in user!');
+        //     }).catch(error => {
+        //         console.log(error.message);
+        //     })
+        // });
+    </script>
 
-                const email = document.querySelector('#emailSignUp').value;
-                const password = document.querySelector('#passwordSignUp').value;
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpTitle">Sign up to save your Lab
+                        Progress!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.body.style.overflow = 'auto'">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <div id = "error"></div>
+                    <form id = "form" action = "/" method = "GET">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fname" aria-describedby="firstName"
+                                        placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lname" aria-describedby="lastName"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailSignUp" aria-describedby="emailHelp"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="passwordSignUp"
+                                placeholder="Create Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="passwordConfSignUp"
+                                placeholder="Confirm Password" required>
+                        </div>
+                        <small class="redirect center">Already have an account? <a data-dismiss="modal" class="toggleSignLog">Log in.</a></small>
+                        <!-- <button type="submit" class="btn green-btn">Sign Up</button> -->
+                        <div class="modal-footer">
+                            <!-- <button type="submit" class="btn green-btn" data-dismiss="modal" id="signUpButton">Sign
+                                Up</button> -->
+                                <button type="submit" class="btn green-btn">Sign
+                                    Up</button>
+                        </div>
+                    </form>
+                </div>
 
-                auth.createUserWithEmailAndPassword(email, password).then(cred => {
-                    console.log('User signed up!');
-                });
+            </div>
+        </div>
+    </div>
+
+    <!-- for the authentication functions (SIGN UP)-->
+    <script>
+        const signUpBtn = document.querySelector('#signUpButton');
+        signUpBtn.addEventListener('click', e => {
+            e.preventDefault();
+
+            const email = document.querySelector('#emailSignUp').value;
+            const password = document.querySelector('#passwordSignUp').value;
+
+            auth.createUserWithEmailAndPassword(email, password).then(cred => {
+                console.log('User signed up!');
             });
-        </script>
+        });
+    </script>
 
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = scrollShowNav;
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = scrollShowNav;
 
-            function scrollShowNav() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementsByTagName("header")[0].style.top = "0px";
-                    document.getElementsByTagName("label")[0].style.opacity = 1;
-                } else {
-                    document.getElementsByTagName("header")[0].style.top = "-58px";
-                    document.getElementsByTagName("label")[0].style.opacity = 0;
-                }
-                prevScrollpos = currentScrollPos;
+        function scrollShowNav() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByTagName("header")[0].style.top = "0px";
+                document.getElementsByTagName("label")[0].style.opacity = 1;
+            } else {
+                document.getElementsByTagName("header")[0].style.top = "-58px";
+                document.getElementsByTagName("label")[0].style.opacity = 0;
             }
-        </script>
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
-                <script>
-            // $("logout-profile").css("display", "none");
-            firebase.auth().onAuthStateChanged(firebaseUser => {
-                if(firebaseUser){
-                    // console.log(firebaseUser);
-                    // $("login-signup").css("display", "none");
-                    // $("logout-profile").css("display", "block");
-                    document.getElementById("login-signup").style.display = "none";
-                    document.getElementById("logout-profile").style.display = "block";
-                }else{
-                    document.getElementById("login-signup").style.display = "block";
-                    document.getElementById("logout-profile").style.display = "none";
-                }
-            })
+            <script>
+        // $("logout-profile").css("display", "none");
+        firebase.auth().onAuthStateChanged(firebaseUser => {
+            if(firebaseUser){
+                // console.log(firebaseUser);
+                // $("login-signup").css("display", "none");
+                // $("logout-profile").css("display", "block");
+                document.getElementById("login-signup").style.display = "none";
+                document.getElementById("logout-profile").style.display = "block";
+            }else{
+                document.getElementById("login-signup").style.display = "block";
+                document.getElementById("logout-profile").style.display = "none";
+            }
+        })
 
-        </script>
+    </script>
+    <div id="progress-indicator"></div>
 </header>
 
 </html>
