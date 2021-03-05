@@ -228,9 +228,11 @@
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementsByTagName("header")[0].style.top = "0px";
+                document.getElementById('progress-indicator').style.marginTop = "70px";
                 document.getElementsByTagName("label")[0].style.opacity = 1;
             } else {
                 document.getElementsByTagName("header")[0].style.top = "-58px";
+                document.getElementById('progress-indicator').style.marginTop = "12px";
                 document.getElementsByTagName("label")[0].style.opacity = 0;
             }
             prevScrollpos = currentScrollPos;

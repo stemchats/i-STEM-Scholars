@@ -825,8 +825,11 @@ header .scrollspy-example {
   width: 100%;
   height: 7px;
   top: 0;
+  left: 0;
   z-index: 100;
-  margin-top: 12px;
+  margin-top: 70px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .toolbox .fixed-nav nav {
