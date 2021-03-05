@@ -66,48 +66,48 @@
 <!-- <script>
     var pageURL = localStorage.getItem("page");
 </script> -->
+
 <body class="toolbox" data-spy="scroll">
     <!-- HEADER -->
     <div id="header"></div>
+
     <!-- CONTENT -->
     <script>
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-    <div class="container-fluid" data-spy="scroll">
+       <div class="container-fluid" data-spy="scroll">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
                     <!-- <p><a href="/toolbox/index.html">Toolbox </a>><a href="/toolbox/vsl/"> VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel Electrophoresis</p> -->
-                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel
-                        Electrophoresis</p>
+                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gram Staining</p>
                     <!-- <h3>Table of Contents/Directory (Scrollable)</h3> -->
                     <!-- nav starts here -->
                     <nav id="navbar" class="navbar bg-light">
                         <nav class="nav nav-pills flex-column">
-                            <h4 class="my-2">Gel Electrophoresis</h4>
+                            <h4 class="my-1">Gram Staining</h4>
                             <a class="nav-link my-1" href="#background">Background</a>
-                            <a class="nav-link my-1" href="#how">How it Works</a>
                             <a class="nav-link my-1" href="#simulation">Simulation</a>
+                            <a class="nav-link my-1" href="#video">Video</a>
                             <a class="nav-link my-1" href="#quiz">Quiz Yourself</a>
-                            <!-- <a class="nav-link my-1" href="#app-simulation">Application
-                                Based-Simulation</a> -->
                             <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
                         <div class="row center previous-next">
-                            <!-- <button type="button" class="btn green-btn previous-btn">Previous Lesson</button> -->
-                            <button type="button" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';"
-                                class="btn green-btn next-btn">Fluorescent Proteins  &#8250;&#8250;</button>
-
-                                <!-- <a href="#" class="previous round">&#8249;  Culturing Bacteria</a>
-                                <a href="#" class="next round">Fluorescent Proteins &#8250;</a> -->
+                            <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249; Fluorescent Proteins</button>
+                            <button type="button" onclick="window.location.href='/toolbox/vsl/biology/culturing-bacteria.html';"
+                            class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
+                            <!-- <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" -->
+                                <!-- class="btn green-btn next-btn">Next Lesson</button> -->
                         </div>
                     </nav>
                     <!-- end of navbar -->
                 </div>
             </div>
             <div class="col-lg-8 offset-lg-1" id="content">
-                <h1 class="center">Gel Electrophoresis</h1>
+                <h1 class="center">Gram Staining)</h1>
+
+
 
                 <div class="row">
                     <div class="col">
@@ -115,43 +115,65 @@
                     </div>
                 </div>
                 <h3 class="center">Welcome Student Scientist!</h3>
-                <p>This lesson will take a look into a biology lab technique called <b>gel electrophoresis</b>.
-                    By the end of this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take this introductory knowledge with you in your future research endeavors.
-                    </p>
+                <p>This lesson will take a look into a biology lab technique called <b>gram staining</b>. By the end of this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take this introductory knowledge with you in your future research endeavors.
+                </p>
                 <!-- <p class="center">The Page Content Goes Here</p> -->
                 <div id="lesson" data-spy="scroll" data-target="#navbar" data-offset="0">
                     <!-- content div here -->
 
                 </div>
+                <div class="sources">
+                    <div class="sources">
+                        <h3 class="small-box-title">Sources</h3>
+
+                        <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.</p>
+
+                        <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR, and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.</p>
+
+                        <p class="source">“RT-PCR Diagram.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+
+                        <p class="source">“RT-PCR: Reverse Transcription PCR.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+
+                        <p class="source">“What Is PCR (Polymerase Chain Reaction)?” Facts, The Public Engagement Team at the Wellcome Genome Campus, 25 Jan. 2016, <a href="www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.">www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.</a></p>
+                    </div>
+                </div>
             </div>
             <div class="row center previous-next mobile">
-                <!-- <button type="button" class="btn green-btn previous-btn">Previous Lesson</button> -->
-                <button type="button" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';"
-                    class="btn green-btn next-btn">Fluorescent Proteins  &#8250;&#8250;</button>
-
-                    <!-- <a href="#" class="previous round">&#8249;  Culturing Bacteria</a>
-                    <a href="#" class="next round">Fluorescent Proteins &#8250;</a> -->
+                <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249; Fluorescent Proteins</button>
+                <button type="button" onclick="window.location.href='/toolbox/vsl/biology/culturing-bacteria.html';"
+                class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
+                <!-- <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" -->
+                    <!-- class="btn green-btn next-btn">Next Lesson</button> -->
             </div>
 
+        </div>
+    </div>
+            <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
+            <!-- <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
+                <div class="scrollable-items">
+                    <h3>Other Topics in Series (Scrollable)</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Video 1</li>
+                        <li class="list-group-item">Article 1</li>
+                        <li class="list-group-item">Article 2</li>
+                        <li class="list-group-item">Video 2</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
+                    </ul>
+                </div>
+            </div> -->
         </div>
     </div>
 
     <!-- footer -->
     <div id="footer"></div>
-    <script>
-      //scroll indicator
-      document.addEventListener(
-        "scroll",
-        function() {
-          const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
-          const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
-          scrollPercent = scrollTop / scrollBottom * 100 + "%";
-          console.log(document.getElementById("progress-indicator"))
-          document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
-        },
-        { passive: true }
-      );
-    </script>
+
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -181,11 +203,8 @@
     </script>
     <script type="text/javascript" src="/scripts/script.js"></script>
     <script>
-
-    </script>
-    <script>
-        const sections = ["background", "how-it-works", "bg-simulation", "quiz", "research"];
-        loadLesson("biology", "gel-electro"); //loadLesson("subject", "lesson")
+        const sections = ["background", "simulation", "video", "quiz", "research"];
+        loadLesson("biology", "gram-staining"); //loadLesson("subject", "lesson")
     </script>
 </body>
 
