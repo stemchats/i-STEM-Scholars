@@ -107,6 +107,25 @@ button {
     }
 }
 
+.btn-primary {
+    font-size: 20px;
+    color: white;
+    padding: 0.3em 1.7em;
+    margin-bottom: 1em;
+    border: 1px solid rgba($color: $light-blue, $alpha: 0.0);
+    border-radius: 10px;
+    background: linear-gradient(to right, $light-blue 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all 0.5s ease;
+
+    &:hover {
+        border: 1px solid $light-blue;
+        color: $light-blue;
+        background-position: right bottom;
+    }
+}
+
 .login-btn {
     margin-right: 0;
 }
