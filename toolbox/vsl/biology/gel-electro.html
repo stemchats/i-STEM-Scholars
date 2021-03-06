@@ -66,7 +66,7 @@
 <!-- <script>
     var pageURL = localStorage.getItem("page");
 </script> -->
-<body class="toolbox" data-spy="scroll">
+<body class="toolbox" data-spy="scroll" data-target="#navbar" data-offset="100">
     <!-- HEADER -->
     <div id="header"></div>
     <!-- CONTENT -->
@@ -74,7 +74,7 @@
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-    <div class="container-fluid" data-spy="scroll">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
@@ -87,8 +87,8 @@
                         <nav class="nav nav-pills flex-column">
                             <h4 class="my-2">Gel Electrophoresis</h4>
                             <a class="nav-link my-1" href="#background">Background</a>
-                            <a class="nav-link my-1" href="#how">How it Works</a>
                             <a class="nav-link my-1" href="#simulation">Simulation</a>
+                            <a class="nav-link my-1" href="#video">Video</a>
                             <a class="nav-link my-1" href="#quiz">Quiz Yourself</a>
                             <!-- <a class="nav-link my-1" href="#app-simulation">Application
                                 Based-Simulation</a> -->
@@ -114,12 +114,22 @@
                         <img src="/images/home_research.svg" alt="Research Image" class="subj-img">
                     </div>
                 </div>
-                <h3 class="center">Welcome Student Scientist!</h3>
-                <p>This lesson will take a look into a biology lab technique called <b>gel electrophoresis</b>.
-                    By the end of this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take this introductory knowledge with you in your future research endeavors.
-                    </p>
                 <!-- <p class="center">The Page Content Goes Here</p> -->
-                <div id="lesson" data-spy="scroll" data-target="#navbar" data-offset="0">
+                <div id="lesson">
+                    <h3 class="center">Welcome Student Scientist!</h3>
+                    <p>This lesson will take a look into a biology lab technique called <b>gel electrophoresis</b>.
+                        By the end of this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take this introductory knowledge with you in your future research endeavors.
+                        </p>
+                    <p><b>This lesson includes:</b></p>
+                    <ol>
+                        <li><em><b><a href="#background">Background</a></b>: Gel Electrophoresis</em></li>
+                        <li><em><b><a href="#simulation">Simulation</a></b>: Gel Electrophoresis</em></li>
+                        <li><em><b><a href="#video">Video</a></b>: Watch scientists perform gel electrophoresis in a lab</em></li>
+                        <li><em><b><a href="#quiz">Quiz Yourself</a></b>: Gauge your understanding of the material</em></li>
+                        <li><em><b><a href="#research">A Reach into Research</a></b>: How UC Berkeley scientists use gel electrophoresis in their research about CRISPR-Cas 9, bacterial immunity, and gene editing.</em></li>
+                    </ol>
+                    <img src="/images/lessons/biology/gel-electro/uvlight.png" alt="Gel electrophoresis graphic under UV light.">
+                    <p class="caption">(<a href="https://www.yourgenome.org/facts/what-is-gel-electrophoresis" target="_blank">Image A</a>: Gel electrophoresis graphic under UV light.)</p>
                     <!-- content div here -->
 
                 </div>
@@ -184,7 +194,7 @@
 
     </script>
     <script>
-        const sections = ["background", "how-it-works", "bg-simulation", "quiz", "research"];
+        const sections = ["background", "bg-simulation", "video", "quiz", "research"];
         loadLesson("biology", "gel-electro"); //loadLesson("subject", "lesson")
     </script>
 </body>

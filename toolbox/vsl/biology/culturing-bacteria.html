@@ -67,7 +67,7 @@
     var pageURL = localStorage.getItem("page");
 </script> -->
 
-<body class="toolbox" data-spy="scroll">
+<body class="toolbox" data-spy="scroll" data-target="#navbar" data-offset="100">
     <!-- HEADER -->
     <div id="header"></div>
 
@@ -76,7 +76,7 @@
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-    <div class="container-fluid" data-spy="scroll">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
@@ -89,7 +89,7 @@
                             <h4 class="my-1">Culturing Bacteria</h4>
                             <a class="nav-link my-1" href="#background">Background</a>
                             <a class="nav-link my-1" href="#simulation">Simulation</a>
-                            <a class="nav-link my-1" href="#videos">Videos</a>
+                            <a class="nav-link my-1" href="#video">Videos</a>
                             <a class="nav-link my-1" href="#quiz">Quiz Yourself</a>
                             <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
@@ -110,11 +110,23 @@
                         <img src="/images/home_research.svg" alt="Research Image" class="subj-img">
                     </div>
                 </div>
-                <h3 class="center">Welcome Student Scientist!</h3>
-                <p>This lesson will take a look into a biology lab technique called <b>culturing bacteria</b>. By the end of this lesson, our goal for you is to become more familiar with this lab skill, in hopes that you take this introductory knowledge with you in your future research endeavors.
-                </p>
                 <!-- <p class="center">The Page Content Goes Here</p> -->
-                <div id="lesson" data-spy="scroll" data-target="#navbar" data-offset="0">
+                <div id="lesson">
+                    <h3 class="center">Welcome Student Scientist!</h3>
+                    <p>This lesson will take a look into a biology lab technique called <b>culturing bacteria</b>. By the end of this lesson, our goal for you is to become more familiar with this lab skill, in hopes that you take this introductory knowledge with you in your future research endeavors.
+                    </p>
+                    <br/>
+                    <p><b>This lesson includes:</b></p>
+                    <ol>
+                        <li><em><b><a href="#background">Background</a></b>: Culturing Bacteria</em></li>
+                        <li><em><b><a href="#simulation">Simulation</a></b>: Streak Plate Test</em></li>
+                        <li><em><b><a href="#video">Videos</a></b>: Watch a series of videos covering bacteria culture techniques</em></li>
+                        <li><em><b><a href="#quiz">Quiz Yourself</a></b>: Gauge your understanding of bacterial culturing techniques</em></li>
+                        <li><em><b><a href="#research">A Reach into Research</a></b>: Antibiotic Resistance and Biofilms</em></li>
+                    </ol>
+                    <img src="/images/lessons/biology/culturing/bacteria.png" alt="Fluorescent Proteins.">
+                    <!-- <p class="caption">(<a href="https://mappingignorance.org/2014/12/10/use-natural-fluorescent-proteins-studying-life/" target="_blank">Image A</a>: Fluorescent Proteins.)</p> -->
+
                     <!-- content div here -->
 
                 </div>

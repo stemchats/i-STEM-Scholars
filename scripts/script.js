@@ -74,7 +74,9 @@ const elements = {
 		video.setAttribute('frameborder', "0");
 		video.setAttribute('allowfullscreen', "");
 		video.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-		video.src = this.content.link;
+		video.src = this.content.link; //MAKE SURE URL IS IN FORM "https://www.youtube.com/watch?v=VIDEO_ID"
+		var replaceIndex = video.src.indexOf("watch?v=");
+		video.src = video.src.substring(0, replaceIndex) + "embed/" + video.src.substring(replaceIndex+8);
 		yt.appendChild(video);
 		lessonSection.appendChild(yt);
     },
