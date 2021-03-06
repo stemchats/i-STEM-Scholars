@@ -142,7 +142,19 @@
 
     <!-- footer -->
     <div id="footer"></div>
-
+    <script>
+      //scroll indicator
+      document.addEventListener(
+        "scroll",
+        function() {
+          const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+          const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
+          scrollPercent = scrollTop / scrollBottom * 100 + "%";
+          document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
+        },
+        { passive: true }
+      );
+    </script>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
