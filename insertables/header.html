@@ -242,20 +242,20 @@
         }
     </script>
 
-            <script>
-        // $("logout-profile").css("display", "none");
-        firebase.auth().onAuthStateChanged(firebaseUser => {
-            if(firebaseUser){
-                // console.log(firebaseUser);
-                // $("login-signup").css("display", "none");
-                // $("logout-profile").css("display", "block");
-                document.getElementById("login-signup").style.display = "none";
-                document.getElementById("logout-profile").style.display = "block";
-            }else{
-                document.getElementById("login-signup").style.display = "block";
-                document.getElementById("logout-profile").style.display = "none";
-            }
-        })
+    <script>
+    // $("logout-profile").css("display", "none");
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if(firebaseUser){
+            // console.log(firebaseUser);
+            // $("login-signup").css("display", "none");
+            // $("logout-profile").css("display", "block");
+            document.getElementById("login-signup").style.display = "none";
+            document.getElementById("logout-profile").style.display = "block";
+        }else{
+            document.getElementById("login-signup").style.display = "block";
+            document.getElementById("logout-profile").style.display = "none";
+        }
+    })
 
     </script>
     <div id="progress-indicator"></div>
