@@ -231,12 +231,24 @@
             var menu = document.getElementsByTagName("label")[0];
             if (prevScrollpos > currentScrollPos) {
                 header.style.top = "0px";
-                prog.style.marginTop = "70px";
                 menu.style.opacity = 1;
+
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    prog.style.marginTop = "59px";
+                }
+                else {
+                    prog.style.marginTop = "70px";
+                }
             } else {
                 header.style.top = "-58px";
-                prog.style.marginTop = "12px";
                 menu.style.opacity = 0;
+
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    prog.style.marginTop = "1px";
+                }
+                else {
+                    prog.style.marginTop = "12px";
+                }
             }
             prevScrollpos = currentScrollPos;
         }
