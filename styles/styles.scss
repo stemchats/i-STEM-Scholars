@@ -915,6 +915,10 @@ header {
 #lesson {
     min-height: 100vh;
 
+    a {
+        border-bottom: 1px solid $light-blue;
+    }
+
     h4 {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: bold;
@@ -979,6 +983,10 @@ header {
 }
 
 .sources {
+    a {
+        border-bottom: 1px solid $light-blue;
+    }
+    
     .source {
         padding-left: 36px;
         text-indent: -36px;
