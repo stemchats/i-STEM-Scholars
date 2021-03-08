@@ -228,15 +228,6 @@ button {
     text-align: center;
 }
 
-.hashtag::before { //add .hashtag to all in-page anchor links
-    display: block;
-    content: " ";
-    margin-top: -90px;
-    height: 90px;
-    visibility: hidden;
-    pointer-events: none;
-}
-
 .small-box-title { //h3
     margin-top: 3rem;
     font-size: 28px;

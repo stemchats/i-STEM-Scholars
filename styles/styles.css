@@ -209,15 +209,6 @@ button:hover {
   text-align: center;
 }
 
-.hashtag::before {
-  display: block;
-  content: " ";
-  margin-top: -90px;
-  height: 90px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .small-box-title {
   margin-top: 3rem;
   font-size: 28px;
