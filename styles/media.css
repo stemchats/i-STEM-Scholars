@@ -109,6 +109,9 @@
   #navbar {
     display: none;
   }
+  .includes, .previous-next.mobile {
+    display: block;
+  }
   .offset-sm-2 {
     padding: 0 1.5rem;
   }

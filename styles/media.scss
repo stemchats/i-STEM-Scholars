@@ -143,6 +143,10 @@ $light-grey : #f8f8f8;
         display: none;
     }
 
+    .includes, .previous-next.mobile {
+        display: block;
+    }
+
     .offset-sm-2 {
         padding: 0 1.5rem;
     }
@@ -167,7 +171,7 @@ $light-grey : #f8f8f8;
             }
         }
     }
-    
+
     iframe {
         width: 100%;
     }

@@ -1001,6 +1001,10 @@ header .scrollspy-example {
   text-indent: -36px;
 }
 
+.includes, .previous-next.mobile {
+  display: none;
+}
+
 footer {
   padding-bottom: 4rem;
   padding-top: 2rem;
