@@ -86,7 +86,7 @@
     <div id="header"></div>
 
         <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
+        <!-- <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
@@ -97,9 +97,9 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body"> -->
                         <!-- form -->
-                        <form>
+                        <!-- <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="email"
@@ -111,9 +111,8 @@
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="password"
                                     placeholder="Password">
-                            </div>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                        </form>
+                            </div> -->
+                        <!-- </form>
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary" data-dismiss="modal" id="signUp">Sign
@@ -123,7 +122,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- for the authentication functions -->
         <!-- <script>
@@ -312,6 +311,8 @@
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        //moved to script.js
         var firebaseConfig = {
             apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
             authDomain: "i-stem-scholars.firebaseapp.com",
@@ -325,12 +326,8 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         //firebase.analytics();
-        const auth = firebase.auth();
+        //const auth = firebase.auth();
         const db = firebase.firestore();
-        const realtime_db = firebase.database();
-
-
-
     </script>
 
     <!-- Bootstrap Javascript -->
