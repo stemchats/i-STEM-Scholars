@@ -9,42 +9,30 @@
 
 @media screen and (max-width: 1410px) {
   header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
+    flex-direction: column;
     height: max-content;
     overflow: hidden;
     padding: 1rem 1.5rem 0;
   }
   header .logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
   header #menu-icon + label {
     display: block;
     position: fixed;
     right: 2rem;
     top: 35px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
-    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   header ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: relative;
     opacity: 0;
     height: 0;
     margin-top: -15px;
-    -webkit-transition: 0.35s;
     transition: 0.35s;
     padding: 0;
     margin-left: auto;
@@ -88,8 +76,6 @@
     margin: 0 auto 4rem auto;
   }
   .home section {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   .home .arrow {
@@ -133,6 +119,9 @@
   iframe {
     width: 100%;
   }
+  #curator {
+    padding: 40px 1.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -143,5 +132,7 @@
   .previous-next.mobile button {
     font-size: 18px;
   }
+  #curator {
+    padding: 20px 1.5rem;
+  }
 }
-/*# sourceMappingURL=media.css.map */
