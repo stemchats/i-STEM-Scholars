@@ -42,11 +42,14 @@
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-399S7QGWJQ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-399S7QGWJQ');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-399S7QGWJQ');
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -76,7 +79,7 @@
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-       <div class="container-fluid" data-spy="scroll">
+    <div class="container-fluid" data-spy="scroll">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
@@ -94,11 +97,14 @@
                             <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
                         <div class="row center previous-next">
-                            <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249; Fluorescent Proteins</button>
-                            <button type="button" onclick="window.location.href='/toolbox/vsl/biology/culturing-bacteria.html';"
-                            class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
+                            <button type="button" class="btn green-btn previous-btn"
+                                onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249;
+                                Fluorescent Proteins</button>
+                            <button type="button"
+                                onclick="window.location.href='/toolbox/vsl/biology/culturing-bacteria.html';"
+                                class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
                             <!-- <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" -->
-                                <!-- class="btn green-btn next-btn">Next Lesson</button> -->
+                            <!-- class="btn green-btn next-btn">Next Lesson</button> -->
                         </div>
                     </nav>
                     <!-- end of navbar -->
@@ -115,7 +121,9 @@
                     </div>
                 </div>
                 <h3 class="center">Welcome Student Scientist!</h3>
-                <p>This lesson will take a look into a biology lab technique called <b>gram staining</b>. By the end of this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take this introductory knowledge with you in your future research endeavors.
+                <p>This lesson will take a look into a biology lab technique called <b>gram staining</b>. By the end of
+                    this lesson, our goal for you is to become more familiar with this lab skill in hopes that you take
+                    this introductory knowledge with you in your future research endeavors.
                 </p>
                 <!-- <p class="center">The Page Content Goes Here</p> -->
                 <div id="lesson" data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -126,65 +134,59 @@
                     <div class="sources">
                         <h3 class="small-box-title">Sources</h3>
 
-                        <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.</p>
+                        <p class="source">Goldberg, Alexander. “PCR Diagram.” LABTAG, 2019, <a
+                                href="https://blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/">blog.labtag.com/a-brief-history-of-pcr-and-its-derivatives/</a>.
+                        </p>
 
-                        <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR, and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.</p>
+                        <p class="source">Neidler, Sarah. “TechNote: What Are the Differences between PCR, RT-PCR, QPCR,
+                            and RT-QPCR?” Enzo Life Sciences, 2 July 2020, <a
+                                href="http://www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F.">www.enzolifesciences.com/science-center/technotes/2017/march/what-are-the-differences-between-pcr-rt-pcr-qpcr-and-rt-qpcr?%2F</a>.
+                        </p>
 
-                        <p class="source">“RT-PCR Diagram.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+                        <p class="source">“RT-PCR Diagram.” Millipore Sigma, 2020, <a
+                                href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a>
+                        </p>
 
-                        <p class="source">“RT-PCR: Reverse Transcription PCR.” Millipore Sigma, 2020, <a href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a></p>
+                        <p class="source">“RT-PCR: Reverse Transcription PCR.” Millipore Sigma, 2020, <a
+                                href="http://www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.">www.sigmaaldrich.com/life-science/molecular-biology/pcr/rt-pcr.html.</a>
+                        </p>
 
-                        <p class="source">“What Is PCR (Polymerase Chain Reaction)?” Facts, The Public Engagement Team at the Wellcome Genome Campus, 25 Jan. 2016, <a href="www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.">www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.</a></p>
+                        <p class="source">“What Is PCR (Polymerase Chain Reaction)?” Facts, The Public Engagement Team
+                            at the Wellcome Genome Campus, 25 Jan. 2016, <a
+                                href="www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.">www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction.</a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row center previous-next mobile">
-                <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249; Fluorescent Proteins</button>
+                <button type="button" class="btn green-btn previous-btn"
+                    onclick="window.location.href='/toolbox/vsl/biology/fluorescent-proteins.html';">&#8249;&#8249;
+                    Fluorescent Proteins</button>
                 <button type="button" onclick="window.location.href='/toolbox/vsl/biology/culturing-bacteria.html';"
-                class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
+                    class="btn green-btn next-btn">Culturing Bacteria &#8250;&#8250;</button>
                 <!-- <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';" -->
-                    <!-- class="btn green-btn next-btn">Next Lesson</button> -->
+                <!-- class="btn green-btn next-btn">Next Lesson</button> -->
             </div>
 
-        </div>
-    </div>
-            <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
-            <!-- <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
-                <div class="scrollable-items">
-                    <h3>Other Topics in Series (Scrollable)</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Video 1</li>
-                        <li class="list-group-item">Article 1</li>
-                        <li class="list-group-item">Article 2</li>
-                        <li class="list-group-item">Video 2</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </div>
 
     <!-- footer -->
     <div id="footer"></div>
     <script>
-      //scroll indicator
-      document.addEventListener(
-        "scroll",
-        function() {
-          const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
-          const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
-          scrollPercent = scrollTop / scrollBottom * 100 + "%";
-          document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
-        },
-        { passive: true }
-      );
+        //scroll indicator
+        document.addEventListener(
+            "scroll",
+            function () {
+                const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+                const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) -
+                    document.documentElement.clientHeight;
+                scrollPercent = scrollTop / scrollBottom * 100 + "%";
+                document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
+            }, {
+                passive: true
+            }
+        );
     </script>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

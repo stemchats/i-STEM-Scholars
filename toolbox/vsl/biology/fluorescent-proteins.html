@@ -42,11 +42,14 @@
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-399S7QGWJQ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-399S7QGWJQ');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-399S7QGWJQ');
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -76,12 +79,13 @@
         //for the count variable that will be used for the previous button function
         var count = -1;
     </script>
-       <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 sticky-top one fixed-nav">
                 <div class="row">
                     <!-- <p><a href="/toolbox/index.html">Toolbox </a>><a href="/toolbox/vsl/"> VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Gel Electrophoresis</p> -->
-                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Fluorescent Proteins</p>
+                    <p><a href="/toolbox/vsl/">VSL</a> > <a href="/toolbox/vsl/biology/">Biology</a> > Fluorescent
+                        Proteins</p>
                     <!-- <h3>Table of Contents/Directory (Scrollable)</h3> -->
                     <!-- nav starts here -->
                     <nav id="navbar" class="navbar bg-light">
@@ -94,7 +98,9 @@
                             <a class="nav-link my-1" href="#research">A Reach into Research</a>
                         </nav>
                         <div class="row center previous-next">
-                            <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';">&#8249;&#8249;  Gel Electro</button>
+                            <button type="button" class="btn green-btn previous-btn"
+                                onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';">&#8249;&#8249;
+                                Gel Electro</button>
                             <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';"
                                 class="btn green-btn next-btn">PCR &#8250;&#8250;</button>
                         </div>
@@ -113,19 +119,26 @@
                 <!-- <p class="center">The Page Content Goes Here</p> -->
                 <div id="lesson">
                     <h3 class="center">Welcome Student Scientist!</h3>
-                    <p>This lesson will take a look into a biology lab technique called <b>fluorescent proteins</b>. By the end of this lesson, our goal for you is to become more familiar with this lab skill, in hopes that you take this introductory knowledge with you in your future research endeavors.</p>
-                    <div class="includes">
+                    <p>This lesson will take a look into a biology lab technique called <b>fluorescent proteins</b>. By
+                        the end of this lesson, our goal for you is to become more familiar with this lab skill, in
+                        hopes that you take this introductory knowledge with you in your future research endeavors.</p>
+                    <div class="mobile">
                         <p><b>This lesson includes:</b></p>
                         <ol>
                             <li><em><b><a href="#background">Background</a></b>: What is Fluorescence?</em></li>
-                            <li><em><b><a href="#simulation">Simulation</a></b>: Using Green Fluorescent Protein to Tag Gene Expression</em></li>
-                            <li><em><b><a href="#video">Video</a></b>: Watch scientists use fluorescent proteins in a lab</em></li>
-                            <li><em><b><a href="#quiz">Quiz Yourself</a></b>: Gauge your understanding of fluorescent proteins</em></li>
+                            <li><em><b><a href="#simulation">Simulation</a></b>: Using Green Fluorescent Protein to Tag
+                                    Gene Expression</em></li>
+                            <li><em><b><a href="#video">Video</a></b>: Watch scientists use fluorescent proteins in a
+                                    lab</em></li>
+                            <li><em><b><a href="#quiz">Quiz Yourself</a></b>: Gauge your understanding of fluorescent
+                                    proteins</em></li>
                             <li><em><b><a href="#research">A Reach into Research</a></b>: The Brainbow</em></li>
                         </ol>
                     </div>
                     <img src="/images/lessons/biology/fluorescent-proteins/Crayons.png" alt="Fluorescent Proteins.">
-                    <p class="caption">(<a href="https://mappingignorance.org/2014/12/10/use-natural-fluorescent-proteins-studying-life/" target="_blank">Image A</a>: Fluorescent Proteins.)</p>
+                    <p class="caption">(<a
+                            href="https://mappingignorance.org/2014/12/10/use-natural-fluorescent-proteins-studying-life/"
+                            target="_blank">Image A</a>: Fluorescent Proteins.)</p>
                     <!-- content div here -->
 
                 </div>
@@ -133,65 +146,63 @@
                     <div class="sources">
                         <h3 class="small-box-title">Sources</h3>
 
-                        <p class="source">“Bacterial DNA – the Role of Plasmids.” Science Learning Hub, <a href="www.sciencelearn.org.nz/resources/1900-bacterial-dna-the-role-of-plasmids.">www.sciencelearn.org.nz/resources/1900-bacterial-dna-the-role-of-plasmids.</a></p>
+                        <p class="source">“Bacterial DNA – the Role of Plasmids.” Science Learning Hub, <a
+                                href="www.sciencelearn.org.nz/resources/1900-bacterial-dna-the-role-of-plasmids.">www.sciencelearn.org.nz/resources/1900-bacterial-dna-the-role-of-plasmids.</a>
+                        </p>
 
-                        <p class="source">Bradt, Steve. “Researchers Create Colorful ‘Brainbow’ Images of the Nervous System.” Harvard Gazette, Harvard Gazette, 31 Oct. 2007, <a href="news.harvard.edu/gazette/story/2007/10/researchers-create-colorful-brainbow-images-of-the-nervous-system/. ">news.harvard.edu/gazette/story/2007/10/researchers-create-colorful-brainbow-images-of-the-nervous-system/.</a></p>
+                        <p class="source">Bradt, Steve. “Researchers Create Colorful ‘Brainbow’ Images of the Nervous
+                            System.” Harvard Gazette, Harvard Gazette, 31 Oct. 2007, <a
+                                href="news.harvard.edu/gazette/story/2007/10/researchers-create-colorful-brainbow-images-of-the-nervous-system/. ">news.harvard.edu/gazette/story/2007/10/researchers-create-colorful-brainbow-images-of-the-nervous-system/.</a>
+                        </p>
 
-                        <p class="source">Gearing, Mary. “Evolution of Brainbow: Using Cre-Lox for Multicolor Labeling of Neurons.” Addgene Blog, 24 Apr. 2015, <a href="blog.addgene.org/evolution-of-brainbow-using-cre-lox-for-multicolor-labeling-of-neurons. ">blog.addgene.org/evolution-of-brainbow-using-cre-lox-for-multicolor-labeling-of-neurons.</a></p>
+                        <p class="source">Gearing, Mary. “Evolution of Brainbow: Using Cre-Lox for Multicolor Labeling
+                            of Neurons.” Addgene Blog, 24 Apr. 2015, <a
+                                href="blog.addgene.org/evolution-of-brainbow-using-cre-lox-for-multicolor-labeling-of-neurons. ">blog.addgene.org/evolution-of-brainbow-using-cre-lox-for-multicolor-labeling-of-neurons.</a>
+                        </p>
 
-                        <p class="source">“Guerrero, Anna, "Jellyfish and Green Fluorescent Protein". Embryo Project Encyclopedia (2017-02-06). ISSN: 1940-5030, <a href="http://embryo.asu.edu/handle/10776/11400.">http://embryo.asu.edu/handle/10776/11400.</a></p>
+                        <p class="source">“Guerrero, Anna, "Jellyfish and Green Fluorescent Protein". Embryo Project
+                            Encyclopedia (2017-02-06). ISSN: 1940-5030, <a
+                                href="http://embryo.asu.edu/handle/10776/11400.">http://embryo.asu.edu/handle/10776/11400.</a>
+                        </p>
 
-                        <p class="source">“Juchheim, A Max. “Plasmids 101: Cre-Lox.” Addgene Blog, 13 Jan. 2015, <a href="blog.addgene.org/plasmids-101-cre-lox. ">blog.addgene.org/plasmids-101-cre-lox. </a></p>
+                        <p class="source">“Juchheim, A Max. “Plasmids 101: Cre-Lox.” Addgene Blog, 13 Jan. 2015, <a
+                                href="blog.addgene.org/plasmids-101-cre-lox. ">blog.addgene.org/plasmids-101-cre-lox.
+                            </a></p>
 
-                        <p class="source">“Piston, David W., et al. “Introduction to Fluorescent Proteins.” Nikon's MicroscopyU, Nikon, <a href="www.microscopyu.com/techniques/fluorescence/introduction-to-fluorescent-proteins.">www.microscopyu.com/techniques/fluorescence/introduction-to-fluorescent-proteins.</a></p>
+                        <p class="source">“Piston, David W., et al. “Introduction to Fluorescent Proteins.” Nikon's
+                            MicroscopyU, Nikon, <a
+                                href="www.microscopyu.com/techniques/fluorescence/introduction-to-fluorescent-proteins.">www.microscopyu.com/techniques/fluorescence/introduction-to-fluorescent-proteins.</a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row center previous-next mobile">
-                <button type="button" class="btn green-btn previous-btn" onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';">&#8249;&#8249;  Gel Electro</button>
+                <button type="button" class="btn green-btn previous-btn"
+                    onclick="window.location.href='/toolbox/vsl/biology/gel-electro.html';">&#8249;&#8249; Gel
+                    Electro</button>
                 <button type="button" onclick="window.location.href='/toolbox/vsl/biology/pcr.html';"
                     class="btn green-btn next-btn">PCR &#8250;&#8250;</button>
             </div>
 
         </div>
     </div>
-            <!-- THIS IS THE SCROLLABLE LIST IF WE EVER NEED IT -->
-            <!-- <div class="col-lg-2 fixed-top two fixed-nav offset-sm-8">
-                <div class="scrollable-items">
-                    <h3>Other Topics in Series (Scrollable)</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Video 1</li>
-                        <li class="list-group-item">Article 1</li>
-                        <li class="list-group-item">Article 2</li>
-                        <li class="list-group-item">Video 2</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                        <li class="list-group-item">Make these two sub-rows divide equally or else</li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
-    </div>
 
     <!-- footer -->
     <div id="footer"></div>
     <script>
-      //scroll indicator
-      document.addEventListener(
-        "scroll",
-        function() {
-          const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
-          const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
-          scrollPercent = scrollTop / scrollBottom * 100 + "%";
-          document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
-        },
-        { passive: true }
-      );
+        //scroll indicator
+        document.addEventListener(
+            "scroll",
+            function () {
+                const scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+                const scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) -
+                    document.documentElement.clientHeight;
+                scrollPercent = scrollTop / scrollBottom * 100 + "%";
+                document.getElementById("progress-indicator").style.setProperty("--scroll", scrollPercent);
+            }, {
+                passive: true
+            }
+        );
     </script>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

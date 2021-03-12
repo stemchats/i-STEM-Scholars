@@ -1,4 +1,4 @@
-const datab = firebase.firestore();
+const db = firebase.firestore();
 
 function setURL(the_id) {
     localStorage.setItem("page", "/toolbox/"+the_id) + "/";
@@ -104,7 +104,7 @@ const elements = {
 //
 // function loadLesson(lesson){
 //   for(var i = 0; i<sections.length; i++){ //how many sections the edition has, iterates through sections (below)
-//       datab.collection("editions").doc("edition" + edition).collection(sections[i]).get()
+//       db.collection("editions").doc("edition" + edition).collection(sections[i]).get()
 //         .then(querySnapshot => {
 //           querySnapshot.forEach(doc => {
 //             const data = doc.data(); //retrieves all the sections as 'objects'
@@ -138,7 +138,7 @@ const elements = {
 //         });
 //     };
 //   }
-const lessons = datab.collection("lessons");
+const lessons = db.collection("lessons");
 
 function loadLesson(subject, lesson) {
 	for (var i = 0; i<sections.length; i++) { //how many sections the edition has, iterates through sections (below)
@@ -187,10 +187,10 @@ function loadLesson(subject, lesson) {
 //FIREBASE REALTIME DATABASE FUNCTIONS
 
 
-// function writeUserData(first_name, last_name, email, password, birthday, imageUrl, realtime_datab) {
+// function writeUserData(first_name, last_name, email, password, birthday, imageUrl, realtime_db) {
 // //using email as tree structure for users because its a very unique identifier
-// //realtime_datab = firebase.database();
-// 	realtime_datab.ref('users/' + first_name + "-" + last_name).set({
+// //realtime_db = firebase.database();
+// 	realtime_db.ref('users/' + first_name + "-" + last_name).set({
 // 		first_name: first_name,
 // 		last_name: last_name,
 // 		email: email,

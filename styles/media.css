@@ -9,30 +9,42 @@
 
 @media screen and (max-width: 1410px) {
   header {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     overflow: hidden;
     padding: 1rem 1.5rem 0;
   }
   header .logo {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   header #menu-icon + label {
     display: block;
     position: fixed;
     right: 2rem;
     top: 35px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   header ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     opacity: 0;
     height: 0;
     margin-top: -15px;
+    -webkit-transition: 0.35s;
     transition: 0.35s;
     padding: 0;
     margin-left: auto;
@@ -76,6 +88,8 @@
     margin: 0 auto 4rem auto;
   }
   .home section {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
   .home .arrow {
@@ -95,7 +109,7 @@
   #navbar {
     display: none;
   }
-  .includes, .previous-next.mobile {
+  .mobile {
     display: block;
   }
   .offset-sm-2 {
@@ -136,3 +150,4 @@
     padding: 20px 1.5rem;
   }
 }
+/*# sourceMappingURL=media.css.map */
