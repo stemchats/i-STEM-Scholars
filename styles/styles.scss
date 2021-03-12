@@ -978,7 +978,7 @@ header {
     a {
         border-bottom: 1px solid $light-blue;
     }
-    
+
     .source {
         padding-left: 36px;
         text-indent: -36px;
@@ -990,7 +990,10 @@ header {
 }
 
 
-
+#curator {
+  position: relative;
+  padding: 60px;
+}
 
 footer {
     padding-bottom: 4rem;

@@ -1,9 +1,4 @@
-const auth = firebase.auth();
 const db = firebase.firestore();
-//const realtime_db = firebase.database();
-function goBack() {
-    window.history.back();
-}
 
 function setURL(the_id) {
     localStorage.setItem("page", "/toolbox/"+the_id) + "/";
@@ -11,10 +6,10 @@ function setURL(the_id) {
 function setName(the_id) {
     localStorage.setItem("name", the_id);
 }
-function signout(){
-    console.log("logged out user, stupid");
-    auth.signOut();
-}
+// function signout(){
+//     console.log("logged out user, stupid");
+//     auth.signOut();
+// }
 
 //Cloud Firestore Lesson pages
 
@@ -192,18 +187,18 @@ function loadLesson(subject, lesson) {
 //FIREBASE REALTIME DATABASE FUNCTIONS
 
 
-function writeUserData(first_name, last_name, email, password, birthday, imageUrl, realtime_db) {
-//using email as tree structure for users because its a very unique identifier
-//realtime_db = firebase.database();
-	realtime_db.ref('users/' + first_name + "-" + last_name).set({
-		first_name: first_name,
-		last_name: last_name,
-		email: email,
-		password: password,
-		birthday: birthday,
-		profile_picture : imageUrl
-	});
-}
+// function writeUserData(first_name, last_name, email, password, birthday, imageUrl, realtime_db) {
+// //using email as tree structure for users because its a very unique identifier
+// //realtime_db = firebase.database();
+// 	realtime_db.ref('users/' + first_name + "-" + last_name).set({
+// 		first_name: first_name,
+// 		last_name: last_name,
+// 		email: email,
+// 		password: password,
+// 		birthday: birthday,
+// 		profile_picture : imageUrl
+// 	});
+// }
 /*
 //AN ATTEMPT!
 //Login/Signup Required Fields

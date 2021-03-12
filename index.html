@@ -86,7 +86,7 @@
     <div id="header"></div>
 
         <!-- Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
+        <!-- <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
@@ -97,9 +97,9 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body"> -->
                         <!-- form -->
-                        <form>
+                        <!-- <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="email"
@@ -111,9 +111,8 @@
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="password"
                                     placeholder="Password">
-                            </div>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                        </form>
+                            </div> -->
+                        <!-- </form>
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary" data-dismiss="modal" id="signUp">Sign
@@ -123,7 +122,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- for the authentication functions -->
         <!-- <script>
@@ -274,14 +273,27 @@
             </div>
         </div>
 
+        <!-- Curator.io -->
+        <div id="curator">
+          <div id="curator-feed-i-stem-scholars-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+        </div>
+        
         <!-- footer -->
         <div id="footer"></div>
     </div>
 
         <!-- Scripts -->
+        <script type="text/javascript">
+        /* curator-feed-i-stem-scholars-layout */
+        (function(){
+        var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+        i.src = "https://cdn.curator.io/published/f899b50d-816a-4c14-85ae-664c144cc4e2.js";
+        e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+        </script>
         <script type="text/javascript" src="/scripts/script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
+        <script type="text/javascript">
             //initalize aos animation
             AOS.init({
               once:true
@@ -312,6 +324,8 @@
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        //moved to script.js
         var firebaseConfig = {
             apiKey: "AIzaSyDoJPoXgRcjkeRq0z4TEVQdgfm4USmdT0Y",
             authDomain: "i-stem-scholars.firebaseapp.com",
@@ -325,12 +339,8 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         //firebase.analytics();
-        const auth = firebase.auth();
+        //const auth = firebase.auth();
         const db = firebase.firestore();
-        const realtime_db = firebase.database();
-
-
-
     </script>
 
     <!-- Bootstrap Javascript -->
