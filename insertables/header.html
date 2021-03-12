@@ -229,7 +229,7 @@
             var header = document.getElementsByTagName("header")[0];
             var prog = document.getElementById('progress-indicator');
             var menu = document.getElementsByTagName("label")[0];
-            if (prevScrollpos > currentScrollPos) {
+            if (prevScrollpos > currentScrollPos || currentScrollPos == '0') {
                 header.style.top = "0px";
                 menu.style.opacity = 1;
 
