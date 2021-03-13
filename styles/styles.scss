@@ -46,12 +46,9 @@ $light-grey : #f8f8f8;
     }
 }
 
-html {
+html, body {
+    // overflow-y: scroll;
     scroll-behavior: smooth;
-}
-
-body {
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -424,13 +421,13 @@ blockquote {
         font-size: 36px;
         color: $light-blue;
     }
-    
+
     &::before {
         content: '\f10d';
         margin-top: -20px;
         margin-left: -30px;
     }
-    
+
     &::after {
         content: '\f10e';
         margin-top: -10px;
@@ -780,7 +777,7 @@ header {
 
 .toolbox {
     //display: flex;
-    
+
     .fixed-nav nav {
         width: 100%;
 
