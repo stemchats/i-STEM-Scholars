@@ -74,6 +74,9 @@
   header .login-btn {
     margin-right: 15px;
   }
+  .home .section-img {
+    margin: 0 auto 4rem !important;
+  }
 }
 
 @media screen and (max-width: 991px) {

@@ -87,7 +87,7 @@ button {
     }
 }
 
-.mobile { //doesnt show up until specified media query (in media.scss)
+.mobile { //doesnt show up until specified in media query
     display: none;
 }
 
@@ -467,8 +467,7 @@ header {
     transition: 0.3s;
     background-color: $dark-blue;
 
-    #menu-icon,
-    #menu-icon+label {
+    #menu-icon, #menu-icon + label {
         display: none;
         margin: 0;
     }
@@ -731,31 +730,6 @@ header {
     }
 }
 
-.fixed-nav {
-    .list-group-item {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-    }
-}
-
-.one {
-    top: 120px;
-    margin-left: 2rem;
-    left: 5%;
-    height: max-content;
-
-    &::after {
-        content: '';
-        position: absolute;
-        height: 550px;
-        width: 1px;
-        background-color: rgba($color: black, $alpha: 0.3);
-        right: -45px;
-        top: 0;
-        z-index: 100000;
-    }
-}
-
 
 
 
@@ -778,21 +752,38 @@ header {
 .toolbox {
     //display: flex;
 
-    .fixed-nav nav {
-        width: 100%;
+    .one {
+        margin-left: 2rem;
+        left: 5%;
+        height: max-content;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            height: 550px;
+            width: 1px;
+            background-color: rgba($color: black, $alpha: 0.3);
+            right: -45px;
+            top: 0;
+            z-index: 100000;
+        }
+        
+        nav {
+            width: 100%;
 
-        .nav-link {
-            color: black;
-            padding-top: 0;
-            padding-bottom: 0;
+            .nav-link {
+                color: black;
+                padding-top: 0;
+                padding-bottom: 0;
 
-            &:hover {
-                color: $light-blue;
-            }
+                &:hover {
+                    color: $light-blue;
+                }
 
-            &.active {
-                background-color: $light-blue;
-                color: white;
+                &.active {
+                    background-color: $light-blue;
+                    color: white;
+                }
             }
         }
     }
@@ -966,11 +957,7 @@ footer {
 
 @keyframes bounce {
 
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
+    0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
 
