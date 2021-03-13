@@ -1,4 +1,4 @@
-const db = firebase.firestore();
+var db = firebase.firestore();
 
 function setURL(the_id) {
     localStorage.setItem("page", "/toolbox/"+the_id) + "/";
@@ -13,9 +13,9 @@ function setName(the_id) {
 
 //Cloud Firestore Lesson pages
 
-const lessonSection = document.getElementById("lesson"); //section where the lesson will be rendered
+var lessonSection = document.getElementById("lesson"); //section where the lesson will be rendered
 
-const elements = {
+var elements = {
     image: function() { //uses map
 		const img = document.createElement("img");
 		img.src = this.content.link;
@@ -138,7 +138,7 @@ const elements = {
 //         });
 //     };
 //   }
-const lessons = db.collection("lessons");
+var lessons = db.collection("lessons");
 
 function loadLesson(subject, lesson) {
 	for (var i = 0; i<sections.length; i++) { //how many sections the edition has, iterates through sections (below)
