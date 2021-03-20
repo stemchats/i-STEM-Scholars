@@ -143,6 +143,20 @@
 
 @media screen and (max-width: 576px) {
   /* start of phone styles */
+  header .logo {
+    margin-left: -20px;
+  }
+  header .logo .logo-img {
+    margin-bottom: -25px;
+  }
+  header .logo .logo-text {
+    margin-bottom: 25px;
+  }
+  header .block .stemchats {
+    position: absolute;
+    margin-left: 35px;
+    bottom: 5px;
+  }
   .previous-next.mobile {
     display: block;
   }

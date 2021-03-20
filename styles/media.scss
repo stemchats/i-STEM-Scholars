@@ -190,6 +190,24 @@ $light-grey : #f8f8f8;
 
 @media screen and (max-width: 576px) {
     /* start of phone styles */
+    header {
+        .logo {
+            margin-left: -20px;
+            .logo-img {
+                margin-bottom: -25px;
+            }
+            .logo-text {
+                margin-bottom: 25px;
+            }
+        }
+
+        .block .stemchats {
+            position: absolute;
+            margin-left: 35px;
+            bottom: 5px;
+        }
+    }
+
     .previous-next.mobile {
         display: block;
 

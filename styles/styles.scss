@@ -456,6 +456,25 @@ blockquote {
 }
 
 
+
+/* HEADER */
+
+.stemchats {
+    color: #a2d3d9;
+    font-size: 14px;
+
+    .stemchats-link {
+        color: #ff5959;
+        border-bottom: 1px dashed #ccc;
+        transition: 0.2s;
+
+        &:hover {
+            color: #ff5959;
+            border-bottom: 1px dashed #ff5959;
+        }
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -474,6 +493,18 @@ header {
     #menu-icon, #menu-icon + label {
         display: none;
         margin: 0;
+    }
+
+    .block {
+        display: flex;
+        position: relative;
+
+        .stemchats {
+            margin-left: 10px;
+            margin-top: 12px;
+            margin-bottom: 0;
+            transition: opacity 0.3s;
+        }
     }
 
     a {

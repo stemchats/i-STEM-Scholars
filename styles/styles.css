@@ -436,6 +436,24 @@ blockquote::after {
   color: #4f9da6;
 }
 
+/* HEADER */
+.stemchats {
+  color: #a2d3d9;
+  font-size: 14px;
+}
+
+.stemchats .stemchats-link {
+  color: #ff5959;
+  border-bottom: 1px dashed #ccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.stemchats .stemchats-link:hover {
+  color: #ff5959;
+  border-bottom: 1px dashed #ff5959;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,6 +480,21 @@ header {
 header #menu-icon, header #menu-icon + label {
   display: none;
   margin: 0;
+}
+
+header .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+header .block .stemchats {
+  margin-left: 10px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 header a {
