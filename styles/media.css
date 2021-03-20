@@ -133,6 +133,9 @@
     font-size: 26px;
     margin: 0;
   }
+  header .block .stemchats {
+    margin-top: 9px;
+  }
   iframe {
     width: 100%;
   }
