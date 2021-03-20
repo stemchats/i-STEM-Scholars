@@ -826,6 +826,10 @@ header ul .dropdown {
   color: white;
 }
 
+.toolbox .sticky-top {
+  top: 120px;
+}
+
 .toolbox .col {
   margin-top: 20px;
 }

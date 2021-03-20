@@ -11,3 +11,11 @@ document.addEventListener(
         passive: true
     }
 );
+
+// fix sticky lesson navbar
+var html = document.documentElement;
+html.style.overflow = "unset";
+
+var body = document.body;
+body.style.overflowY = "scroll";
+body.style.scrollBehavior = "unset";
