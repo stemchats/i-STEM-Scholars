@@ -151,6 +151,10 @@ button:hover {
   padding: 1.5rem 1.25rem;
 }
 
+.card .card-body .involved-list {
+  padding: 14px 0px;
+}
+
 .card a {
   color: black;
 }
