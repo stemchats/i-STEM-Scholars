@@ -61,6 +61,7 @@
             </ul>
         </div> -->
     </ul>
+    <div id="progress-indicator"></div>
 
     <!-- Modal -->
 
@@ -232,25 +233,28 @@
             var header = document.getElementsByTagName("header")[0];
             var prog = document.getElementById('progress-indicator');
             var menu = document.getElementsByTagName("label")[0];
-            if (prevScrollpos > currentScrollPos || currentScrollPos == '0') {
-                header.style.top = "0px";
-                menu.style.opacity = 1;
+            var menu_check = document.getElementById("menu-icon");
+            if (!menu_check.checked) {
+                if (prevScrollpos > currentScrollPos || currentScrollPos == '0') {
+                    header.style.top = "0px";
+                    menu.style.opacity = 1;
 
-                if (window.matchMedia("(max-width: 767px)").matches) {
-                    prog.style.marginTop = "59px";
-                }
-                else {
-                    prog.style.marginTop = "70px";
-                }
-            } else {
-                header.style.top = "-58px";
-                menu.style.opacity = 0;
+                    if (window.matchMedia("(max-width: 767px)").matches) {
+                        prog.style.marginTop = "59px";
+                    }
+                    else {
+                        prog.style.marginTop = "70px";
+                    }
+                } else {
+                    header.style.top = "-58px";
+                    menu.style.opacity = 0;
 
-                if (window.matchMedia("(max-width: 767px)").matches) {
-                    prog.style.marginTop = "1px";
-                }
-                else {
-                    prog.style.marginTop = "12px";
+                    if (window.matchMedia("(max-width: 767px)").matches) {
+                        prog.style.marginTop = "1px";
+                    }
+                    else {
+                        prog.style.marginTop = "12px";
+                    }
                 }
             }
             prevScrollpos = currentScrollPos;
@@ -268,7 +272,6 @@
     //     }
     // })
     </script>
-    <div id="progress-indicator"></div>
 </header>
 
 </html>

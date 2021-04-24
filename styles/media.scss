@@ -91,6 +91,9 @@ $light-grey : #f8f8f8;
             opacity: 1;
             height: 140px;//with buttons: 240px;
         }
+        #menu-icon:checked ~ #progress-indicator {
+            opacity: 0;
+        }
 
         .login-btn {
             margin-right: 15px;
@@ -142,6 +145,7 @@ $light-grey : #f8f8f8;
 
         &.one {
             margin: 0 15px 30px;
+            top: unset;
         }
     }
 
@@ -151,6 +155,14 @@ $light-grey : #f8f8f8;
 
     .mobile {
         display: block;
+    }
+    
+    .previous-next.mobile {
+        display: block;
+
+        button {
+            font-size: 18px;
+        }
     }
 
     .offset-sm-2 {
@@ -212,13 +224,6 @@ $light-grey : #f8f8f8;
         }
     }
 
-    .previous-next.mobile {
-        display: block;
-
-        button {
-            font-size: 18px;
-        }
-    }
     #curator {
       padding: 20px 1.5rem;
     }

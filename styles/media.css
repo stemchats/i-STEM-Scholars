@@ -71,6 +71,9 @@
     opacity: 1;
     height: 140px;
   }
+  header #menu-icon:checked ~ #progress-indicator {
+    opacity: 0;
+  }
   header .login-btn {
     margin-right: 15px;
   }
@@ -108,12 +111,19 @@
   }
   .fixed-nav.one {
     margin: 0 15px 30px;
+    top: unset;
   }
   #navbar {
     display: none;
   }
   .mobile {
     display: block;
+  }
+  .previous-next.mobile {
+    display: block;
+  }
+  .previous-next.mobile button {
+    font-size: 18px;
   }
   .offset-sm-2 {
     padding: 0 1.5rem;
@@ -159,12 +169,6 @@
     position: absolute;
     margin-left: 35px;
     bottom: 5px;
-  }
-  .previous-next.mobile {
-    display: block;
-  }
-  .previous-next.mobile button {
-    font-size: 18px;
   }
   #curator {
     padding: 20px 1.5rem;
