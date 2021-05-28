@@ -154,15 +154,7 @@ $light-grey : #f8f8f8;
     }
 
     .mobile {
-        display: block;
-    }
-    
-    .previous-next.mobile {
-        display: block;
-
-        button {
-            font-size: 18px;
-        }
+        display: block !important;
     }
 
     .offset-sm-2 {

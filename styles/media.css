@@ -117,13 +117,7 @@
     display: none;
   }
   .mobile {
-    display: block;
-  }
-  .previous-next.mobile {
-    display: block;
-  }
-  .previous-next.mobile button {
-    font-size: 18px;
+    display: block !important;
   }
   .offset-sm-2 {
     padding: 0 1.5rem;

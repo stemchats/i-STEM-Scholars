@@ -19,3 +19,22 @@ html.style.overflow = "unset";
 var body = document.body;
 body.style.overflowY = "scroll";
 body.style.scrollBehavior = "unset";
+
+
+// to top button
+var topbtn = document.getElementById("totop-btn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topbtn.style.display = "block";
+    } else {
+        topbtn.style.display = "none";
+    }
+    console.log(document.body.scrollTop);
+}
+
+function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
