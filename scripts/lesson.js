@@ -22,7 +22,6 @@ body.style.scrollBehavior = "unset";
 
 
 // to top button
-// var topbtn = document.getElementById("totop-btn");
 var row = document.getElementsByClassName('container-fluid')[0].querySelector('.row');
 var topbtn = document.createElement('button');
 topbtn.classList = "btn yellow-btn mobile";
