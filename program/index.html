@@ -238,30 +238,30 @@
 
     <script>
         //Constant Slideshow Height
-				let maxHeight = 0;
-				let slideShow = document.querySelectorAll(".mySlides");
-				function getHeight(element) {
-				  let container = element.clientHeight + 200; // plus image add height
-        //   console.log(container)
-				  if(container > maxHeight) {
-				    maxHeight = container;
-				  }
-				}
-				function setHeight(element) {
-				  element.style.height = `${maxHeight}px`;
-				}
-				function getSlideShow() {
-					slideShow.forEach(getHeight);
-				}
-				function setSlideShow() {
-					slideShow.forEach(setHeight);
-				}
+        let maxHeight = 0;
+        let slideShow = document.querySelectorAll(".mySlides");
+        function getHeight(element) {
+            let container = element.clientHeight + 200; // plus image add height
+            //   console.log(container)
+            if(container > maxHeight) {
+                maxHeight = container;
+            }
+        }
+        function setHeight(element) {
+            element.style.height = `${maxHeight}px`;
+        }
+        function getSlideShow() {
+            slideShow.forEach(getHeight);
+        }
+        function setSlideShow() {
+            slideShow.forEach(setHeight);
+        }
 
-				window.onload = getSlideShow();
-				window.onload = setSlideShow();
-				window.onresize = function () {
-					location.reload();
-				};
+        window.onload = getSlideShow();
+        window.onload = setSlideShow();
+        window.onresize = function () {
+            location.reload();
+        };
 
         //Slideshow Arrows
         let slideIndex = 1;
