@@ -15,22 +15,6 @@ $light-grey : #f8f8f8;
 
 
 
-@media screen and (max-width: 1305px) {
-    header {
-        .logo {
-            .logo-text {
-                font-size: 28px;
-            }
-        }
-        ul {
-            li {
-                margin: 0 17px;
-            }
-        }
-    }
-}
-
-
 @media screen and (max-width: 1410px) { // header gets replaced by menu icon
     header {
         flex-direction: column;
@@ -103,6 +87,22 @@ $light-grey : #f8f8f8;
     .home {
         .section-img {
             margin: 0 auto 4rem !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1305px) {
+    header {
+        .logo {
+            .logo-text {
+                font-size: 28px;
+            }
+        }
+        ul {
+            li {
+                margin: 0 17px;
+            }
         }
     }
 }
@@ -191,6 +191,15 @@ $light-grey : #f8f8f8;
 
         .block .stemchats {
             margin-top: 9px;
+        }
+    }
+
+    //scroll indicator
+    #progress-indicator {
+        margin-top: 59px;
+
+        &.scrolled {
+            margin-top: 1px;
         }
     }
 

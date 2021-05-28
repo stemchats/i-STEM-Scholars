@@ -238,23 +238,25 @@
                 if (prevScrollpos > currentScrollPos || currentScrollPos == '0') {
                     header.style.top = "0px";
                     menu.style.opacity = 1;
+                    prog.classList.remove("scrolled");
 
-                    if (window.matchMedia("(max-width: 767px)").matches) {
+                    /* if (window.matchMedia("(max-width: 767px)").matches) {
                         prog.style.marginTop = "59px";
                     }
                     else {
                         prog.style.marginTop = "70px";
-                    }
+                    } */
                 } else {
                     header.style.top = "-58px";
                     menu.style.opacity = 0;
+                    prog.classList.add("scrolled");
 
-                    if (window.matchMedia("(max-width: 767px)").matches) {
+                    /* if (window.matchMedia("(max-width: 767px)").matches) {
                         prog.style.marginTop = "1px";
                     }
                     else {
                         prog.style.marginTop = "12px";
-                    }
+                    } */
                 }
             }
             prevScrollpos = currentScrollPos;

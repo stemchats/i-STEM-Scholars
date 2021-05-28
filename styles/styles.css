@@ -784,8 +784,12 @@ header ul .dropdown {
   left: 0;
   z-index: 100;
   margin-top: 70px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: margin-top 0.3s;
+  transition: margin-top 0.3s;
+}
+
+#progress-indicator.scrolled {
+  margin-top: 12px;
 }
 
 .toolbox .one {
