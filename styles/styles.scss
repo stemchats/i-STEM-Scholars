@@ -814,7 +814,7 @@ header {
     left: 0;
     z-index: 100;
     margin-top: 70px; //height of header
-    transition: margin-top 0.3s;
+    transition: margin-top 0.3s, opacity 0.2s;
 
     &.scrolled {
         margin-top: 12px;
