@@ -226,6 +226,7 @@
 
     <script>
         var prevScrollpos = window.pageYOffset;
+        var menu_check = document.getElementById("menu-icon");
         window.onscroll = scrollShowNav;
 
         function scrollShowNav() {
@@ -233,7 +234,6 @@
             var header = document.getElementsByTagName("header")[0];
             var prog = document.getElementById('progress-indicator');
             var menu = document.getElementsByTagName("label")[0];
-            var menu_check = document.getElementById("menu-icon");
             if (!menu_check.checked) {
                 if (prevScrollpos > currentScrollPos || currentScrollPos < '20') {
                     header.style.top = "0px";
@@ -247,6 +247,15 @@
             }
             prevScrollpos = currentScrollPos;
         }
+
+        // click anywhere will close menu icon
+        document.getElementsByClassName('container-fluid')[0].addEventListener('click', function() {
+                if (menu_check.checked) {
+                    menu_check.checked = false;
+                }
+            }, 
+            true
+        ); 
     </script>
 
     <script>

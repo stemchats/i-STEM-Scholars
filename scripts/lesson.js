@@ -22,8 +22,17 @@ body.style.scrollBehavior = "unset";
 
 
 // to top button
-var topbtn = document.getElementById("totop-btn");
-window.onscroll = function() {scrollFunction()};
+// var topbtn = document.getElementById("totop-btn");
+var row = document.getElementsByClassName('container-fluid')[0].querySelector('.row');
+var topbtn = document.createElement('button');
+topbtn.classList = "btn yellow-btn mobile";
+topbtn.id = 'totop-btn';
+topbtn.title = 'Go to top';
+topbtn.onclick = function() {toTop();};
+topbtn.innerHTML = '<i class="fas fa-angle-double-up"></i>';
+row.appendChild(topbtn);
+
+/* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -32,7 +41,8 @@ function scrollFunction() {
         topbtn.style.display = "none";
     }
     console.log(document.body.scrollTop);
-}
+} 
+NOT WORKING^^^^ */
 
 function toTop() {
     document.body.scrollTop = 0;
