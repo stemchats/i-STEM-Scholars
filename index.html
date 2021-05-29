@@ -85,233 +85,231 @@
 </head>
 
 <body class="home">
-    <div class="wrapper">
-        <!-- HEADER -->
-        <div id="header"></div>
+    <!-- HEADER -->
+    <div id="header"></div>
 
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Sign up to save your Lab Progress!
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body"> -->
-        <!-- form -->
-        <!-- <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="email"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                    email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Password">
-                            </div> -->
-        <!-- </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="signUp">Sign
-                            Up</button>
-                        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="login">Log
-                            In</button>
-                    </div>
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sign up to save your Lab Progress!
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"> -->
+    <!-- form -->
+    <!-- <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Password">
+                        </div> -->
+    <!-- </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" id="signUp">Sign
+                        Up</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" id="login">Log
+                        In</button>
                 </div>
             </div>
-        </div> -->
+        </div>
+    </div> -->
 
-        <!-- for the authentication functions -->
-        <!-- <script>
-        const signupBtn = document.querySelector('#signUp');
-        signupBtn.addEventListener('click', e => {
-            e.preventDefault();
+    <!-- for the authentication functions -->
+    <!-- <script>
+    const signupBtn = document.querySelector('#signUp');
+    signupBtn.addEventListener('click', e => {
+        e.preventDefault();
 
-            const email = document.querySelector('#email').value;
-            const password = document.querySelector('#password').value;
+        const email = document.querySelector('#email').value;
+        const password = document.querySelector('#password').value;
 
-            auth.createUserWithEmailAndPassword(email, password).then(cred => {
-            // console.log('User signed up!');
-            });
+        auth.createUserWithEmailAndPassword(email, password).then(cred => {
+        // console.log('User signed up!');
         });
-        const loginBtn = document.querySelector('#login');
-        loginBtn.addEventListener('click', e => {
-            e.preventDefault();
+    });
+    const loginBtn = document.querySelector('#login');
+    loginBtn.addEventListener('click', e => {
+        e.preventDefault();
 
-            const email = document.querySelector('#email').value;
-            const password = document.querySelector('#password').value;
+        const email = document.querySelector('#email').value;
+        const password = document.querySelector('#password').value;
 
-            auth.signInWithEmailAndPassword(email, password).then(cred => {
-                // console.log('Logged in user!');
-            }).catch(error => {
-                console.log(error.message);
-            })
-        });
-        </script> -->
+        auth.signInWithEmailAndPassword(email, password).then(cred => {
+            // console.log('Logged in user!');
+        }).catch(error => {
+            console.log(error.message);
+        })
+    });
+    </script> -->
 
-        <section>
-            <div class="container">
-                <div class="row content">
-                    <div class="col-lg-7 section-img">
-                        <img src="images/home_research.svg" alt="Research Image">
-                    </div>
-                    <div class="col-lg-4 section-desc">
-                        <h1><strong>i-STEM Scholars</strong></h1>
-                        <p>We aim to serve high school students from
-                            <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b>
-                            backgrounds by
-                            providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve
-                            the accessibility
-                            of STEM research, and ensure that FGLI and URM students feel <b>empowered</b> to learn more
-                            about and
-                            pursue these research fields. i-STEM Scholars is a program at <b><a href = "https://stemchats.org/" target = "_blank">STEMchats</a></b>,
-                            a nonprofit for equitable STEM education.
-                        </p>
-                    </div>
+    <section>
+        <div class="container">
+            <div class="row content">
+                <div class="col-lg-7 section-img">
+                    <img src="images/home_research.svg" alt="Research Image">
                 </div>
-                <div class="arrow bounce">
-                    <div class="fa fa-arrow-down fa-2x"></div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20"
-                data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <div class="row align-items-center flex-md-row flex-column-reverse content">
-                    <div class="col-lg-4 section-desc">
-                        <h1>Summer Research Program</h1>
-                        <p>Join our annual <b>Summer Research Program</b>, connecting high school students with
-                            <b>university labs</b> to contribute to a research project.
-                        </p>
-                        <button class="btn green-btn" onclick="window.location.pathname='/program/index.html';">Learn
-                            More!</button>
-                    </div>
-                    <div class="col-lg-7 section-img justify-content-end">
-                        <img src="images/home_research2.svg" alt="Research Image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container" data-aos="fade-right" data-aos-offset="100" data-aos-delay="20"
-                data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <div class="row align-items-center content">
-                    <div class="col-lg-7 section-img">
-                        <img src="images/home_toolbox.svg" alt="Toolbox Image">
-                    </div>
-                    <div class="col-lg-4 section-desc">
-                        <h1>STEM Research Toolbox</h1>
-                        <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
-                                STEM reasearch</b> and providing workshops and courses for all.</p>
-                        <button class="btn green-btn" onclick="window.location.pathname='/toolbox/vsl/index.html'">Learn
-                            More!</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20"
-                data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <div class="row align-items-center flex-md-row flex-column-reverse content">
-                    <div class="col-lg-4 section-desc">
-                        <h1>i-STEM Campaigns</h1>
-                        <p>Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FGLI/URM students by
-                            highlighting researchers from similar backgrounds & giving students the opportunity to
-                            interact with
-                            those in STEM research.
-                        </p>
-                        <!-- <button class="button-home" onclick="window.location.pathname='/campaigns/index.html';">Learn More!</button> -->
-                        <!-- Include curator plug-in content later -->
-                    </div>
-                    <div class="col-lg-7 section-img justify-content-end">
-                        <img src="images/home_campaign.svg" alt="home_campaign Image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="get-involved">
-            <div class="container center">
-                <div class="section-desc text-center">
-                    <h1>Get Involved</h1>
-                    <p>We welcome all HS, Undergraduate, and Graduate Students + Professors/PIs who are
-                        passionate about equity and education to explore our resources and collaborate with our team!
+                <div class="col-lg-4 section-desc">
+                    <h1><strong>i-STEM Scholars</strong></h1>
+                    <p>We aim to serve high school students from
+                        <b>first-generation, low-income (FGLI)</b>, and <b>underrepresented minority (URM)</b>
+                        backgrounds by
+                        providing <b>opportunities</b> and <b>education</b> in STEM research. Our goal is to improve
+                        the accessibility
+                        of STEM research, and ensure that FGLI and URM students feel <b>empowered</b> to learn more
+                        about and
+                        pursue these research fields. i-STEM Scholars is a program at <b><a href = "https://stemchats.org/" target = "_blank">STEMchats</a></b>,
+                        a nonprofit for equitable STEM education.
                     </p>
                 </div>
+            </div>
+            <div class="arrow bounce">
+                <div class="fa fa-arrow-down fa-2x"></div>
+            </div>
+        </div>
+    </section>
 
-                <div id="detectAnimation" class="card-deck noHover shiny-cards">
-                    <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
-                        data-aos-duration="500">
-                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                        <div class="card-body">
-                            <center>
-                                <h3><strong>High School Students</strong></h3>
-                                <ul>
-                                <li class = "involved-list">Apply to be an <b>i-STEM Scholar</b> for Summer 2021 (application will open Spring
-                                    2021)</li>
-                                    <li class = "involved-list">Learn about the fundamentals of STEM research through courses, workshops, and other
-                                    educational
-                                    resources on our website & social media</li>
-                                </ul>
-                            </center>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
-                        data-aos-duration="500">
-                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                        <div class="card-body">
-                            <center>
-                                <h3><strong>College Students</strong></h3>
-                                <ul>
-                                <li class = "involved-list">Learn about the fundamentals of STEM research through courses, workshops, and other
-                                    educational
-                                    resources on our website & social media</li>
-                                <li class = "involved-list">Showcase your own research through our social media campaigns</li>
-                            </ul>
-                            </center>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
-                        data-aos-duration="500">
-                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                        <div class="card-body">
-                            <center>
-                                <h3><strong>Graduate Students and Research Professionals</strong></h3>
-                                <ul>
-                                <li class = "involved-list">Partner with us to host a high school student for our Summer 2021 Research Program
-                                    Cohort</li>
-                                <li class = "involved-list">Showcase your own research through our social media campaigns</li>
-                                <li class = "involved-list">Host workshops or talks with students from FGLI/URM backgrounds</li>
-                                </ul>
-                            </center>
-                        </div>
-                        <!-- <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div> -->
-                    </div>
+    <section>
+        <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div class="row align-items-center flex-md-row flex-column-reverse content">
+                <div class="col-lg-4 section-desc">
+                    <h1>Summer Research Program</h1>
+                    <p>Join our annual <b>Summer Research Program</b>, connecting high school students with
+                        <b>university labs</b> to contribute to a research project.
+                    </p>
+                    <button class="btn green-btn" onclick="window.location.pathname='/program/index.html';">Learn
+                        More!</button>
+                </div>
+                <div class="col-lg-7 section-img justify-content-end">
+                    <img src="images/home_research2.svg" alt="Research Image">
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Curator.io -->
-        <div id="curator">
-            <div id="curator-feed-i-stem-scholars-layout"><a href="https://curator.io" target="_blank"
-                    class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    <section>
+        <div class="container" data-aos="fade-right" data-aos-offset="100" data-aos-delay="20"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div class="row align-items-center content">
+                <div class="col-lg-7 section-img">
+                    <img src="images/home_toolbox.svg" alt="Toolbox Image">
+                </div>
+                <div class="col-lg-4 section-desc">
+                    <h1>STEM Research Toolbox</h1>
+                    <p>Check out our <b>publicly-accessible</b> resources educating students about the <b>basics of
+                            STEM reasearch</b> and providing workshops and courses for all.</p>
+                    <button class="btn green-btn" onclick="window.location.pathname='/toolbox/vsl/index.html'">Learn
+                        More!</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- footer -->
-        <div id="footer"></div>
+    <section>
+        <div class="container" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div class="row align-items-center flex-md-row flex-column-reverse content">
+                <div class="col-lg-4 section-desc">
+                    <h1>i-STEM Campaigns</h1>
+                    <p>Check out our <b>social media campaigns</b> which aim to <b>inspire</b> FGLI/URM students by
+                        highlighting researchers from similar backgrounds & giving students the opportunity to
+                        interact with
+                        those in STEM research.
+                    </p>
+                    <!-- <button class="button-home" onclick="window.location.pathname='/campaigns/index.html';">Learn More!</button> -->
+                    <!-- Include curator plug-in content later -->
+                </div>
+                <div class="col-lg-7 section-img justify-content-end">
+                    <img src="images/home_campaign.svg" alt="home_campaign Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="get-involved">
+        <div class="container center">
+            <div class="section-desc text-center">
+                <h1>Get Involved</h1>
+                <p>We welcome all HS, Undergraduate, and Graduate Students + Professors/PIs who are
+                    passionate about equity and education to explore our resources and collaborate with our team!
+                </p>
+            </div>
+
+            <div id="detectAnimation" class="card-deck noHover shiny-cards">
+                <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
+                    data-aos-duration="500">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <center>
+                            <h3><strong>High School Students</strong></h3>
+                            <ul>
+                            <li class = "involved-list">Apply to be an <b>i-STEM Scholar</b> for Summer 2021 (application will open Spring
+                                2021)</li>
+                                <li class = "involved-list">Learn about the fundamentals of STEM research through courses, workshops, and other
+                                educational
+                                resources on our website & social media</li>
+                            </ul>
+                        </center>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
+                    data-aos-duration="500">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <center>
+                            <h3><strong>College Students</strong></h3>
+                            <ul>
+                            <li class = "involved-list">Learn about the fundamentals of STEM research through courses, workshops, and other
+                                educational
+                                resources on our website & social media</li>
+                            <li class = "involved-list">Showcase your own research through our social media campaigns</li>
+                        </ul>
+                        </center>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-down" data-aos-offset="100" data-aos-delay="500"
+                    data-aos-duration="500">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <center>
+                            <h3><strong>Graduate Students and Research Professionals</strong></h3>
+                            <ul>
+                            <li class = "involved-list">Partner with us to host a high school student for our Summer 2021 Research Program
+                                Cohort</li>
+                            <li class = "involved-list">Showcase your own research through our social media campaigns</li>
+                            <li class = "involved-list">Host workshops or talks with students from FGLI/URM backgrounds</li>
+                            </ul>
+                        </center>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div> -->
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Curator.io -->
+    <div id="curator">
+        <div id="curator-feed-i-stem-scholars-layout"><a href="https://curator.io" target="_blank"
+                class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
 
     <!-- Scripts -->
     <script type="text/javascript">
