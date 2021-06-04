@@ -237,31 +237,6 @@
     <script type="text/javascript" src="/scripts/script.js"></script>
 
     <script>
-        //Constant Slideshow Height
-        let slideShow = document.querySelectorAll(".mySlides");
-        let images = document.querySelectorAll('.mySlides img');
-
-        let slideShowArr = [...slideShow];
-
-        function getHeight() {
-          maxHeight = 0;
-          slideShowArr.forEach(slide => {
-            // console.log(slide, slide.clientHeight, images[0].height)
-            container = slide.clientHeight + images[0].height; // height of the slide
-
-            if(container > maxHeight) {
-              maxHeight = container;
-            }
-          });
-          setHeight(maxHeight);
-        }
-
-        function setHeight(max) {
-          slideShowArr.map(slide => slide.style.height = `${max}px`);
-        }
-
-        window.onload = getHeight();
-
 
         //Slideshow Arrows
         let slideIndex = 1;
