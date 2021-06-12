@@ -249,18 +249,12 @@
         }
 
         // click anywhere will close menu icon
-        // document.getElementsByClassName('container-fluid')[0].addEventListener('click', function() {
-        document.querySelector("body > :not(#header)").addEventListener('click', function() {
+        document.body.addEventListener('mouseup', function() {
+                console.log("clicked");
                 if (menu_check.checked) {
                     menu_check.checked = false;
                 }
-            }, true
-        ); 
-        document.getElementsByClassName('container-fluid')[0].addEventListener('click', function() {
-                if (menu_check.checked) {
-                    menu_check.checked = false;
-                }
-            }, true
+            }
         ); 
     </script>
 
