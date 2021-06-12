@@ -1,4 +1,4 @@
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1305px) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -13,6 +13,9 @@
   header .logo {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  header .logo .logo-text {
+    font-size: 28px;
   }
   header #menu-icon + label {
     display: block;
@@ -70,12 +73,6 @@
   }
   .home .section-img {
     margin: 0 auto 4rem !important;
-  }
-}
-
-@media screen and (max-width: 1305px) {
-  header .logo .logo-text {
-    font-size: 28px;
   }
 }
 

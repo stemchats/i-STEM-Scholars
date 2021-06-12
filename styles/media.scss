@@ -15,7 +15,7 @@ $light-grey : #f8f8f8;
 
 
 
-@media screen and (max-width: 1410px) { // header gets replaced by menu icon
+@media screen and (max-width: 1305px) { // header gets replaced by menu icon
     header {
         flex-direction: column;
         height: max-content;
@@ -24,6 +24,10 @@ $light-grey : #f8f8f8;
 
         .logo {
             align-self: flex-start;
+            
+            .logo-text {
+                font-size: 28px;
+            }
         }
 
         #menu-icon + label {
@@ -87,17 +91,6 @@ $light-grey : #f8f8f8;
     .home {
         .section-img {
             margin: 0 auto 4rem !important;
-        }
-    }
-}
-
-
-@media screen and (max-width: 1305px) {
-    header {
-        .logo {
-            .logo-text {
-                font-size: 28px;
-            }
         }
     }
 }

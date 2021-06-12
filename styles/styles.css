@@ -827,6 +827,10 @@ header ul .dropdown {
   margin-top: 12px;
 }
 
+.toolbox {
+  overflow-x: hidden;
+}
+
 .toolbox .one {
   margin-left: 2rem;
   left: 5%;
@@ -844,10 +848,6 @@ header ul .dropdown {
   right: -45px;
   top: 0;
   z-index: 100000;
-}
-
-.toolbox .one nav {
-  width: 100%;
 }
 
 .toolbox .one nav .nav-link {
