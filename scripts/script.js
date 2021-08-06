@@ -233,3 +233,173 @@ form.addEventListener('submit', (e) => {
 	}
 })
 */
+
+//Blog list and grid view
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// List View
+function listView() {
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.width = "70%";
+
+	// elements[i].$display.$card.style.height = "100%";
+	// var posts = document.getElementsByClassName("card h-100 mb-3 mx-auto mr-5"); 
+	// elements[i].posts.style.height = "100rem"; 
+	// var postsbod = document.getElementsByClassName("card-body"); 
+	// postsbod.style.height = "10%"; 
+	// var imagetop = document.getElementsByClassName("card-img-top"); 
+	// $imagetop.style.height = "100%"; 
+  }
+}
+
+// Grid View
+function gridView() {
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.width = "33.33%";
+  }
+}
+
+// const blog = document.getElementById("blogs"); 
+
+$(function() {
+// createBlogs = (blog) => {
+    var mediumPromise = new Promise(function (resolve) {
+    var $content = $('#jsonContent');
+    var data = {
+        rss: 'https://medium.com/feed/@blueprint-magnify'
+    };
+    $.get('  https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40blueprint-magnify', data, function (response) {
+        if (response.status == 'ok') {
+            $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
+            var display = '';
+		    
+            $.each(response.items, function (k, item) {
+			// blog.forEach(function(k, item){
+				// display+=`<div class = "row">`;
+				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto">`;
+                display += `<div class="card h-100 mb-3 mx-auto mr-5">`;
+				// style="width: 20rem;";
+                var src = item["thumbnail"]; // use thumbnail url
+                display += `<img src="${src}" class="card-img-top" alt="Cover image" style = "height: 45%;">`;
+                display += `<div class="card-body">`;
+                display += `<h4 class="card-title"><a href="${item.link}" target="_blank">${item.title}</a></h4>`;
+                var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
+                yourString = yourString.replace('h4', 'p'); 
+                yourString = yourString.replace('h3', 'p');
+                var maxLength = 190; // maximum number of characters to extract
+                //trim the string to the maximum length
+                var trimmedString = yourString.substr(0, maxLength);
+                //re-trim if we are in the middle of a word
+                trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+                display += `<p class="card-text">${trimmedString}...</p>`;
+                
+				// display+= `<div class = "card-footer">`;
+                display += `<a href="${item.link}" target="_blank" type="button" class="card-footer yellow-btn" style = "bottom:0;">Read More</a>`;
+                display += `</div></div></div>`;
+                return k < 10;
+            });
+			// display+= `</center>`;
+            resolve($content.html(display));
+        }
+    });
+    // });
+	});
+	
+mediumPromise.then(function()
+    {
+        //Pagination
+        pageSize = 10;
+
+        var pageCount = $(".card").length / pageSize;
+
+        for (var i = 0; i < pageCount; i++) {
+            $("#pagin").append(`<li class="page-item"><a class="page-link" href="#">${(i + 1)}</a></li>`);
+        }
+        $("#pagin li:nth-child(1)").addClass("active");
+        showPage = function (page) {
+            $(".card").hide();
+            $(".card").each(function (n) {
+                if (n >= pageSize * (page - 1) && n < pageSize * page)
+                    $(this).show();
+            });
+        }
+
+        showPage(1);
+
+        $("#pagin li").click(function () {
+            $("#pagin li").removeClass("active");
+            $(this).addClass("active");
+            showPage(parseInt($(this).text()))
+            return false;
+        });
+    });
+// });
+});
+
+let blogsObj = [
+	{
+		topic: "tech"
+	},
+	{
+		topic: "bio"
+	},
+	{
+		topic: "chem"
+	},
+	{
+		topic: "tech"
+	},
+	{
+		topic: "tech"
+	},
+	{
+		topic: "chem"
+	},
+	{
+		topic: "bio"
+	},
+	{
+		topic: "bio"
+	}
+];
+window.onload = createBlogs(blogsObj);
+// window.onload =	animateOnload();
+
+hide = () => {
+	$content.innerHTML = "";
+}
+                    
+//select Team
+function select(topic) {
+	topic.innerHTML = topic;
+	console.log(topic.textContent)
+}
+tech = () => {
+ 		let array = blogsObj.filter(function(blog) {
+		return blog.topic.indexOf("Technology") !== -1;
+	})
+	select("Technology");
+	return array;
+}
+bio = () => {
+		let array = blogsObj.filter(function(blog) {
+		return blog.topic.indexOf("Biology") !== -1;
+	})
+	select("Biology");
+	return array;
+}
+chem = () => {
+			let array = blogsObj.filter(function(content) {
+			return blog.topic.indexOf("Chemistry") !== -1;
+		})
+		select("Chemistry");
+		return array;
+	}
+phys = () => {
+			let array = blogsObj.filter(function(content) {
+			return blog.topic.indexOf("Physics") !== -1;
+		})
+		select("Physics");
+		return array;
+	}
