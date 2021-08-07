@@ -260,10 +260,7 @@ function gridView() {
   }
 }
 
-// const blog = document.getElementById("blogs"); 
-
-$(function() {
-// createBlogs = (blog) => {
+const createBlogs = $(function() {
     var mediumPromise = new Promise(function (resolve) {
     var $content = $('#jsonContent');
     var data = {
@@ -275,6 +272,8 @@ $(function() {
             var display = '';
 		    
             $.each(response.items, function (k, item) {
+				console.log(k);
+				blogsObj[k].title = item.title;
 			// blog.forEach(function(k, item){
 				// display+=`<div class = "row">`;
 				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto">`;
@@ -303,7 +302,6 @@ $(function() {
             resolve($content.html(display));
         }
     });
-    // });
 	});
 	
 mediumPromise.then(function()
@@ -334,7 +332,6 @@ mediumPromise.then(function()
             return false;
         });
     });
-// });
 });
 
 let blogsObj = [
@@ -363,43 +360,34 @@ let blogsObj = [
 		topic: "bio"
 	}
 ];
-window.onload = createBlogs(blogsObj);
-// window.onload =	animateOnload();
+
+
+
+const category = document.getElementById("article-topic");
+const blog = document.getElementById("jsonContent");
 
 hide = () => {
-	$content.innerHTML = "";
+	// blog.innerHTML = "";
+	blog.style.visibility = "hidden";
 }
-                    
+
+unhide = () => {
+	blog.style.visibility = "visible";
+}
+
 //select Team
 function select(topic) {
-	topic.innerHTML = topic;
-	console.log(topic.textContent)
+	category.textContent = topic;
 }
 tech = () => {
- 		let array = blogsObj.filter(function(blog) {
-		return blog.topic.indexOf("Technology") !== -1;
-	})
 	select("Technology");
-	return array;
 }
 bio = () => {
-		let array = blogsObj.filter(function(blog) {
-		return blog.topic.indexOf("Biology") !== -1;
-	})
 	select("Biology");
-	return array;
 }
 chem = () => {
-			let array = blogsObj.filter(function(content) {
-			return blog.topic.indexOf("Chemistry") !== -1;
-		})
-		select("Chemistry");
-		return array;
-	}
+	select("Chemistry");
+}
 phys = () => {
-			let array = blogsObj.filter(function(content) {
-			return blog.topic.indexOf("Physics") !== -1;
-		})
-		select("Physics");
-		return array;
-	}
+	select("Physics");
+}
