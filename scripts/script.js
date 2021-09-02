@@ -260,6 +260,7 @@ function gridView() {
   }
 }
 
+let blogsArray = {};
 const createBlogs = $(function() {
     var mediumPromise = new Promise(function (resolve) {
     var $content = $('#jsonContent');
@@ -276,7 +277,7 @@ const createBlogs = $(function() {
 				blogsObj[k].title = item.title;
 			// blog.forEach(function(k, item){
 				// display+=`<div class = "row">`;
-				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto">`;
+				display +=`<div class = "column" id="posts" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto">`;
                 display += `<div class="card h-100 mb-3 mx-auto mr-5">`;
 				// style="width: 20rem;";
                 var src = item["thumbnail"]; // use thumbnail url
@@ -296,6 +297,10 @@ const createBlogs = $(function() {
 				// display+= `<div class = "card-footer">`;
                 display += `<a href="${item.link}" target="_blank" type="button" class="card-footer yellow-btn" style = "bottom:0;">Read More</a>`;
                 display += `</div></div></div>`;
+				// blogsObj[k].display = display; 
+				blogsArray += display; 
+				// console.log(blogsArray);
+
                 return k < 10;
             });
 			// display+= `</center>`;
@@ -303,8 +308,8 @@ const createBlogs = $(function() {
         }
     });
 	});
-	
-mediumPromise.then(function()
+
+	mediumPromise.then(function()
     {
         //Pagination
         pageSize = 10;
@@ -336,28 +341,44 @@ mediumPromise.then(function()
 
 let blogsObj = [
 	{
+		title: "Cynthia Fayssal: A New Era of Cancer Treatment",
 		topic: "tech"
 	},
 	{
+		title: "Bhavya Bansal: Investigating the Willingness to Take a Rapid COVID-19 Test",
 		topic: "bio"
 	},
 	{
+		title: "Juliet Amadi: Race for a Cure",
 		topic: "chem"
 	},
 	{
+		title: "Kaitlyn Leitherer: How to Save the Bay",
 		topic: "tech"
 	},
 	{
+		title: "A Closer Look: Gonzalez",
 		topic: "tech"
 	},
 	{
+		title: "A Closer Look: Bianca",
 		topic: "chem"
 	},
 	{
+		title: "A Closer Look: Audrey",
 		topic: "bio"
 	},
 	{
+		title: "A Closer Look: April",
 		topic: "bio"
+	},
+	{
+		title: "A Closer Look: Sakshi",
+		topic: "chem"
+	},
+	{
+		title: "A Closer Look: Gina",
+		topic: "tech"
 	}
 ];
 
@@ -365,6 +386,8 @@ let blogsObj = [
 
 const category = document.getElementById("article-topic");
 const blog = document.getElementById("jsonContent");
+const drop = document.getElementById("posts"); 
+const testing = document.getElementsByClassName("column"); 
 
 hide = () => {
 	// blog.innerHTML = "";
@@ -380,7 +403,19 @@ function select(topic) {
 	category.textContent = topic;
 }
 tech = () => {
+	// let array = blogsObj.filter(function(){
+		// return blogsObj.topic.indexOf("tech") !== -1; 
+		for (var i = 0; i < blogsObj.length; i++){
+			if (blogsObj[i].topic =="tech"){
+				console.log(blogsObj[i]);
+				blog.style.visibility = "visible";
+				// blog.getElementById("posts")
+				// return blogsObj[i]; 
+			}
+		}
+	// })
 	select("Technology");
+	// return array;
 }
 bio = () => {
 	select("Biology");
