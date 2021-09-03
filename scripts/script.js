@@ -378,7 +378,7 @@ let blogsObj = [
 	},
 	{
 		title: "A Closer Look: Gina",
-		topic: "tech"
+		topic: "phys"
 	}
 ];
 
@@ -408,30 +408,15 @@ function select(topic) {
 }
 
 filterPost = (topic) => {
-
-}
-
-tech = () => {
-    const posts = document.querySelectorAll("div.card");
+	const posts = document.querySelectorAll("div.card");
     const displayPosts = [];
     [...posts].map(post => {
       const title = post.querySelector("h4.card-title").textContent;
       blogsObj.forEach(blog => {
-          if(title == blog.title && blog.topic == "tech") {
+          if(title == blog.title && blog.topic == topic) {
             // make all non-tech posts invisible!
             post.style.display = "block";
           }
         })
     });
-	select("Technology");
-}
-
-bio = () => {
-	select("Biology");
-}
-chem = () => {
-	select("Chemistry");
-}
-phys = () => {
-	select("Physics");
 }
