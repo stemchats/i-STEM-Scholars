@@ -244,12 +244,12 @@ function listView() {
     elements[i].style.width = "70%";
 
 	// elements[i].$display.$card.style.height = "100%";
-	// var posts = document.getElementsByClassName("card h-100 mb-3 mx-auto mr-5"); 
-	// elements[i].posts.style.height = "100rem"; 
-	// var postsbod = document.getElementsByClassName("card-body"); 
-	// postsbod.style.height = "10%"; 
-	// var imagetop = document.getElementsByClassName("card-img-top"); 
-	// $imagetop.style.height = "100%"; 
+	// var posts = document.getElementsByClassName("card h-100 mb-3 mx-auto mr-5");
+	// elements[i].posts.style.height = "100rem";
+	// var postsbod = document.getElementsByClassName("card-body");
+	// postsbod.style.height = "10%";
+	// var imagetop = document.getElementsByClassName("card-img-top");
+	// $imagetop.style.height = "100%";
   }
 }
 
@@ -271,7 +271,7 @@ const createBlogs = $(function() {
         if (response.status == 'ok') {
             $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
             var display = '';
-		    
+
             $.each(response.items, function (k, item) {
 				console.log(k);
 				blogsObj[k].title = item.title;
@@ -285,7 +285,7 @@ const createBlogs = $(function() {
                 display += `<div class="card-body">`;
                 display += `<h4 class="card-title"><a href="${item.link}" target="_blank">${item.title}</a></h4>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-                yourString = yourString.replace('h4', 'p'); 
+                yourString = yourString.replace('h4', 'p');
                 yourString = yourString.replace('h3', 'p');
                 var maxLength = 190; // maximum number of characters to extract
                 //trim the string to the maximum length
@@ -293,12 +293,12 @@ const createBlogs = $(function() {
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
-                
+
 				// display+= `<div class = "card-footer">`;
                 display += `<a href="${item.link}" target="_blank" type="button" class="card-footer yellow-btn" style = "bottom:0;">Read More</a>`;
                 display += `</div></div></div>`;
-				// blogsObj[k].display = display; 
-				blogsArray += display; 
+				// blogsObj[k].display = display;
+				blogsArray += display;
 				// console.log(blogsArray);
 
                 return k < 10;
@@ -382,41 +382,50 @@ let blogsObj = [
 	}
 ];
 
-
-
 const category = document.getElementById("article-topic");
 const blog = document.getElementById("jsonContent");
-const drop = document.getElementById("posts"); 
-const testing = document.getElementsByClassName("column"); 
+// const blog = document.querySelectorAll("div.card");
+const drop = document.getElementById("posts");
+const testing = document.getElementsByClassName("column");
 
 hide = () => {
-	// blog.innerHTML = "";
-	blog.style.visibility = "hidden";
+  const posts = blog.querySelectorAll("div.card");
+  [...posts].map(post => {
+    post.style.display = "none";
+  });
 }
 
 unhide = () => {
-	blog.style.visibility = "visible";
+  const posts = blog.querySelectorAll("div.card");
+  [...posts].map(post => {
+    post.style.display = "block";
+  });
 }
 
 //select Team
 function select(topic) {
 	category.textContent = topic;
 }
-tech = () => {
-	// let array = blogsObj.filter(function(){
-		// return blogsObj.topic.indexOf("tech") !== -1; 
-		for (var i = 0; i < blogsObj.length; i++){
-			if (blogsObj[i].topic =="tech"){
-				console.log(blogsObj[i]);
-				blog.style.visibility = "visible";
-				// blog.getElementById("posts")
-				// return blogsObj[i]; 
-			}
-		}
-	// })
-	select("Technology");
-	// return array;
+
+filterPost = (topic) => {
+
 }
+
+tech = () => {
+    const posts = document.querySelectorAll("div.card");
+    const displayPosts = [];
+    [...posts].map(post => {
+      const title = post.querySelector("h4.card-title").textContent;
+      blogsObj.forEach(blog => {
+          if(title == blog.title && blog.topic == "tech") {
+            // make all non-tech posts invisible!
+            post.style.display = "block";
+          }
+        })
+    });
+	select("Technology");
+}
+
 bio = () => {
 	select("Biology");
 }
