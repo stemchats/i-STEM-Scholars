@@ -801,7 +801,49 @@ header {
 }
 
 
+//BLOG STYLES 
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
 
+.card-title a {
+    text-decoration: none;
+    color: #233142;
+    text-align: center;
+
+    &:hover {
+        color: #4f9da6;
+    }
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.blog-img-hover {
+    position: relative;
+    transition: 0.5s;
+    &:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=40);
+        transition: 0.5s;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .column {
+        width: 100%;     
+    }
+
+    .view-btns {
+        position:absolute;
+        visibility: hidden;
+    }
+  }
 
 //Toolbox STYLES
 

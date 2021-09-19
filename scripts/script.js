@@ -242,14 +242,6 @@ var elements = document.getElementsByClassName("column");
 function listView() {
   for (var i = 0; i < elements.length; i++) {
     elements[i].style.width = "70%";
-
-	// elements[i].$display.$card.style.height = "100%";
-	// var posts = document.getElementsByClassName("card h-100 mb-3 mx-auto mr-5");
-	// elements[i].posts.style.height = "100rem";
-	// var postsbod = document.getElementsByClassName("card-body");
-	// postsbod.style.height = "10%";
-	// var imagetop = document.getElementsByClassName("card-img-top");
-	// $imagetop.style.height = "100%";
   }
 }
 
@@ -275,14 +267,10 @@ const createBlogs = $(function() {
             $.each(response.items, function (k, item) {
 				console.log(k);
 				blogsObj[k].title = item.title;
-			// blog.forEach(function(k, item){
-				// display+=`<div class = "row">`;
 				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto;">`;
                 display += `<div class="card h-100 mb-3 mx-auto mr-5">`;
-				// display += `<div class="card h-100">`;
-				// style="width: 20rem;";
                 var src = item["thumbnail"]; // use thumbnail url
-                display += `<img src="${src}" class="card-img-top" alt="Cover image" style = "height: 45%;">`;
+                display += `<a href = "${item.link}"><img src="${src}" class="blog-img-hover card-img-top" alt="Cover image">`;
                 display += `<div class="card-body">`;
                 display += `<h4 class="card-title"><a href="${item.link}" target="_blank">${item.title}</a></h4>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
@@ -296,7 +284,7 @@ const createBlogs = $(function() {
                 display += `<p class="card-text">${trimmedString}...</p>`;
 
 				// display+= `<div class = "card-footer">`;
-                display += `<a href="${item.link}" target="_blank" type="button" class="card-footer yellow-btn" style = "bottom:0;">Read More</a>`;
+                // display += `<a href="${item.link}" target="_blank" type="button" class="card-footer yellow-btn" style = "bottom:0;">Read More</a>`;
                 display += `</div></div></div>`;
 				// blogsObj[k].display = display;
 				blogsArray += display;

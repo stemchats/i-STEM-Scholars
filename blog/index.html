@@ -92,8 +92,10 @@ gtag('config', 'G-399S7QGWJQ');
                 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@blueprint-magnify","postsPerLine":3,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script> -->
 
             <!-- Buttons to choose list or grid view -->
+                    <div class = "view-btns">
                     <button onclick="listView()"><i class="btn green-btn fa fa-bars"> List</button></i>
                     <button onclick="gridView()"><i class="btn green-btn fa fa-th-large"> Grid</button></i>
+                </div>
                     <div class="row justify-content-end">
                       <div class="col-sm-2">
                           <div class="show dropdown">
@@ -118,11 +120,7 @@ gtag('config', 'G-399S7QGWJQ');
                       </div>
                   </div>
 
-                    <div class="row" id="jsonContent">
-                        <!-- <div id = "blogs">
-                            
-                        </div> -->
-                    </div>
+                    <div class="row" id="jsonContent" onload="gridView()"> </div>
 
                     <!-- <div class="card-deck">
                         <div class="row">
