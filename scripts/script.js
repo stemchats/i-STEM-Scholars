@@ -277,8 +277,9 @@ const createBlogs = $(function() {
 				blogsObj[k].title = item.title;
 			// blog.forEach(function(k, item){
 				// display+=`<div class = "row">`;
-				display +=`<div class = "column" id="posts" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto">`;
+				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto;">`;
                 display += `<div class="card h-100 mb-3 mx-auto mr-5">`;
+				// display += `<div class="card h-100">`;
 				// style="width: 20rem;";
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<img src="${src}" class="card-img-top" alt="Cover image" style = "height: 45%;">`;
@@ -389,14 +390,14 @@ const drop = document.getElementById("posts");
 const testing = document.getElementsByClassName("column");
 
 hide = () => {
-  const posts = blog.querySelectorAll("div.card");
+  const posts = blog.querySelectorAll("div.column");
   [...posts].map(post => {
     post.style.display = "none";
   });
 }
 
 unhide = () => {
-  const posts = blog.querySelectorAll("div.card");
+  const posts = blog.querySelectorAll("div.column");
   [...posts].map(post => {
     post.style.display = "block";
   });
@@ -408,7 +409,7 @@ function select(topic) {
 }
 
 filterPost = (topic) => {
-	const posts = document.querySelectorAll("div.card");
+	const posts = document.querySelectorAll("div.column");
     const displayPosts = [];
     [...posts].map(post => {
       const title = post.querySelector("h4.card-title").textContent;
