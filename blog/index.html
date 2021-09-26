@@ -86,18 +86,14 @@ gtag('config', 'G-399S7QGWJQ');
             <!-- CONTENT -->
             <div class="container">
                 <h1 class="large-box-title center">Blog</h1>
-
-                <!-- <div id="medium-widget"></div>
-                <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-                <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@blueprint-magnify","postsPerLine":3,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script> -->
-
-            <!-- Buttons to choose list or grid view -->
-                    <div class = "view-btns">
-                    <button onclick="listView()"><i class="btn green-btn fa fa-bars"> List</button></i>
-                    <button onclick="gridView()"><i class="btn green-btn fa fa-th-large"> Grid</button></i>
+                <div class="blog-desc center">Highlighting independent researchers and their stories | a Blueprint x Stemchats program.</div>
+                <button href="https://medium.com/@blueprint-magnify" target="_blank" class="btn btn-primary center">Discover More</button>
+                <div class = "view-btns" id = "inlineBtn">
+                    <button onclick="listView()" class="btn btn-secondary fa fa-bars"> List</button>
+                    <button onclick="gridView()" class="btn btn-secondary fa fa-th-large"> Grid</button>
                 </div>
                     <div class="row justify-content-end">
-                      <div class="col-sm-2">
+                      <div class="col-sm-3" id = "inlineBtn">
                           <div class="show dropdown">
                               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownSelectTeam"
                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -117,10 +113,9 @@ gtag('config', 'G-399S7QGWJQ');
                                       onclick="hide(), filterPost('phys'), select('Physics')">Physics</a>
                               </div>
                           </div>
-                      </div>
-                  </div>
-
-                    <div class="row" id="jsonContent" onload="gridView()"> </div>
+                        </div>
+                    <div class="row" id="jsonContent" onload="gridView()"></div>
+                </div>
 
                     <!-- <div class="card-deck">
                         <div class="row">

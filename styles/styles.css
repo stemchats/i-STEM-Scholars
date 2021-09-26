@@ -845,12 +845,22 @@ header ul .dropdown {
   transition: 0.5s;
 }
 
+#inlineBtn {
+  display: inline-block;
+}
+
+.blog-desc {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 700px) {
   .column {
     width: 100%;
   }
   .view-btns {
-    position: absolute;
     visibility: hidden;
   }
 }
