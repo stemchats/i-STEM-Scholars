@@ -241,7 +241,7 @@ var elements = document.getElementsByClassName("column");
 // List View
 function listView() {
   for (var i = 0; i < elements.length; i++) {
-    elements[i].style.width = "70%";
+    elements[i].style.width = "100%";
   }
 }
 
@@ -267,7 +267,7 @@ const createBlogs = $(function() {
             $.each(response.items, function (k, item) {
 				console.log(k);
 				blogsObj[k].title = item.title;
-				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; width: 70%; margin-left: auto; margin-right: auto;">`;
+				display +=`<div class = "column" style = "padding:2% 2.31% 0% 0%; margin-left: auto; margin-right: auto;">`;
                 display += `<div class="card h-100 mb-3 mx-auto mr-5">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<a href = "${item.link}"><img src="${src}" class="blog-img-hover card-img-top" alt="Cover image">`;
